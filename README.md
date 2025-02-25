@@ -69,9 +69,13 @@ From here on out we assume a working connection to the backend.
 
 ---
 
-### Additional Tips & Tricks for future developers
-:/
+### Miscellaneous:
 
+Further development of this frontend is only advised for people with experience in UE5 development, especially with Blueprints.
+
+If you try to resolve the faulty colormap values, try the JSON converter classes and associated Blueprints.
+
+If you want to add calculations regarding surface normals, look into the Procedural Mesh components in the mesh actor classes.
 
 <!--
 
