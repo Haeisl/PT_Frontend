@@ -1,0 +1,7 @@
+<map id="UPT_JSONConverter::CreateJsonArrayFromVectorArray" name="UPT_JSONConverter::CreateJsonArrayFromVectorArray">
+<area shape="rect" id="Node000001" title="Converts an array of FVectors to a JSON array." alt="" coords="246,39,463,81"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#a01d8a33ef51278a61eeffb4d6bdab2a7" title="Converts the ROI data to a JSON string." alt="" coords="10,5,193,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,46,193,41,194,36,230,41"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html#af1fe8c56b3ed362127bc6cc30495f7cb" title="Creates a JSON string for interpolated data." alt="" coords="5,72,198,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,79,199,83,198,78,230,74"/>
+</map>

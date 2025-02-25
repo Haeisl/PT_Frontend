@@ -1,0 +1,23 @@
+<map id="UPT_JSONConverter::ConvertJSONObjectToVectorArray" name="UPT_JSONConverter::ConvertJSONObjectToVectorArray">
+<area shape="rect" id="Node000001" title="Converts a JSON object to an array of FVector." alt="" coords="989,305,1213,348"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___j_s_o_n_converter.html#a71aa218001cae5cba5ed47016a8a65ae" title="Converts a JSON response body to an array of FVector." alt="" coords="698,197,941,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1023,302,903,259,905,254,1025,297"/>
+<area shape="rect" id="Node000009" href="$class_u_p_t___simulation_component.html#a35c508f431cbfefe07042f0bfc42783f" title="Processes electrode data." alt="" coords="728,343,911,385"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="974,346,912,354,912,349,973,341"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___single3_d_actor.html#aa66f0711724e833a781e44011a7f9f3c" title="Converts a JSON response body to a mesh." alt="" coords="380,5,618,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="786,187,727,122,690,89,649,62,618,49,620,44,651,58,693,85,731,118,790,183"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___single3_d_actor.html#a9ce628a69546652c564d9b95d8da7ed2" title="Converts a JSON response body to a volume." alt="" coords="374,72,624,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="763,191,709,158,649,129,615,118,617,113,651,124,711,153,765,186"/>
+<area shape="rect" id="Node000005" href="$class_a_p_t___multi3_d_actor.html#ae8d4937169940ce4fb4e6741471c6375" title="Extracts both mesh and volume data from a JSON response body." alt="" coords="348,139,650,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="682,201,604,185,605,179,683,196"/>
+<area shape="rect" id="Node000006" href="$class_a_p_t___multi3_d_actor.html#a527e7a4b5d9b79bf6f5d48c36d95ae8d" title="Extracts mesh data from a JSON response body." alt="" coords="395,205,603,248"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="683,229,603,229,603,224,683,224"/>
+<area shape="rect" id="Node000007" href="$class_a_p_t___multi3_d_actor.html#a950fe8c53ff0b1c574ed669a02996fa4" title="Extracts volume data from a JSON response body." alt="" coords="389,272,608,315"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="683,258,605,274,604,269,682,252"/>
+<area shape="rect" id="Node000008" href="$class_a_p_t___single3_d_actor.html#a37e361d670c1290c63b501c7ec8b26b8" title="Sets the vertex array from a JSON response body." alt="" coords="367,339,631,381"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="765,267,711,300,651,329,617,341,615,336,649,324,709,295,763,263"/>
+<area shape="rect" id="Node000010" href="$class_u_p_t___simulation_component.html#ac2605fac55d1e34d09181fb205101db9" title="Retrieves simulation data from a JSON object." alt="" coords="377,405,620,448"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="713,387,612,407,611,402,712,382"/>
+<area shape="rect" id="Node000011" href="$class_u_p_t___simulation_component.html#a57b42939f12c19af9b851a8b323f01dd" title="Retrieves simulation data from a JSON response body." alt="" coords="5,405,300,448"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="362,429,300,429,300,424,362,424"/>
+</map>

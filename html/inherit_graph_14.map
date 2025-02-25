@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,106,57"/>
+<area shape="rect" id="Node000001" href="$class_u_manage_server_widget.html" title="A widget class for managing server interactions specifically for the &quot;Server Management&quot; screen." alt="" coords="162,5,318,32"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="121,32,161,27,162,32,121,38"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___configuration_widget.html" title="A widget class for managing server configuration." alt="" coords="154,56,327,83"/>
+<area shape="poly" id="edge19_Node000000_Node000002" title=" " alt="" coords="122,50,154,55,153,60,121,56"/>
+</map>

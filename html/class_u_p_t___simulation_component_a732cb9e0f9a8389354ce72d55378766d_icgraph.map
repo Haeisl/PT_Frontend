@@ -1,0 +1,7 @@
+<map id="UPT_SimulationComponent::GetSimulationDataPerElectrodePerTag" name="UPT_SimulationComponent::GetSimulationDataPerElectrodePerTag">
+<area shape="rect" id="Node000001" title="Retrieves simulation data per electrode per tag." alt="" coords="468,5,682,64"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___simulation_component.html#a1c2172529ef17f65b1bdda430d9e6e08" title="Performs barycentric interpolation for simulation data." alt="" coords="237,13,420,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="452,37,420,37,420,32,452,32"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html#a694de51fcc8d63e5b972879ff0d1d29d" title="Processes interpolation for simulation data." alt="" coords="5,13,189,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,37,189,37,189,32,221,32"/>
+</map>

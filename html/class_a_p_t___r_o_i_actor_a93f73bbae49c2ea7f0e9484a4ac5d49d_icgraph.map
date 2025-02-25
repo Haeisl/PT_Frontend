@@ -1,0 +1,18 @@
+<map id="APT_ROIActor::GenerateBoxMesh" name="APT_ROIActor::GenerateBoxMesh">
+<area shape="rect" id="Node000001" title="Generates the box mesh for the ROI." alt="" coords="780,157,1006,184"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#a98775029206b38e73be0166206e3237c" title="Applies the transformations to the ROI." alt="" coords="488,81,732,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="825,155,662,111,664,106,827,150"/>
+<area shape="rect" id="Node000006" href="$class_a_p_t___r_o_i_actor.html#a9187e9cf17cdcd8dcd43da6b7a7e77b8" title="Called when the game starts or when spawned." alt="" coords="5,183,182,209"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="765,177,182,196,182,191,765,172"/>
+<area shape="rect" id="Node000007" href="$class_a_p_t___r_o_i_actor.html#a804b904c74c01607b1a74e0a378e44d4" title="Moves the ROI position by the specified amount." alt="" coords="500,208,720,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="800,190,689,210,688,205,799,185"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___r_o_i_actor.html#a023f69a334c1d6b8d7a2582605acbb81" title="Sets the position of the ROI." alt="" coords="231,5,439,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="550,79,439,47,395,35,396,30,441,41,551,74"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___r_o_i_actor.html#ad6bcdd64a2631fdc13d3f45d08998527" title="Sets the rotation of the ROI and applies the transformation." alt="" coords="230,56,440,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="472,85,440,82,441,76,473,79"/>
+<area shape="rect" id="Node000005" href="$class_a_p_t___r_o_i_actor.html#a8a9a838509c7c2ef1222d9c0feccbc02" title="Sets the size of the ROI and applies the transformation." alt="" coords="241,107,428,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="473,110,429,114,429,109,472,105"/>
+<area shape="rect" id="Node000008" href="$class_a_p_t___r_o_i_actor.html#a5db649b8bd5881a7cf8adfabab72ed2b" title="Handles the input action to move the ROI." alt="" coords="240,208,430,235"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="484,224,431,224,431,219,484,219"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="224,212,182,208,183,203,224,207"/>
+</map>

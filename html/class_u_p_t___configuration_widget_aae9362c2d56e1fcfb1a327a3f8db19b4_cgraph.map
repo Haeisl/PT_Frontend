@@ -1,0 +1,5 @@
+<map id="UPT_ConfigurationWidget::GetServerRunSimulationsAddress" name="UPT_ConfigurationWidget::GetServerRunSimulationsAddress">
+<area shape="rect" id="Node000001" title="Gets the server run simulations address." alt="" coords="5,5,234,48"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#af2f990e4ee3b3793887be01b231dfa08" title="Gets the run simulations address URL." alt="" coords="282,5,464,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,24,266,24,266,29,234,29"/>
+</map>

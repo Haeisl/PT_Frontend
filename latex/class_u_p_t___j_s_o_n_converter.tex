@@ -1,0 +1,781 @@
+\doxysection{UPT\+\_\+\+JSONConverter Class Reference}
+\hypertarget{class_u_p_t___j_s_o_n_converter}{}\label{class_u_p_t___j_s_o_n_converter}\index{UPT\_JSONConverter@{UPT\_JSONConverter}}
+
+
+A utility class for converting JSON data to various Unreal Engine data types.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+JSONConverter.\+h$>$}
+
+
+
+Inheritance diagram for UPT\+\_\+\+JSONConverter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_u_p_t___j_s_o_n_converter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UPT\+\_\+\+JSONConverter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_u_p_t___j_s_o_n_converter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a34ee89d947e80dcdab7dfa3d7223caff}{UPT\+\_\+\+JSONConverter}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a83c9a64f2ad33cbcceaf64416f2e0b39}{\texorpdfstring{$\sim$}{\string~}\+UPT\+\_\+\+JSONConverter}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a71aa218001cae5cba5ed47016a8a65ae}{Convert\+JSONResponse\+Body\+To\+Vector\+Array}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Array\+Field\+Name, TArray$<$ FVector $>$ \&Out\+Vector\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to an array of FVector. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a2598aaf8a9a48fa1e9ef95b8053c8eef}{Convert\+JSONObject\+To\+Vector\+Array}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Array\+Field\+Name, TArray$<$ FVector $>$ \&Out\+Vector\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to an array of FVector. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a023fb22fafec94af4e5d4f0661a66635}{Convert\+JSONResponse\+Body\+To\+String\+Array}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Array\+Field\+Name, TArray$<$ FString $>$ \&Out\+String\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to an array of FString. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a9d43ed66078b3fd9559b5a09738fb129}{Convert\+JSONObject\+To\+String\+Array}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Array\+Field\+Name, TArray$<$ FString $>$ \&Out\+String\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to an array of FString. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a06d1c55d34fea6ba5fa4a8463ed08253}{Convert\+JSONResponse\+Body\+To\+Color\+Array}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Array\+Field\+Name, TArray$<$ FLinear\+Color $>$ \&Out\+Color\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to an array of FLinear\+Color. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a4d1493a858d50f43a3ff0e76f5515843}{Convert\+JSONObject\+To\+Color\+Array}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Array\+Field\+Name, TArray$<$ FLinear\+Color $>$ \&Out\+Color\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to an array of FLinear\+Color. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_ab57aab60f12e2a256748433bddd98a7a}{Convert\+JSONResponse\+Body\+To\+Triangle\+Index\+Array}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Array\+Field\+Name, TArray$<$ int32 $>$ \&Out\+Triangle\+Index\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to an array of triangle indices. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a3d0b180b51e52375fd2cbd5aad33e27d}{Convert\+JSONObject\+To\+Triangle\+Index\+Array}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Array\+Field\+Name, TArray$<$ int32 $>$ \&Out\+Triangle\+Index\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to an array of triangle indices. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_ad40b8256d54c6056ea84d3498e62c1c3}{Convert\+JSONResponse\+Body\+To\+Tetra\+Array}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Array\+Field\+Name, TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ \&Out\+Tetra\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to an array of \doxylink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a7486fee0f598edc01991e5103bbf3201}{Convert\+JSONObject\+To\+Tetra\+Array}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Array\+Field\+Name, TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ \&Out\+Tetra\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to an array of \doxylink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a5d32f2c1006346cd2e3a0479cbb8200f}{Convert\+JSONResponse\+Body\+To\+Double\+Array}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Array\+Field\+Name, TArray$<$ double $>$ \&Out\+Double\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to an array of doubles. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a9bf5ddfd3a7b31044faaf04519ca153d}{Convert\+JSONObject\+To\+Double\+Array}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Array\+Field\+Name, TArray$<$ double $>$ \&Out\+Double\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to an array of doubles. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a520fbf12003508772fda06fe9f5acfa3}{Convert\+JSONResponse\+Body\+To\+Integer\+Array}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Array\+Field\+Name, TArray$<$ int32 $>$ \&Out\+Integer\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to an array of integers. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a77d30c9e8b027c8da2ce98371a115067}{Convert\+JSONObject\+To\+Integer\+Array}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Array\+Field\+Name, TArray$<$ int32 $>$ \&Out\+Integer\+Array, const bool \&b\+Print\+Error\+Message=true)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to an array of integers. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a23c361fef0b3e21ae024fd9196723e16}{Convert\+JSONTo\+Double}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Field\+Name, double \&Out\+Number)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to a double. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a1ba17e54c0adff9d588774a39652bcc3}{Convert\+JSONTo\+Integer}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Field\+Name, int32 \&Out\+Number)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to an integer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_aa87eff3b9e1cc05bbfea5171eec554be}{Convert\+JSONTo\+String}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Field\+Name, FString \&Out\+String)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to a string. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_aa4df3bbd7b886b6a9513f8f96e2211a4}{Convert\+JSONResponse\+Body\+To\+Vector}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, FVector \&Out\+Vector)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to a FVector. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a665f2da5b43bcbc10fdb10582bd8edec}{Convert\+JSONObject\+To\+Vector}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}json\+Obj, const FString \&In\+Field\+Name, FVector \&Out\+Vector)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to a FVector. \end{DoxyCompactList}\item 
+static TShared\+Ptr$<$ FJson\+Object $>$ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_ab8f81ee9032d83d3b992720f93811fba}{Create\+Json\+Object\+From\+Vector}} (const FVector \&In\+Vector)
+\begin{DoxyCompactList}\small\item\em Converts a FVector to a JSON object. \end{DoxyCompactList}\item 
+static TArray$<$ TShared\+Ptr$<$ FJson\+Value $>$ $>$ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_aaf6d693a500595e5fd75c4345dbcf933}{Create\+Json\+Array\+From\+Vector\+Array}} (const TArray$<$ FVector $>$ \&In\+Vector\+Array)
+\begin{DoxyCompactList}\small\item\em Converts an array of FVectors to a JSON array. \end{DoxyCompactList}\item 
+static TArray$<$ TShared\+Ptr$<$ FJson\+Value $>$ $>$ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a143c58849b8ee7146bc91fcfcd0cc524}{Create\+Json\+Array\+From\+Double\+Array}} (const TArray$<$ double $>$ \&In\+Double\+Array)
+\begin{DoxyCompactList}\small\item\em Converts an array of doubles to a JSON array. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a756044bc94b910a0ac9154076f0aff37}{Serialize\+Json\+Object\+To\+String}} (const TShared\+Ptr$<$ FJson\+Object $>$ \&In\+Json\+Object)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class for converting JSON data to various Unreal Engine data types. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a34ee89d947e80dcdab7dfa3d7223caff}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\index{UPT\_JSONConverter@{UPT\_JSONConverter}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{UPT\_JSONConverter()}{UPT\_JSONConverter()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a34ee89d947e80dcdab7dfa3d7223caff} 
+UPT\+\_\+\+JSONConverter\+::\+UPT\+\_\+\+JSONConverter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a83c9a64f2ad33cbcceaf64416f2e0b39}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!````~UPT\_JSONConverter@{\texorpdfstring{$\sim$}{\string~}UPT\_JSONConverter}}
+\index{````~UPT\_JSONConverter@{\texorpdfstring{$\sim$}{\string~}UPT\_JSONConverter}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}UPT\_JSONConverter()}{\string~UPT\_JSONConverter()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a83c9a64f2ad33cbcceaf64416f2e0b39} 
+UPT\+\_\+\+JSONConverter\+::\texorpdfstring{$\sim$}{\string~}\+UPT\+\_\+\+JSONConverter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a4d1493a858d50f43a3ff0e76f5515843}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONObjectToColorArray@{ConvertJSONObjectToColorArray}}
+\index{ConvertJSONObjectToColorArray@{ConvertJSONObjectToColorArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToColorArray()}{ConvertJSONObjectToColorArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a4d1493a858d50f43a3ff0e76f5515843} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONObject\+To\+Color\+Array (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ FLinear\+Color $>$ \&}]{Out\+Color\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to an array of FLinear\+Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+Color\+Array} & \mbox{[}out\mbox{]} A TArray of FLinear\+Color representing the converted JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a4d1493a858d50f43a3ff0e76f5515843_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a9bf5ddfd3a7b31044faaf04519ca153d}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONObjectToDoubleArray@{ConvertJSONObjectToDoubleArray}}
+\index{ConvertJSONObjectToDoubleArray@{ConvertJSONObjectToDoubleArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToDoubleArray()}{ConvertJSONObjectToDoubleArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a9bf5ddfd3a7b31044faaf04519ca153d} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONObject\+To\+Double\+Array (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ double $>$ \&}]{Out\+Double\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to an array of doubles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & The JSON object to convert. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Double\+Array} & \mbox{[}out\mbox{]} An array of doubles representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a9bf5ddfd3a7b31044faaf04519ca153d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a77d30c9e8b027c8da2ce98371a115067}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONObjectToIntegerArray@{ConvertJSONObjectToIntegerArray}}
+\index{ConvertJSONObjectToIntegerArray@{ConvertJSONObjectToIntegerArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToIntegerArray()}{ConvertJSONObjectToIntegerArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a77d30c9e8b027c8da2ce98371a115067} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONObject\+To\+Integer\+Array (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ int32 $>$ \&}]{Out\+Integer\+Array}{, }\item[{const bool \&}]{b\+Print\+Error\+Message}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to an array of integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & The JSON object to convert. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Integer\+Array} & \mbox{[}out\mbox{]} An array of integers representing the specified field in the JSON object. \\
+\hline
+{\em b\+Print\+Error\+Message} & Whether to print an error message if the field is not found. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a77d30c9e8b027c8da2ce98371a115067_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a9d43ed66078b3fd9559b5a09738fb129}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONObjectToStringArray@{ConvertJSONObjectToStringArray}}
+\index{ConvertJSONObjectToStringArray@{ConvertJSONObjectToStringArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToStringArray()}{ConvertJSONObjectToStringArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a9d43ed66078b3fd9559b5a09738fb129} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONObject\+To\+String\+Array (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+String\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to an array of FString. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+String\+Array} & \mbox{[}out\mbox{]} A TArray of FString representing the converted JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a9d43ed66078b3fd9559b5a09738fb129_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a7486fee0f598edc01991e5103bbf3201}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONObjectToTetraArray@{ConvertJSONObjectToTetraArray}}
+\index{ConvertJSONObjectToTetraArray@{ConvertJSONObjectToTetraArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToTetraArray()}{ConvertJSONObjectToTetraArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a7486fee0f598edc01991e5103bbf3201} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONObject\+To\+Tetra\+Array (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ \&}]{Out\+Tetra\+Data\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to an array of \doxylink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+Tetra\+Data\+Array} & \mbox{[}out\mbox{]} A TArray of \doxylink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data} representing the converted JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a7486fee0f598edc01991e5103bbf3201_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a3d0b180b51e52375fd2cbd5aad33e27d}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONObjectToTriangleIndexArray@{ConvertJSONObjectToTriangleIndexArray}}
+\index{ConvertJSONObjectToTriangleIndexArray@{ConvertJSONObjectToTriangleIndexArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToTriangleIndexArray()}{ConvertJSONObjectToTriangleIndexArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a3d0b180b51e52375fd2cbd5aad33e27d} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONObject\+To\+Triangle\+Index\+Array (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ int32 $>$ \&}]{Out\+Triangle\+Index\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to an array of triangle indices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+Triangle\+Index\+Array} & \mbox{[}out\mbox{]} A TArray of int32 representing the converted JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a3d0b180b51e52375fd2cbd5aad33e27d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a665f2da5b43bcbc10fdb10582bd8edec}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONObjectToVector@{ConvertJSONObjectToVector}}
+\index{ConvertJSONObjectToVector@{ConvertJSONObjectToVector}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToVector()}{ConvertJSONObjectToVector()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a665f2da5b43bcbc10fdb10582bd8edec} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONObject\+To\+Vector (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{json\+Obj}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{FVector \&}]{Out\+Vector}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to a FVector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Obj} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+Vector} & \mbox{[}out\mbox{]} The FVector representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a665f2da5b43bcbc10fdb10582bd8edec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a665f2da5b43bcbc10fdb10582bd8edec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a2598aaf8a9a48fa1e9ef95b8053c8eef}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONObjectToVectorArray@{ConvertJSONObjectToVectorArray}}
+\index{ConvertJSONObjectToVectorArray@{ConvertJSONObjectToVectorArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToVectorArray()}{ConvertJSONObjectToVectorArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a2598aaf8a9a48fa1e9ef95b8053c8eef} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONObject\+To\+Vector\+Array (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Vector\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to an array of FVector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+Vector\+Array} & \mbox{[}out\mbox{]} A TArray of FVector representing the converted JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a2598aaf8a9a48fa1e9ef95b8053c8eef_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a06d1c55d34fea6ba5fa4a8463ed08253}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONResponseBodyToColorArray@{ConvertJSONResponseBodyToColorArray}}
+\index{ConvertJSONResponseBodyToColorArray@{ConvertJSONResponseBodyToColorArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToColorArray()}{ConvertJSONResponseBodyToColorArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a06d1c55d34fea6ba5fa4a8463ed08253} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONResponse\+Body\+To\+Color\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ FLinear\+Color $>$ \&}]{Out\+Color\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON response body to an array of FLinear\+Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & A pointer to the \doxylink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent} that contains the HTTP response. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Color\+Array} & \mbox{[}out\mbox{]} An array of FLinear\+Color representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a06d1c55d34fea6ba5fa4a8463ed08253_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a06d1c55d34fea6ba5fa4a8463ed08253_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a5d32f2c1006346cd2e3a0479cbb8200f}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONResponseBodyToDoubleArray@{ConvertJSONResponseBodyToDoubleArray}}
+\index{ConvertJSONResponseBodyToDoubleArray@{ConvertJSONResponseBodyToDoubleArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToDoubleArray()}{ConvertJSONResponseBodyToDoubleArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a5d32f2c1006346cd2e3a0479cbb8200f} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONResponse\+Body\+To\+Double\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ double $>$ \&}]{Out\+Double\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON response body to an array of doubles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & A pointer to the \doxylink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent} that contains the HTTP response. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Double\+Array} & \mbox{[}out\mbox{]} An array of doubles representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a5d32f2c1006346cd2e3a0479cbb8200f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a520fbf12003508772fda06fe9f5acfa3}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONResponseBodyToIntegerArray@{ConvertJSONResponseBodyToIntegerArray}}
+\index{ConvertJSONResponseBodyToIntegerArray@{ConvertJSONResponseBodyToIntegerArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToIntegerArray()}{ConvertJSONResponseBodyToIntegerArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a520fbf12003508772fda06fe9f5acfa3} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONResponse\+Body\+To\+Integer\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ int32 $>$ \&}]{Out\+Integer\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON response body to an array of integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & A pointer to the \doxylink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent} that contains the HTTP response. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Integer\+Array} & \mbox{[}out\mbox{]} An array of integers representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a520fbf12003508772fda06fe9f5acfa3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a520fbf12003508772fda06fe9f5acfa3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a023fb22fafec94af4e5d4f0661a66635}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONResponseBodyToStringArray@{ConvertJSONResponseBodyToStringArray}}
+\index{ConvertJSONResponseBodyToStringArray@{ConvertJSONResponseBodyToStringArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToStringArray()}{ConvertJSONResponseBodyToStringArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a023fb22fafec94af4e5d4f0661a66635} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONResponse\+Body\+To\+String\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+String\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON response body to an array of FString. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & A pointer to the \doxylink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent} that contains the HTTP response. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+String\+Array} & \mbox{[}out\mbox{]} An array of FString representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a023fb22fafec94af4e5d4f0661a66635_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a023fb22fafec94af4e5d4f0661a66635_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_ad40b8256d54c6056ea84d3498e62c1c3}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONResponseBodyToTetraArray@{ConvertJSONResponseBodyToTetraArray}}
+\index{ConvertJSONResponseBodyToTetraArray@{ConvertJSONResponseBodyToTetraArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToTetraArray()}{ConvertJSONResponseBodyToTetraArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_ad40b8256d54c6056ea84d3498e62c1c3} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONResponse\+Body\+To\+Tetra\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ \&}]{Out\+Tetra\+Data\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON response body to an array of \doxylink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & A pointer to the \doxylink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent} that contains the HTTP response. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Tetra\+Data\+Array} & \mbox{[}out\mbox{]} An array of \doxylink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data} representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_ad40b8256d54c6056ea84d3498e62c1c3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_ab57aab60f12e2a256748433bddd98a7a}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONResponseBodyToTriangleIndexArray@{ConvertJSONResponseBodyToTriangleIndexArray}}
+\index{ConvertJSONResponseBodyToTriangleIndexArray@{ConvertJSONResponseBodyToTriangleIndexArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToTriangleIndexArray()}{ConvertJSONResponseBodyToTriangleIndexArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_ab57aab60f12e2a256748433bddd98a7a} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONResponse\+Body\+To\+Triangle\+Index\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ int32 $>$ \&}]{Out\+Triangle\+Index\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON response body to an array of triangle indices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & A pointer to the \doxylink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent} that contains the HTTP response. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Triangle\+Index\+Array} & \mbox{[}out\mbox{]} An array of int32 representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_ab57aab60f12e2a256748433bddd98a7a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_ab57aab60f12e2a256748433bddd98a7a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_aa4df3bbd7b886b6a9513f8f96e2211a4}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONResponseBodyToVector@{ConvertJSONResponseBodyToVector}}
+\index{ConvertJSONResponseBodyToVector@{ConvertJSONResponseBodyToVector}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToVector()}{ConvertJSONResponseBodyToVector()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_aa4df3bbd7b886b6a9513f8f96e2211a4} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONResponse\+Body\+To\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{FVector \&}]{Out\+Vector}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON response body to a FVector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & A pointer to the \doxylink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent} that contains the HTTP response. \\
+\hline
+{\em In\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Vector} & \mbox{[}out\mbox{]} The FVector representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_aa4df3bbd7b886b6a9513f8f96e2211a4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a71aa218001cae5cba5ed47016a8a65ae}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONResponseBodyToVectorArray@{ConvertJSONResponseBodyToVectorArray}}
+\index{ConvertJSONResponseBodyToVectorArray@{ConvertJSONResponseBodyToVectorArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToVectorArray()}{ConvertJSONResponseBodyToVectorArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a71aa218001cae5cba5ed47016a8a65ae} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONResponse\+Body\+To\+Vector\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Array\+Field\+Name}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Vector\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON response body to an array of FVector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & A pointer to the \doxylink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent} that contains the HTTP response. \\
+\hline
+{\em In\+Array\+Field\+Name} & The name of the field in the JSON object to convert. \\
+\hline
+{\em Out\+Vector\+Array} & \mbox{[}out\mbox{]} An array of FVector representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a71aa218001cae5cba5ed47016a8a65ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a71aa218001cae5cba5ed47016a8a65ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a23c361fef0b3e21ae024fd9196723e16}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONToDouble@{ConvertJSONToDouble}}
+\index{ConvertJSONToDouble@{ConvertJSONToDouble}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONToDouble()}{ConvertJSONToDouble()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a23c361fef0b3e21ae024fd9196723e16} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONTo\+Double (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{double \&}]{Out\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to a double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+Number} & \mbox{[}out\mbox{]} The double value representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a23c361fef0b3e21ae024fd9196723e16_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a1ba17e54c0adff9d588774a39652bcc3}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONToInteger@{ConvertJSONToInteger}}
+\index{ConvertJSONToInteger@{ConvertJSONToInteger}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONToInteger()}{ConvertJSONToInteger()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a1ba17e54c0adff9d588774a39652bcc3} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONTo\+Integer (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{int32 \&}]{Out\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to an integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+Number} & \mbox{[}out\mbox{]} The integer value representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a1ba17e54c0adff9d588774a39652bcc3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_aa87eff3b9e1cc05bbfea5171eec554be}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!ConvertJSONToString@{ConvertJSONToString}}
+\index{ConvertJSONToString@{ConvertJSONToString}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONToString()}{ConvertJSONToString()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_aa87eff3b9e1cc05bbfea5171eec554be} 
+void UPT\+\_\+\+JSONConverter\+::\+Convert\+JSONTo\+String (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{FString \&}]{Out\+String}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+String} & \mbox{[}out\mbox{]} The string value representing the specified field in the JSON object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a143c58849b8ee7146bc91fcfcd0cc524}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!CreateJsonArrayFromDoubleArray@{CreateJsonArrayFromDoubleArray}}
+\index{CreateJsonArrayFromDoubleArray@{CreateJsonArrayFromDoubleArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{CreateJsonArrayFromDoubleArray()}{CreateJsonArrayFromDoubleArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a143c58849b8ee7146bc91fcfcd0cc524} 
+TArray$<$ TShared\+Ptr$<$ FJson\+Value $>$ $>$ UPT\+\_\+\+JSONConverter\+::\+Create\+Json\+Array\+From\+Double\+Array (\begin{DoxyParamCaption}\item[{const TArray$<$ double $>$ \&}]{In\+Double\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts an array of doubles to a JSON array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Double\+Array} & The array of doubles to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A JSON array where each element is a JSON value representing a double from the input array. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a143c58849b8ee7146bc91fcfcd0cc524_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_aaf6d693a500595e5fd75c4345dbcf933}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!CreateJsonArrayFromVectorArray@{CreateJsonArrayFromVectorArray}}
+\index{CreateJsonArrayFromVectorArray@{CreateJsonArrayFromVectorArray}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{CreateJsonArrayFromVectorArray()}{CreateJsonArrayFromVectorArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_aaf6d693a500595e5fd75c4345dbcf933} 
+TArray$<$ TShared\+Ptr$<$ FJson\+Value $>$ $>$ UPT\+\_\+\+JSONConverter\+::\+Create\+Json\+Array\+From\+Vector\+Array (\begin{DoxyParamCaption}\item[{const TArray$<$ FVector $>$ \&}]{In\+Vector\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts an array of FVectors to a JSON array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Vector\+Array} & The array of FVectors to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A JSON array where each element is a JSON array representing a FVector from the input array. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_aaf6d693a500595e5fd75c4345dbcf933_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_ab8f81ee9032d83d3b992720f93811fba}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!CreateJsonObjectFromVector@{CreateJsonObjectFromVector}}
+\index{CreateJsonObjectFromVector@{CreateJsonObjectFromVector}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{CreateJsonObjectFromVector()}{CreateJsonObjectFromVector()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_ab8f81ee9032d83d3b992720f93811fba} 
+TShared\+Ptr$<$ FJson\+Object $>$ UPT\+\_\+\+JSONConverter\+::\+Create\+Json\+Object\+From\+Vector (\begin{DoxyParamCaption}\item[{const FVector \&}]{In\+Vector}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a FVector to a JSON object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Vector} & The FVector to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A JSON object representing the FVector. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_ab8f81ee9032d83d3b992720f93811fba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___j_s_o_n_converter_a756044bc94b910a0ac9154076f0aff37}\index{UPT\_JSONConverter@{UPT\_JSONConverter}!SerializeJsonObjectToString@{SerializeJsonObjectToString}}
+\index{SerializeJsonObjectToString@{SerializeJsonObjectToString}!UPT\_JSONConverter@{UPT\_JSONConverter}}
+\doxysubsubsection{\texorpdfstring{SerializeJsonObjectToString()}{SerializeJsonObjectToString()}}
+{\footnotesize\ttfamily \label{class_u_p_t___j_s_o_n_converter_a756044bc94b910a0ac9154076f0aff37} 
+FString UPT\+\_\+\+JSONConverter\+::\+Serialize\+Json\+Object\+To\+String (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \&}]{In\+Json\+Object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a JSON object to a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object} & The JSON object to serialize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The serialized JSON object as a string. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___j_s_o_n_converter_a756044bc94b910a0ac9154076f0aff37_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___j_s_o_n_converter_8h}{PT\+\_\+\+JSONConverter.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___j_s_o_n_converter_8cpp}{PT\+\_\+\+JSONConverter.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="UPT_HTTPComponent::OnResponseReceived" name="UPT_HTTPComponent::OnResponseReceived">
+<area shape="rect" id="Node000001" title="Handles the response received from an HTTP request." alt="" coords="219,72,384,115"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___h_t_t_p_component.html#a5efefb469a23a7d2b5a4bddd9a527c57" title="Sends an HTTP request to the specified address using the specified HTTP verb." alt="" coords="5,5,171,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,69,158,51,160,46,217,64"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___h_t_t_p_component.html#ae6b67e84300df6d6192ab4e27b878230" title="Sends an HTTP request with a JSON body to the specified address using the specified HTTP verb." alt="" coords="5,72,171,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,96,171,96,171,91,203,91"/>
+<area shape="rect" id="Node000004" href="$class_u_p_t___h_t_t_p_component.html#a82a1b987aefd255e92ee41193713f78e" title="Sends simulation data to the server." alt="" coords="5,139,171,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="217,122,160,141,158,135,216,117"/>
+</map>

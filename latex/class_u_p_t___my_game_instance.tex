@@ -1,0 +1,126 @@
+\doxysection{UPT\+\_\+\+My\+Game\+Instance Class Reference}
+\hypertarget{class_u_p_t___my_game_instance}{}\label{class_u_p_t___my_game_instance}\index{UPT\_MyGameInstance@{UPT\_MyGameInstance}}
+
+
+A game instance class for managing game-\/wide systems and data.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+My\+Game\+Instance.\+h$>$}
+
+
+
+Inheritance diagram for UPT\+\_\+\+My\+Game\+Instance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_u_p_t___my_game_instance__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UPT\+\_\+\+My\+Game\+Instance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_u_p_t___my_game_instance__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_p_t___my_game_instance_aedfec5d638736ee3a0419e702910953e}{Init}} () override
+\begin{DoxyCompactList}\small\item\em Initializes the game instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___my_game_instance_af839ff56b5c3b24b787bd3f9f6bc425c}{Set\+Interpolated\+Data}} (const TArray$<$ double $>$ \&In\+Data)
+\begin{DoxyCompactList}\small\item\em Sets the interpolated data. \end{DoxyCompactList}\item 
+TArray$<$ double $>$ \mbox{\hyperlink{class_u_p_t___my_game_instance_af3ab7f7eb1cf88adace7beec2e4cf014}{Get\+Interpolated\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Gets the interpolated data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_p_t___my_game_instance_ab71d5275d3d4dd38b417eef9f1d54b1b}{HTTPComponent}}
+\begin{DoxyCompactList}\small\item\em The HTTP component used for making HTTP requests. \end{DoxyCompactList}\item 
+TArray$<$ double $>$ \mbox{\hyperlink{class_u_p_t___my_game_instance_a44d5eacaa628aa0a69477d072030f706}{Interpolated\+Data}}
+\begin{DoxyCompactList}\small\item\em The array of interpolated data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A game instance class for managing game-\/wide systems and data. 
+
+This class provides functionality to initialize the game instance, manage HTTP components, and handle interpolated data. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_p_t___my_game_instance_af3ab7f7eb1cf88adace7beec2e4cf014}\index{UPT\_MyGameInstance@{UPT\_MyGameInstance}!GetInterpolatedData@{GetInterpolatedData}}
+\index{GetInterpolatedData@{GetInterpolatedData}!UPT\_MyGameInstance@{UPT\_MyGameInstance}}
+\doxysubsubsection{\texorpdfstring{GetInterpolatedData()}{GetInterpolatedData()}}
+{\footnotesize\ttfamily \label{class_u_p_t___my_game_instance_af3ab7f7eb1cf88adace7beec2e4cf014} 
+TArray$<$ double $>$ UPT\+\_\+\+My\+Game\+Instance\+::\+Get\+Interpolated\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the interpolated data. 
+
+This function returns the current interpolated data array.
+
+\begin{DoxyReturn}{Returns}
+TArray$<$double$>$ The current interpolated data array. 
+\end{DoxyReturn}
+\Hypertarget{class_u_p_t___my_game_instance_aedfec5d638736ee3a0419e702910953e}\index{UPT\_MyGameInstance@{UPT\_MyGameInstance}!Init@{Init}}
+\index{Init@{Init}!UPT\_MyGameInstance@{UPT\_MyGameInstance}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{class_u_p_t___my_game_instance_aedfec5d638736ee3a0419e702910953e} 
+void UPT\+\_\+\+My\+Game\+Instance\+::\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the game instance. 
+
+This function is called to initialize the game instance. \Hypertarget{class_u_p_t___my_game_instance_af839ff56b5c3b24b787bd3f9f6bc425c}\index{UPT\_MyGameInstance@{UPT\_MyGameInstance}!SetInterpolatedData@{SetInterpolatedData}}
+\index{SetInterpolatedData@{SetInterpolatedData}!UPT\_MyGameInstance@{UPT\_MyGameInstance}}
+\doxysubsubsection{\texorpdfstring{SetInterpolatedData()}{SetInterpolatedData()}}
+{\footnotesize\ttfamily \label{class_u_p_t___my_game_instance_af839ff56b5c3b24b787bd3f9f6bc425c} 
+void UPT\+\_\+\+My\+Game\+Instance\+::\+Set\+Interpolated\+Data (\begin{DoxyParamCaption}\item[{const TArray$<$ double $>$ \&}]{In\+Data}{}\end{DoxyParamCaption})}
+
+
+
+Sets the interpolated data. 
+
+This function sets the interpolated data array with the provided data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Data} & The input data array to set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_p_t___my_game_instance_ab71d5275d3d4dd38b417eef9f1d54b1b}\index{UPT\_MyGameInstance@{UPT\_MyGameInstance}!HTTPComponent@{HTTPComponent}}
+\index{HTTPComponent@{HTTPComponent}!UPT\_MyGameInstance@{UPT\_MyGameInstance}}
+\doxysubsubsection{\texorpdfstring{HTTPComponent}{HTTPComponent}}
+{\footnotesize\ttfamily \label{class_u_p_t___my_game_instance_ab71d5275d3d4dd38b417eef9f1d54b1b} 
+\mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}}\texorpdfstring{$\ast$}{*} UPT\+\_\+\+My\+Game\+Instance\+::\+HTTPComponent}
+
+
+
+The HTTP component used for making HTTP requests. 
+
+\Hypertarget{class_u_p_t___my_game_instance_a44d5eacaa628aa0a69477d072030f706}\index{UPT\_MyGameInstance@{UPT\_MyGameInstance}!InterpolatedData@{InterpolatedData}}
+\index{InterpolatedData@{InterpolatedData}!UPT\_MyGameInstance@{UPT\_MyGameInstance}}
+\doxysubsubsection{\texorpdfstring{InterpolatedData}{InterpolatedData}}
+{\footnotesize\ttfamily \label{class_u_p_t___my_game_instance_a44d5eacaa628aa0a69477d072030f706} 
+TArray$<$double$>$ UPT\+\_\+\+My\+Game\+Instance\+::\+Interpolated\+Data}
+
+
+
+The array of interpolated data. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___my_game_instance_8h}{PT\+\_\+\+My\+Game\+Instance.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___my_game_instance_8cpp}{PT\+\_\+\+My\+Game\+Instance.\+cpp}}\end{DoxyCompactItemize}

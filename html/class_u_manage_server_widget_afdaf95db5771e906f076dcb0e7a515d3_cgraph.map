@@ -1,0 +1,5 @@
+<map id="UManageServerWidget::SaveServerAddress" name="UManageServerWidget::SaveServerAddress">
+<area shape="rect" id="Node000001" title="Saves the server address." alt="" coords="5,5,162,48"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#a0e2a9d235ce5686c97d97766b04443f9" title="Sets the server address." alt="" coords="210,5,361,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,24,194,24,194,29,162,29"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="UPT_JSONConverter::ConvertJSONObjectToTriangleIndexArray" name="UPT_JSONConverter::ConvertJSONObjectToTriangleIndexArray">
+<area shape="rect" id="Node000001" title="Converts a JSON object to an array of triangle indices." alt="" coords="942,68,1144,127"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___multi3_d_actor.html#abb35b78b80db195a803da94781e0c251" title="Converts a JSON object to multiple meshes." alt="" coords="676,39,860,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="926,84,860,75,861,70,927,79"/>
+<area shape="rect" id="Node000006" href="$class_u_p_t___j_s_o_n_converter.html#ab57aab60f12e2a256748433bddd98a7a" title="Converts a JSON response body to an array of triangle indices." alt="" coords="642,105,894,164"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="927,116,895,120,894,115,927,110"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___multi3_d_actor.html#af0a1bdccdb99c2f4d2db4821d775c2ae" title="Converts a JSON response body to multiple meshes." alt="" coords="365,39,585,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="661,63,585,63,585,57,661,57"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___multi3_d_actor.html#ae8d4937169940ce4fb4e6741471c6375" title="Extracts both mesh and volume data from a JSON response body." alt="" coords="5,5,308,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="349,50,308,45,308,40,350,44"/>
+<area shape="rect" id="Node000005" href="$class_a_p_t___multi3_d_actor.html#a527e7a4b5d9b79bf6f5d48c36d95ae8d" title="Extracts mesh data from a JSON response body." alt="" coords="52,72,261,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="350,76,261,85,261,80,349,70"/>
+<area shape="rect" id="Node000007" href="$class_a_p_t___single3_d_actor.html#aa66f0711724e833a781e44011a7f9f3c" title="Converts a JSON response body to a mesh." alt="" coords="356,113,594,156"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="626,137,594,137,594,132,626,132"/>
+</map>

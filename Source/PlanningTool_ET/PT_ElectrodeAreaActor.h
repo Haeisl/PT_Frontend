@@ -4,10 +4,10 @@
 /**
  * @file PT_ElectrodeAreaActor.h
  * @brief Header file for the APT_ElectrodeAreaActor class.
- * 
+ *
  * This file contains the declaration of the APT_ElectrodeAreaActor class, which is responsible for handling electrode area operations.
  * It includes methods for processing HTTP response data, finding nearest neighbors, and calculating barycentric weights.
- * 
+ *
  * @author Jan-Vincent Mock
  * @date 2024
  */
@@ -22,7 +22,7 @@
 /**
  * @class APT_ElectrodeAreaActor
  * @brief A class that represents an electrode area actor.
- * 
+ *
  * This class is responsible for handling various operations related to electrode areas, such as processing HTTP response data,
  * finding nearest neighbors, and calculating barycentric weights.
  */
@@ -30,20 +30,13 @@ UCLASS()
 class PLANNINGTOOL_ET_API APT_ElectrodeAreaActor : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	/**
   * @brief Sets default values for this actor's properties.
   */
 	APT_ElectrodeAreaActor();
 
-protected:
-	/**
-  * @brief Called when the game starts or when spawned.
-  */
-	virtual void BeginPlay() override;
-
-public:	
 	/**
   * @brief Called every frame.
   * @param DeltaTime The time elapsed since the last frame.
@@ -52,7 +45,7 @@ public:
 
 	/**
   * @brief Processes the response data from an HTTP component and extracts various parameters.
-  * 
+  *
   * @param InHttpComponent The HTTP component containing the response data.
   * @param OutCenter The center point extracted from the response data.
   * @param OutA The first corner point extracted from the response data.
@@ -71,7 +64,7 @@ public:
 
 	/**
   * @brief Processes the validation response data from an HTTP component and extracts various parameters.
-  * 
+  *
   * @param InHttpComponent The HTTP component containing the response data.
   * @param OutElectrodeCount The number of electrodes extracted from the response data.
   * @param OutSuccessfullElectrodeIndex The indices of successfully simulated electrodes.
@@ -82,7 +75,7 @@ public:
 
 	/**
   * @brief Finds the nearest neighbors to a given point within a grid.
-  * 
+  *
   * @param InPoint The point for which to find the nearest neighbors.
   * @param InGrid The grid of points to search within.
   * @param OutNearestNeighborsGridIndicies The indices of the nearest neighbors within the grid.
@@ -93,7 +86,7 @@ public:
 
 	/**
   * @brief Calculates the barycentric weights for a point within a triangle.
-  * 
+  *
   * @param InPoint The point for which to calculate the weights.
   * @param InA The first vertex of the triangle.
   * @param InB The second vertex of the triangle.
@@ -104,6 +97,12 @@ public:
   */
 	UFUNCTION(BlueprintCallable, Category = "ELECTRODE_AREA")
 	void BarycentricWeightCalculation(const FVector& InPoint, const FVector& InA, const FVector& InB, const FVector& InC, double& OutWeightA, double& OutWeightB, double& OutWeightC);
+
+protected:
+	/**
+  * @brief Called when the game starts or when spawned.
+  */
+	virtual void BeginPlay() override;
 
 private:
 	/**

@@ -1,0 +1,9 @@
+<map id="APT_ROIActor::OnMoveROI" name="APT_ROIActor::OnMoveROI">
+<area shape="rect" id="Node000001" title="Handles the input action to move the ROI." alt="" coords="5,13,196,40"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#a804b904c74c01607b1a74e0a378e44d4" title="Moves the ROI position by the specified amount." alt="" coords="244,13,464,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,24,228,24,228,29,196,29"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___r_o_i_actor.html#a93f73bbae49c2ea7f0e9484a4ac5d49d" title="Generates the box mesh for the ROI." alt="" coords="512,13,737,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,24,497,24,497,29,465,29"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___r_o_i_actor.html#ad3dab860f4835c2043c1e16246a1d1be" title="Manually calculates the normals for the current vertex and triangle index arrays." alt="" coords="785,5,1007,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="738,24,770,24,770,29,738,29"/>
+</map>

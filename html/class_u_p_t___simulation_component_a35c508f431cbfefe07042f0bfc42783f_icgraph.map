@@ -1,0 +1,7 @@
+<map id="UPT_SimulationComponent::ProcessElectrodeData" name="UPT_SimulationComponent::ProcessElectrodeData">
+<area shape="rect" id="Node000001" title="Processes electrode data." alt="" coords="639,5,822,48"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___simulation_component.html#ac2605fac55d1e34d09181fb205101db9" title="Retrieves simulation data from a JSON object." alt="" coords="348,5,591,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="623,29,591,29,591,24,623,24"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html#a57b42939f12c19af9b851a8b323f01dd" title="Retrieves simulation data from a JSON response body." alt="" coords="5,5,300,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,29,300,29,300,24,332,24"/>
+</map>

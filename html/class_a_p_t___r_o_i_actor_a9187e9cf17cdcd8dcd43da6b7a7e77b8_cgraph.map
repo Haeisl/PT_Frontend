@@ -1,0 +1,15 @@
+<map id="APT_ROIActor::BeginPlay" name="APT_ROIActor::BeginPlay">
+<area shape="rect" id="Node000001" title="Called when the game starts or when spawned." alt="" coords="5,64,182,91"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#ad3dab860f4835c2043c1e16246a1d1be" title="Manually calculates the normals for the current vertex and triangle index arrays." alt="" coords="1010,5,1231,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,61,229,48,439,29,649,20,840,18,994,20,994,25,840,23,649,25,439,34,230,53,156,66"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___r_o_i_actor.html#a93f73bbae49c2ea7f0e9484a4ac5d49d" title="Generates the box mesh for the ROI." alt="" coords="736,39,962,65"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,72,721,54,721,59,182,77"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___r_o_i_actor.html#a5db649b8bd5881a7cf8adfabab72ed2b" title="Handles the input action to move the ROI." alt="" coords="230,89,420,116"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="182,84,214,88,214,93,182,90"/>
+<area shape="rect" id="Node000006" href="$class_a_p_t___r_o_i_actor.html#a442faed02cc87040949cc61a488a434d" title="Resets the vertex array to the standard size." alt="" coords="230,140,420,183"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="132,89,231,125,248,132,246,137,229,131,130,94"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="962,39,994,36,995,41,963,44"/>
+<area shape="rect" id="Node000005" href="$class_a_p_t___r_o_i_actor.html#a804b904c74c01607b1a74e0a378e44d4" title="Moves the ROI position by the specified amount." alt="" coords="468,89,688,116"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="421,100,452,100,452,105,421,105"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="653,86,759,66,760,71,654,91"/>
+</map>

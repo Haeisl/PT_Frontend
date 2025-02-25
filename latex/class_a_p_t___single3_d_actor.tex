@@ -1,0 +1,529 @@
+\doxysection{APT\+\_\+\+Single3\+DActor Class Reference}
+\hypertarget{class_a_p_t___single3_d_actor}{}\label{class_a_p_t___single3_d_actor}\index{APT\_Single3DActor@{APT\_Single3DActor}}
+
+
+A class representing a single 3D actor in the Planning Tool.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Single3\+DActor.\+h$>$}
+
+
+
+Inheritance diagram for APT\+\_\+\+Single3\+DActor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_a_p_t___single3_d_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for APT\+\_\+\+Single3\+DActor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_a_p_t___single3_d_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707}{APT\+\_\+\+Single3\+DActor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a7451f79e24c4143a22a8d3d55c1c9fb5}{Tick}} (float Delta\+Time) override
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a167008919b32a3d177057b4f7c7b17ca}{Get\+Vertex\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the vertex array. \end{DoxyCompactList}\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a93a32b1ffd19680faf89040d21b7e0cc}{Get\+Vertex\+Color\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the vertex color array. \end{DoxyCompactList}\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a7eab857de9c5215e2947562ff2815254}{Get\+Triangle\+Index\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the triangle index array. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8e9dab58abdf56e917aa7fe7ddec6bcc}{Get\+Normal\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the normal array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a0149913b56d5ba144d7ae6cec09c22e7}{Create\+Point\+Cloud\+Array}} (const TArray$<$ int32 $>$ \&In\+Vertex\+Index\+Array, const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ FLinear\+Color $>$ \&In\+Vertex\+Color\+Array, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud\+Array)
+\begin{DoxyCompactList}\small\item\em Creates an array of FLidar\+Point\+Cloud\+Point from given vertex indices, vertex array, and vertex color array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_aeaf883636af0394186f05690534b2917}{Update\+Lidar\+Point\+Cloud\+Color}} (const TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&In\+Point\+Cloud, const TArray$<$ FLinear\+Color $>$ \&In\+Color\+Array, const TArray$<$ int32 $>$ \&In\+Vertex\+Index\+Array, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud)
+\begin{DoxyCompactList}\small\item\em Updates the color of a Lidar point cloud. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_aa66f0711724e833a781e44011a7f9f3c}{Convert\+JSONResponse\+Body\+To\+Mesh}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FVector $>$ \&Out\+Vertex\+Array, TArray$<$ int32 $>$ \&Out\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to a mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a9ce628a69546652c564d9b95d8da7ed2}{Convert\+JSONResponse\+Body\+To\+Volume}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to a volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a37e361d670c1290c63b501c7ec8b26b8}{Set\+Vertex\+Array\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, TArray$<$ FVector $>$ \&Out\+Vertex\+Array)
+\begin{DoxyCompactList}\small\item\em Sets the vertex array from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a047e787ea313e91b392a6749642f3aac}{Set\+Vertex\+Color\+Array\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, TArray$<$ FLinear\+Color $>$ \&In\+Vertex\+Color\+Array)
+\begin{DoxyCompactList}\small\item\em Sets the vertex color array from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac7259989da2d7a5b2de67e87450112c7}{Calculate\+Normals}} (const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ int32 $>$ In\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Calculates the normals of the vertices of a 3D model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a47abcd7e44ed2e809c9afb5c665c711a}{Calculate\+Inverted\+Normals}} (const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ int32 $>$ In\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Inverted\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Calculates the inverted normals of the vertices of a 3D model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac98e2f0e9b475be2abaa210cc00249ba}{Reset\+Single3\+DActor\+Arrays}} ()
+\begin{DoxyCompactList}\small\item\em Resets the arrays of the single 3D actor. \end{DoxyCompactList}\item 
+int32 \mbox{\hyperlink{class_a_p_t___single3_d_actor_abd98047846a9040e34c20d58122e1043}{Get\+Vertex\+Array\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Gets the length of the vertex array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+FMesh\+Data\+Callback\+Event\+Delegate \mbox{\hyperlink{class_a_p_t___single3_d_actor_a895f153034951a3dc3b8b107f469cbc8}{Mesh\+Data\+Loaded\+Callback\+Event}}
+\item 
+FVolume\+Data\+Callback\+Event\+Delegate \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8992e3301ec4511f1c66181970e427ef}{Volume\+Data\+Loaded\+Callback\+Event}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a0b2969f0c88384528171a0c20e74c498}{Begin\+Play}} () override
+\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a488438715c994b19c625a41173015c21}{Init\+White\+Vertex\+Color}} (const int32 \&In\+Vertex\+Array\+Length, const float \&In\+Alpha\+Value=1.f)
+\begin{DoxyCompactList}\small\item\em Initializes the vertex color array with white color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ab1d1a62192718897a53ac93e6ea248d1}{Vertex\+Array}}
+\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8e2242899fb6e9ab41006050fd5b3e01}{Vertex\+Color\+Array}}
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_afce31e08cf5540225dae5717ce4cbca9}{Normal\+Array}}
+\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_afba7b1deb017920e17247c446f2d281d}{Triangle\+Index\+Array}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a single 3D actor in the Planning Tool. 
+
+This class inherits from AActor and provides functionality for handling 3D mesh and volume data. It includes methods for getting vertex, color, triangle index, and normal arrays, as well as methods for converting JSON responses to mesh and volume data. The class also provides delegates for mesh and volume data loaded events, which can be assigned in Blueprint. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707}\index{APT\_Single3DActor@{APT\_Single3DActor}!APT\_Single3DActor@{APT\_Single3DActor}}
+\index{APT\_Single3DActor@{APT\_Single3DActor}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{APT\_Single3DActor()}{APT\_Single3DActor()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707} 
+APT\+\_\+\+Single3\+DActor\+::\+APT\+\_\+\+Single3\+DActor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_p_t___single3_d_actor_a0b2969f0c88384528171a0c20e74c498}\index{APT\_Single3DActor@{APT\_Single3DActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a0b2969f0c88384528171a0c20e74c498} 
+void APT\+\_\+\+Single3\+DActor\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a4da43d76a74f8c47d26182827a2f1d8f}{APT\+\_\+\+Multi3\+DActor}}, and \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a9187e9cf17cdcd8dcd43da6b7a7e77b8}{APT\+\_\+\+ROIActor}}.
+
+\Hypertarget{class_a_p_t___single3_d_actor_a47abcd7e44ed2e809c9afb5c665c711a}\index{APT\_Single3DActor@{APT\_Single3DActor}!CalculateInvertedNormals@{CalculateInvertedNormals}}
+\index{CalculateInvertedNormals@{CalculateInvertedNormals}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{CalculateInvertedNormals()}{CalculateInvertedNormals()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a47abcd7e44ed2e809c9afb5c665c711a} 
+void APT\+\_\+\+Single3\+DActor\+::\+Calculate\+Inverted\+Normals (\begin{DoxyParamCaption}\item[{const TArray$<$ FVector $>$ \&}]{In\+Vertex\+Array}{, }\item[{const TArray$<$ int32 $>$}]{In\+Triangle\+Index\+Array}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Inverted\+Normal\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the inverted normals of the vertices of a 3D model. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes an array of vertices, an array of triangle indices, and an output array for the inverted normal vectors as input. It calculates the inverted normals of the vertices based on the triangle indices and assigns them to the output array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Vertex\+Array} & The array of vertices. \\
+\hline
+{\em In\+Triangle\+Index\+Array} & The array of triangle indices. \\
+\hline
+{\em Out\+Inverted\+Normal\+Array} & The output array for the inverted normal vectors. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___single3_d_actor_a47abcd7e44ed2e809c9afb5c665c711a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_ac7259989da2d7a5b2de67e87450112c7}\index{APT\_Single3DActor@{APT\_Single3DActor}!CalculateNormals@{CalculateNormals}}
+\index{CalculateNormals@{CalculateNormals}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{CalculateNormals()}{CalculateNormals()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_ac7259989da2d7a5b2de67e87450112c7} 
+void APT\+\_\+\+Single3\+DActor\+::\+Calculate\+Normals (\begin{DoxyParamCaption}\item[{const TArray$<$ FVector $>$ \&}]{In\+Vertex\+Array}{, }\item[{const TArray$<$ int32 $>$}]{In\+Triangle\+Index\+Array}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Normal\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the normals of the vertices of a 3D model. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes an array of vertices, an array of triangle indices, and an output array for the normal vectors as input. It calculates the normals of the vertices based on the triangle indices and assigns them to the output array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Vertex\+Array} & The array of vertices. \\
+\hline
+{\em In\+Triangle\+Index\+Array} & The array of triangle indices. \\
+\hline
+{\em Out\+Normal\+Array} & The output array for the normal vectors. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_p_t___single3_d_actor_aa66f0711724e833a781e44011a7f9f3c}\index{APT\_Single3DActor@{APT\_Single3DActor}!ConvertJSONResponseBodyToMesh@{ConvertJSONResponseBodyToMesh}}
+\index{ConvertJSONResponseBodyToMesh@{ConvertJSONResponseBodyToMesh}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToMesh()}{ConvertJSONResponseBodyToMesh()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_aa66f0711724e833a781e44011a7f9f3c} 
+void APT\+\_\+\+Single3\+DActor\+::\+Convert\+JSONResponse\+Body\+To\+Mesh (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Vertex\+Array}{, }\item[{TArray$<$ int32 $>$ \&}]{Out\+Triangle\+Index\+Array}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Normal\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Converts a JSON response body to a mesh. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes a HTTP component and output arrays for vertex and triangle index data as input. It gets the vertex coordinates and triangle indices from the response body of the HTTP component and assigns them to the output arrays and the corresponding member variables. It also initializes the vertex color array with white color for each vertex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component from which to get the response body. \\
+\hline
+{\em Out\+Vertex\+Array} & The output array for the vertex data. \\
+\hline
+{\em Out\+Triangle\+Index\+Array} & The output array for the triangle index data. \\
+\hline
+{\em Out\+Normal\+Array} & The output array for the normal data. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___single3_d_actor_aa66f0711724e833a781e44011a7f9f3c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_a9ce628a69546652c564d9b95d8da7ed2}\index{APT\_Single3DActor@{APT\_Single3DActor}!ConvertJSONResponseBodyToVolume@{ConvertJSONResponseBodyToVolume}}
+\index{ConvertJSONResponseBodyToVolume@{ConvertJSONResponseBodyToVolume}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToVolume()}{ConvertJSONResponseBodyToVolume()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a9ce628a69546652c564d9b95d8da7ed2} 
+void APT\+\_\+\+Single3\+DActor\+::\+Convert\+JSONResponse\+Body\+To\+Volume (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&}]{Out\+Point\+Cloud\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Converts a JSON response body to a volume. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes a HTTP component and an output array for point cloud data as input. It gets the vertex coordinates from the response body of the HTTP component, initializes the vertex color array with white color for each vertex, and creates a point cloud array from the vertex and color arrays and the volume data in the response body. It assigns the point cloud array to the output array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component from which to get the response body. \\
+\hline
+{\em Out\+Point\+Cloud\+Array} & The output array for the point cloud data. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___single3_d_actor_a9ce628a69546652c564d9b95d8da7ed2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_a0149913b56d5ba144d7ae6cec09c22e7}\index{APT\_Single3DActor@{APT\_Single3DActor}!CreatePointCloudArray@{CreatePointCloudArray}}
+\index{CreatePointCloudArray@{CreatePointCloudArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{CreatePointCloudArray()}{CreatePointCloudArray()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a0149913b56d5ba144d7ae6cec09c22e7} 
+void APT\+\_\+\+Single3\+DActor\+::\+Create\+Point\+Cloud\+Array (\begin{DoxyParamCaption}\item[{const TArray$<$ int32 $>$ \&}]{In\+Vertex\+Index\+Array}{, }\item[{const TArray$<$ FVector $>$ \&}]{In\+Vertex\+Array}{, }\item[{const TArray$<$ FLinear\+Color $>$ \&}]{In\+Vertex\+Color\+Array}{, }\item[{TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&}]{Out\+Point\+Cloud\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Creates an array of FLidar\+Point\+Cloud\+Point from given vertex indices, vertex array, and vertex color array. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes an array of vertex indices, an array of vertices, and an array of vertex colors as input. It iterates over the vertex indices array and for each index, it creates a new FLidar\+Point\+Cloud\+Point. The X, Y, and Z coordinates of the FLidar\+Point\+Cloud\+Point are set to the X, Y, and Z coordinates of the vertex at the current index in the vertex array. The R, G, and B color values of the FLidar\+Point\+Cloud\+Point are set to the R, G, and B color values of the vertex color at the current index in the vertex color array. The FLidar\+Point\+Cloud\+Point is then added to the Out\+Point\+Cloud\+Array. Before the function starts adding new points, it empties the Out\+Point\+Cloud\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Vertex\+Index\+Array} & An array of indices to the vertices. \\
+\hline
+{\em In\+Vertex\+Array} & An array of vertices. \\
+\hline
+{\em In\+Vertex\+Color\+Array} & An array of vertex colors. \\
+\hline
+{\em Out\+Point\+Cloud\+Array} & An array of FLidar\+Point\+Cloud\+Point to which the function will add new points. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___single3_d_actor_a0149913b56d5ba144d7ae6cec09c22e7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_a8e9dab58abdf56e917aa7fe7ddec6bcc}\index{APT\_Single3DActor@{APT\_Single3DActor}!GetNormalArray@{GetNormalArray}}
+\index{GetNormalArray@{GetNormalArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{GetNormalArray()}{GetNormalArray()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a8e9dab58abdf56e917aa7fe7ddec6bcc} 
+TArray$<$ FVector $>$ APT\+\_\+\+Single3\+DActor\+::\+Get\+Normal\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the normal array. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It returns the normal array of the actor. The normal array is a member variable of the actor and contains the normal vectors of the vertices of the 3D model represented by the actor.
+
+\begin{DoxyReturn}{Returns}
+The normal array of the actor. 
+\end{DoxyReturn}
+\Hypertarget{class_a_p_t___single3_d_actor_a7eab857de9c5215e2947562ff2815254}\index{APT\_Single3DActor@{APT\_Single3DActor}!GetTriangleIndexArray@{GetTriangleIndexArray}}
+\index{GetTriangleIndexArray@{GetTriangleIndexArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{GetTriangleIndexArray()}{GetTriangleIndexArray()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a7eab857de9c5215e2947562ff2815254} 
+TArray$<$ int32 $>$ APT\+\_\+\+Single3\+DActor\+::\+Get\+Triangle\+Index\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the triangle index array. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It returns the triangle index array of the actor. The triangle index array is a member variable of the actor and contains the indices of the vertices that form the triangles of the 3D model represented by the actor.
+
+\begin{DoxyReturn}{Returns}
+The triangle index array of the actor. 
+\end{DoxyReturn}
+\Hypertarget{class_a_p_t___single3_d_actor_a167008919b32a3d177057b4f7c7b17ca}\index{APT\_Single3DActor@{APT\_Single3DActor}!GetVertexArray@{GetVertexArray}}
+\index{GetVertexArray@{GetVertexArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{GetVertexArray()}{GetVertexArray()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a167008919b32a3d177057b4f7c7b17ca} 
+TArray$<$ FVector $>$ APT\+\_\+\+Single3\+DActor\+::\+Get\+Vertex\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the vertex array. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It returns the vertex array of the actor. The vertex array is a member variable of the actor and contains the vertices of the 3D model represented by the actor.
+
+\begin{DoxyReturn}{Returns}
+The vertex array of the actor. 
+\end{DoxyReturn}
+\Hypertarget{class_a_p_t___single3_d_actor_abd98047846a9040e34c20d58122e1043}\index{APT\_Single3DActor@{APT\_Single3DActor}!GetVertexArrayLength@{GetVertexArrayLength}}
+\index{GetVertexArrayLength@{GetVertexArrayLength}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{GetVertexArrayLength()}{GetVertexArrayLength()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_abd98047846a9040e34c20d58122e1043} 
+int32 APT\+\_\+\+Single3\+DActor\+::\+Get\+Vertex\+Array\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the length of the vertex array. 
+
+This function is a Blueprint\+Pure function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It returns the number of vertices in the vertex array.
+
+\begin{DoxyReturn}{Returns}
+The length of the vertex array. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_a_p_t___single3_d_actor_abd98047846a9040e34c20d58122e1043_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_a_p_t___single3_d_actor_abd98047846a9040e34c20d58122e1043_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_a93a32b1ffd19680faf89040d21b7e0cc}\index{APT\_Single3DActor@{APT\_Single3DActor}!GetVertexColorArray@{GetVertexColorArray}}
+\index{GetVertexColorArray@{GetVertexColorArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{GetVertexColorArray()}{GetVertexColorArray()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a93a32b1ffd19680faf89040d21b7e0cc} 
+TArray$<$ FLinear\+Color $>$ APT\+\_\+\+Single3\+DActor\+::\+Get\+Vertex\+Color\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the vertex color array. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It returns the vertex color array of the actor. The vertex color array is a member variable of the actor and contains the colors of the vertices of the 3D model represented by the actor.
+
+\begin{DoxyReturn}{Returns}
+The vertex color array of the actor. 
+\end{DoxyReturn}
+\Hypertarget{class_a_p_t___single3_d_actor_a488438715c994b19c625a41173015c21}\index{APT\_Single3DActor@{APT\_Single3DActor}!InitWhiteVertexColor@{InitWhiteVertexColor}}
+\index{InitWhiteVertexColor@{InitWhiteVertexColor}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{InitWhiteVertexColor()}{InitWhiteVertexColor()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a488438715c994b19c625a41173015c21} 
+void APT\+\_\+\+Single3\+DActor\+::\+Init\+White\+Vertex\+Color (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Vertex\+Array\+Length}{, }\item[{const float \&}]{In\+Alpha\+Value}{ = {\ttfamily 1.f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes the vertex color array with white color. 
+
+This function initializes the vertex color array with white color for each vertex. It takes the length of the vertex array and an optional alpha value as input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Vertex\+Array\+Length} & The length of the vertex array. \\
+\hline
+{\em In\+Alpha\+Value} & The alpha value for the color (default is 1.\+0). \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___single3_d_actor_a488438715c994b19c625a41173015c21_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_ac98e2f0e9b475be2abaa210cc00249ba}\index{APT\_Single3DActor@{APT\_Single3DActor}!ResetSingle3DActorArrays@{ResetSingle3DActorArrays}}
+\index{ResetSingle3DActorArrays@{ResetSingle3DActorArrays}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{ResetSingle3DActorArrays()}{ResetSingle3DActorArrays()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_ac98e2f0e9b475be2abaa210cc00249ba} 
+void APT\+\_\+\+Single3\+DActor\+::\+Reset\+Single3\+DActor\+Arrays (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Resets the arrays of the single 3D actor. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It resets the vertex array, vertex color array, normal array, and triangle index array of the actor. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___single3_d_actor_ac98e2f0e9b475be2abaa210cc00249ba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_a37e361d670c1290c63b501c7ec8b26b8}\index{APT\_Single3DActor@{APT\_Single3DActor}!SetVertexArrayFromJSONResponseBody@{SetVertexArrayFromJSONResponseBody}}
+\index{SetVertexArrayFromJSONResponseBody@{SetVertexArrayFromJSONResponseBody}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{SetVertexArrayFromJSONResponseBody()}{SetVertexArrayFromJSONResponseBody()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a37e361d670c1290c63b501c7ec8b26b8} 
+void APT\+\_\+\+Single3\+DActor\+::\+Set\+Vertex\+Array\+From\+JSONResponse\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Vertex\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Sets the vertex array from a JSON response body. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes a HTTP component and a field name as input and an output array for the vertex data. It gets the vertex data from the response body of the HTTP component and assigns it to the output array and the corresponding member variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component from which to get the response body. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em Out\+Vertex\+Array} & The output array for the vertex data. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___single3_d_actor_a37e361d670c1290c63b501c7ec8b26b8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_a047e787ea313e91b392a6749642f3aac}\index{APT\_Single3DActor@{APT\_Single3DActor}!SetVertexColorArrayFromJSONResponseBody@{SetVertexColorArrayFromJSONResponseBody}}
+\index{SetVertexColorArrayFromJSONResponseBody@{SetVertexColorArrayFromJSONResponseBody}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{SetVertexColorArrayFromJSONResponseBody()}{SetVertexColorArrayFromJSONResponseBody()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a047e787ea313e91b392a6749642f3aac} 
+void APT\+\_\+\+Single3\+DActor\+::\+Set\+Vertex\+Color\+Array\+From\+JSONResponse\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{TArray$<$ FLinear\+Color $>$ \&}]{In\+Vertex\+Color\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Sets the vertex color array from a JSON response body. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes a HTTP component and a field name as input and an output array for the vertex color data. It gets the vertex color data from the response body of the HTTP component and assigns it to the output array and the corresponding member variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component from which to get the response body. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em In\+Vertex\+Color\+Array} & The output array for the vertex color data. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___single3_d_actor_a047e787ea313e91b392a6749642f3aac_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___single3_d_actor_a7451f79e24c4143a22a8d3d55c1c9fb5}\index{APT\_Single3DActor@{APT\_Single3DActor}!Tick@{Tick}}
+\index{Tick@{Tick}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a7451f79e24c4143a22a8d3d55c1c9fb5} 
+void APT\+\_\+\+Single3\+DActor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a9548531a35dc01867967e74972877294}{APT\+\_\+\+Multi3\+DActor}}, and \mbox{\hyperlink{class_a_p_t___r_o_i_actor_aebfe324c22c7f525e3cba6b8a0a28516}{APT\+\_\+\+ROIActor}}.
+
+\Hypertarget{class_a_p_t___single3_d_actor_aeaf883636af0394186f05690534b2917}\index{APT\_Single3DActor@{APT\_Single3DActor}!UpdateLidarPointCloudColor@{UpdateLidarPointCloudColor}}
+\index{UpdateLidarPointCloudColor@{UpdateLidarPointCloudColor}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{UpdateLidarPointCloudColor()}{UpdateLidarPointCloudColor()}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_aeaf883636af0394186f05690534b2917} 
+void APT\+\_\+\+Single3\+DActor\+::\+Update\+Lidar\+Point\+Cloud\+Color (\begin{DoxyParamCaption}\item[{const TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&}]{In\+Point\+Cloud}{, }\item[{const TArray$<$ FLinear\+Color $>$ \&}]{In\+Color\+Array}{, }\item[{const TArray$<$ int32 $>$ \&}]{In\+Vertex\+Index\+Array}{, }\item[{TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&}]{Out\+Point\+Cloud}{}\end{DoxyParamCaption})}
+
+
+
+Updates the color of a Lidar point cloud. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes an array of Lidar points, an array of colors, and an array of vertex indices as input. It updates the color of each Lidar point based on the corresponding color in the color array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Point\+Cloud} & An array of Lidar points. \\
+\hline
+{\em In\+Color\+Array} & An array of colors. \\
+\hline
+{\em In\+Vertex\+Index\+Array} & An array of vertex indices. \\
+\hline
+{\em Out\+Point\+Cloud} & An array of Lidar points with updated colors. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_p_t___single3_d_actor_a895f153034951a3dc3b8b107f469cbc8}\index{APT\_Single3DActor@{APT\_Single3DActor}!MeshDataLoadedCallbackEvent@{MeshDataLoadedCallbackEvent}}
+\index{MeshDataLoadedCallbackEvent@{MeshDataLoadedCallbackEvent}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{MeshDataLoadedCallbackEvent}{MeshDataLoadedCallbackEvent}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a895f153034951a3dc3b8b107f469cbc8} 
+FMesh\+Data\+Callback\+Event\+Delegate APT\+\_\+\+Single3\+DActor\+::\+Mesh\+Data\+Loaded\+Callback\+Event}
+
+\Hypertarget{class_a_p_t___single3_d_actor_afce31e08cf5540225dae5717ce4cbca9}\index{APT\_Single3DActor@{APT\_Single3DActor}!NormalArray@{NormalArray}}
+\index{NormalArray@{NormalArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{NormalArray}{NormalArray}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_afce31e08cf5540225dae5717ce4cbca9} 
+TArray$<$FVector$>$ APT\+\_\+\+Single3\+DActor\+::\+Normal\+Array\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_p_t___single3_d_actor_afba7b1deb017920e17247c446f2d281d}\index{APT\_Single3DActor@{APT\_Single3DActor}!TriangleIndexArray@{TriangleIndexArray}}
+\index{TriangleIndexArray@{TriangleIndexArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{TriangleIndexArray}{TriangleIndexArray}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_afba7b1deb017920e17247c446f2d281d} 
+TArray$<$int32$>$ APT\+\_\+\+Single3\+DActor\+::\+Triangle\+Index\+Array\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_p_t___single3_d_actor_ab1d1a62192718897a53ac93e6ea248d1}\index{APT\_Single3DActor@{APT\_Single3DActor}!VertexArray@{VertexArray}}
+\index{VertexArray@{VertexArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{VertexArray}{VertexArray}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_ab1d1a62192718897a53ac93e6ea248d1} 
+TArray$<$FVector$>$ APT\+\_\+\+Single3\+DActor\+::\+Vertex\+Array\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_p_t___single3_d_actor_a8e2242899fb6e9ab41006050fd5b3e01}\index{APT\_Single3DActor@{APT\_Single3DActor}!VertexColorArray@{VertexColorArray}}
+\index{VertexColorArray@{VertexColorArray}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{VertexColorArray}{VertexColorArray}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a8e2242899fb6e9ab41006050fd5b3e01} 
+TArray$<$FLinear\+Color$>$ APT\+\_\+\+Single3\+DActor\+::\+Vertex\+Color\+Array\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_a_p_t___single3_d_actor_a8992e3301ec4511f1c66181970e427ef}\index{APT\_Single3DActor@{APT\_Single3DActor}!VolumeDataLoadedCallbackEvent@{VolumeDataLoadedCallbackEvent}}
+\index{VolumeDataLoadedCallbackEvent@{VolumeDataLoadedCallbackEvent}!APT\_Single3DActor@{APT\_Single3DActor}}
+\doxysubsubsection{\texorpdfstring{VolumeDataLoadedCallbackEvent}{VolumeDataLoadedCallbackEvent}}
+{\footnotesize\ttfamily \label{class_a_p_t___single3_d_actor_a8992e3301ec4511f1c66181970e427ef} 
+FVolume\+Data\+Callback\+Event\+Delegate APT\+\_\+\+Single3\+DActor\+::\+Volume\+Data\+Loaded\+Callback\+Event}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___single3_d_actor_8h}{PT\+\_\+\+Single3\+DActor.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___single3_d_actor_8cpp}{PT\+\_\+\+Single3\+DActor.\+cpp}}\end{DoxyCompactItemize}

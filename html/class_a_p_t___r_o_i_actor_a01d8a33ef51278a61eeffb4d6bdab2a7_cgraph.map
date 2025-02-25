@@ -1,0 +1,9 @@
+<map id="APT_ROIActor::ConvertRoiToJson" name="APT_ROIActor::ConvertRoiToJson">
+<area shape="rect" id="Node000001" title="Converts the ROI data to a JSON string." alt="" coords="5,72,189,115"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___j_s_o_n_converter.html#aaf6d693a500595e5fd75c4345dbcf933" title="Converts an array of FVectors to a JSON array." alt="" coords="237,5,454,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,69,248,50,249,55,180,74"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___j_s_o_n_converter.html#ab8f81ee9032d83d3b992720f93811fba" title="Converts a FVector to a JSON object." alt="" coords="249,72,442,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,91,233,91,233,96,189,96"/>
+<area shape="rect" id="Node000004" href="$class_u_p_t___j_s_o_n_converter.html#a756044bc94b910a0ac9154076f0aff37" title="Converts a JSON object to a string." alt="" coords="253,139,438,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,113,249,131,248,137,178,118"/>
+</map>

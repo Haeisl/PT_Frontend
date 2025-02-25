@@ -1,0 +1,11 @@
+<map id="Source/PlanningTool_ET/PT_ClickableComponent.cpp" name="Source/PlanningTool_ET/PT_ClickableComponent.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="130,5,349,48"/>
+<area shape="rect" id="Node000002" href="$_p_t___clickable_component_8h.html" title="Header file for the UPT_ClickableComponent class." alt="" coords="151,96,328,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,49,242,80,237,80,237,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,171,111,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="209,126,105,167,103,162,207,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="135,171,344,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="242,123,242,155,237,155,237,123"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="368,171,606,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="283,121,430,163,429,168,282,126"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="UPT_HTTPComponent::CheckServerStatus" name="UPT_HTTPComponent::CheckServerStatus">
+<area shape="rect" id="Node000001" title="Checks the server status at the specified address." alt="" coords="5,5,171,48"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___h_t_t_p_component.html#a40359c5d8c00601d266d6fb7856b3447" title="Handles the response for the CheckServerStatus request." alt="" coords="219,5,430,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,24,203,24,203,29,171,29"/>
+</map>

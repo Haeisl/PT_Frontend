@@ -1,0 +1,119 @@
+\doxysection{PT\+\_\+\+Config\+Manager.\+h}
+\hypertarget{_p_t___config_manager_8h_source}{}\label{_p_t___config_manager_8h_source}\index{Source/PlanningTool\_ET/PT\_ConfigManager.h@{Source/PlanningTool\_ET/PT\_ConfigManager.h}}
+\mbox{\hyperlink{_p_t___config_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}PT\_ConfigManager.generated.h"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ UCLASS()}
+\DoxyCodeLine{00023\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_u_p_t___config_manager_a259a1f16f06f59bfbb9e54f4e969edaa}{UPT\_ConfigManager}}\ :\ public\ UObject}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_u_p_t___config_manager_a259a1f16f06f59bfbb9e54f4e969edaa}{UPT\_ConfigManager}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_u_p_t___config_manager_a259a1f16f06f59bfbb9e54f4e969edaa}{\string~UPT\_ConfigManager}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___config_manager_a0e2a9d235ce5686c97d97766b04443f9}{SetServerAddress}}(\textcolor{keyword}{const}\ FString\&\ NewAddress);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a6ae375becb9a9ba415971bf986e29c57}{GetReachedAddress}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_af2f990e4ee3b3793887be01b231dfa08}{GetRunSimulationsAddress}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00064\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a652bbd9df021f443f04c91f0b30322a0}{GetConfigurationMeshAddress}}(\textcolor{keyword}{const}\ FString\&\ InPatientId);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00072\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a4e5d916db4b6c4473475d5521f4c36ec}{GetSkinMeshAddress}}(\textcolor{keyword}{const}\ FString\&\ InPatientId);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00081\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a43635d07f6d0b5bee658d0024b4ecfb7}{GetElectrodesPositionAddress}}(\textcolor{keyword}{const}\ FString\&\ InPatientId,\ \textcolor{keyword}{const}\ FString\&\ InConfigId);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00090\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a59bcc19aa5b2104fae73c34697c4e65f}{GetDataVallidationAddress}}(\textcolor{keyword}{const}\ FString\&\ InPatientId,\ \textcolor{keyword}{const}\ FString\&\ InConfigId);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00099\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_ad5286cdef0de33276f2489308ce97a92}{GetRoiAddress}}(\textcolor{keyword}{const}\ FString\&\ InPatientId,\ \textcolor{keyword}{const}\ FString\&\ InRoiId);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00108\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a41c26ab6a05e2bcdc9285bcd88095604}{GetSimulated3DAddress}}(\textcolor{keyword}{const}\ FString\&\ InPatientId,\ \textcolor{keyword}{const}\ FString\&\ InConfigId);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00118\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a3fddf7bb37267c034132ba2e43bd6fff}{GetSimulatedDataAddress}}(\textcolor{keyword}{const}\ FString\&\ InPatientId,\ \textcolor{keyword}{const}\ FString\&\ InConfigId,\ \textcolor{keyword}{const}\ FString\&\ InRoiId);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00129\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a901b0d5ab7ba0cf558540430eb4d4b72}{GetInterpolatedDataAddress}}(\textcolor{keyword}{const}\ FString\&\ InPatientId,\ \textcolor{keyword}{const}\ FString\&\ InConfigId,\ \textcolor{keyword}{const}\ FString\&\ InRoiId,\ \textcolor{keyword}{const}\ FString\&\ InInterpolationId);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00136\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00137\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a2c9bfa7be7dd6e91551037efed9e70cd}{GetServerAddress}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\_ADDRESS}};\ \}}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00143\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00144\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_af2451f60d48311dac0bbc153117816ea}{GetUrlConfigurationMesh}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_a01479b729623c55f91fd9e801472b89e}{URL\_CONFIGURATION\_MESH}};\ \}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00150\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00151\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_addd543b6ccc566db91be4704c1bfc55f}{GetUrlSkinMesh}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_a66ba8cdd4ead95417f57a72bffcc6ba6}{URL\_SKIN\_MESH}};\ \}}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00157\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00158\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a93a589b06e93263a60dcd82bf0c5cf68}{GetUrlElectrodesPosition}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_a5cb1056d189cbc95d538b218c626030e}{URL\_ELECTRODES\_POSITION}};\ \}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00164\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00165\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a5ab134a0b3ff40877ca5590ba7cd0919}{GetUrlDataValidation}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_af52c72a317f948ca5360897909ab0234}{URL\_DATA\_VALIDATION}};\ \}}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00171\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00172\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a502ccd0eb24d2c25c3f5a3ffcf469217}{GetUrlROI}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_af00f3bb8e9c5bf278be1b01a11d71fe0}{URL\_ROI}};\ \}}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00178\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00179\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_adbe2075b96fc494d121bfc075b5c7dcd}{GetUrlSimulated3D}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_a0224037f4fc85e59e62be7d8414a28cf}{URL\_SIMULATED\_3D}};\ \}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00185\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00186\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_ad6460d1b3f28f431e16e8df397d13541}{GetUrlSimulatedData}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_acf27fd2c849c57e1b3fd27bf5669c8d5}{URL\_SIMULATED\_DATA}};\ \}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00192\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00193\ \ \ \ \ static\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_ac6ed879f9237324d2519b7a314fa9327}{GetUrlInterpolatedData}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_abd7e8b79878f1a66a93e32c5f1af5b09}{URL\_INTERPOLATED\_DATA}};\ \}}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00199\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00200\ \ \ \ \ static\ TArray<FString>\ \mbox{\hyperlink{class_u_p_t___config_manager_a300fe850ee9747d6fd253425a8c57bbc}{GetDataTagArray}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_a3d0e73bcd53e560ade677cceecc28f62}{DATA\_TAG\_ARRAY}};\ \}}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00206\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00207\ \ \ \ \ static\ TArray<FString>\ \mbox{\hyperlink{class_u_p_t___config_manager_aea1369c0413d7b8b4b9a9a86ef234f38}{GetDataTagNameArray}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_aa70d41264d1b9b6395718a25fe8eaa9d}{DATA\_TAG\_NAME\_ARRAY}};\ \}}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00213\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00214\ \ \ \ \ static\ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___config_manager_a8c74dca0e2da85e92a49eab962b01787}{GetDataTagIndexArray}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_a2a7784ab027e7fe94305b82de8963374}{DATA\_TAG\_INDEX\_ARRAY}};\ \}}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00220\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00221\ \ \ \ \ static\ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___config_manager_a6ac1ace95c7c1fb061031432161f7e21}{GetDataTagVolumeIndexArray}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_ab72c002313b9606924d0ba594d52af7e}{DATA\_TAG\_VOLUME\_INDEX\_ARRAY}};\ \}}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00227\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ConfigManager"{}})}
+\DoxyCodeLine{00228\ \ \ \ \ static\ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___config_manager_ad2232370224cb1dcc97d8ad93c2ae841}{GetDataTagMeshIndexArray}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_u_p_t___config_manager_ae6e9904bbbbeb31b5a7efd376e996895}{DATA\_TAG\_MESH\_INDEX\_ARRAY}};\ \}}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00231\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\_ADDRESS}};\ }
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_ace64e9d2a554e6de2eb018fc5312f8ca}{URL\_REACHED}};\ }
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a8c82f878632bf3ce427227756a8f63bf}{URL\_RUN\_SIMULATIONS}};\ }
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a01479b729623c55f91fd9e801472b89e}{URL\_CONFIGURATION\_MESH}};\ }
+\DoxyCodeLine{00235\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a66ba8cdd4ead95417f57a72bffcc6ba6}{URL\_SKIN\_MESH}};\ }
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a5cb1056d189cbc95d538b218c626030e}{URL\_ELECTRODES\_POSITION}};\ }
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_af52c72a317f948ca5360897909ab0234}{URL\_DATA\_VALIDATION}};\ }
+\DoxyCodeLine{00238\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_af00f3bb8e9c5bf278be1b01a11d71fe0}{URL\_ROI}};\ }
+\DoxyCodeLine{00239\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_a0224037f4fc85e59e62be7d8414a28cf}{URL\_SIMULATED\_3D}};\ }
+\DoxyCodeLine{00240\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_acf27fd2c849c57e1b3fd27bf5669c8d5}{URL\_SIMULATED\_DATA}};\ }
+\DoxyCodeLine{00241\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___config_manager_abd7e8b79878f1a66a93e32c5f1af5b09}{URL\_INTERPOLATED\_DATA}};\ }
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00243\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ TArray<FString>\ \mbox{\hyperlink{class_u_p_t___config_manager_a3d0e73bcd53e560ade677cceecc28f62}{DATA\_TAG\_ARRAY}};\ }
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ TArray<FString>\ \mbox{\hyperlink{class_u_p_t___config_manager_aa70d41264d1b9b6395718a25fe8eaa9d}{DATA\_TAG\_NAME\_ARRAY}};\ }
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___config_manager_a2a7784ab027e7fe94305b82de8963374}{DATA\_TAG\_INDEX\_ARRAY}};\ }
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___config_manager_ab72c002313b9606924d0ba594d52af7e}{DATA\_TAG\_VOLUME\_INDEX\_ARRAY}};\ }
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___config_manager_ae6e9904bbbbeb31b5a7efd376e996895}{DATA\_TAG\_MESH\_INDEX\_ARRAY}};\ }
+\DoxyCodeLine{00248\ \};}
+
+\end{DoxyCode}

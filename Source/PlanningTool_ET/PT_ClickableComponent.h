@@ -4,9 +4,9 @@
 /**
  * @file PT_ClickableComponent.h
  * @brief Header file for the UPT_ClickableComponent class.
- * 
+ *
  * This file contains the declaration of the UPT_ClickableComponent class, which is responsible for handling clickable component behavior.
- * 
+ *
  */
 
 #pragma once
@@ -18,27 +18,22 @@
 /**
  * @class UPT_ClickableComponent
  * @brief A class that represents a clickable component.
- * 
+ *
  * This class is responsible for handling the behavior of clickable components within the game.
  */
+class UPT_ClickableComponent;
+
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class PLANNINGTOOL_ET_API UPT_ClickableComponent : public UActorComponent
 {
     GENERATED_BODY()
 
-public:    
+public:
     /**
      * @brief Sets default values for this component's properties.
      */
     UPT_ClickableComponent();
 
-protected:
-    /**
-     * @brief Called when the game starts.
-     */
-    virtual void BeginPlay() override;
-
-public:    
     /**
      * @brief Called every frame.
      * @param DeltaTime The time elapsed since the last frame.
@@ -46,4 +41,10 @@ public:
      * @param ThisTickFunction Internal tick function struct that caused this to run.
      */
     virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+protected:
+    /**
+     * @brief Called when the game starts.
+     */
+    virtual void BeginPlay() override;
 };

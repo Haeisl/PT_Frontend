@@ -1,0 +1,5 @@
+<map id="UPT_ConfigManager::SetServerAddress" name="UPT_ConfigManager::SetServerAddress">
+<area shape="rect" id="Node000001" title="Sets the server address." alt="" coords="210,5,361,48"/>
+<area shape="rect" id="Node000002" href="$class_u_manage_server_widget.html#afdaf95db5771e906f076dcb0e7a515d3" title="Saves the server address." alt="" coords="5,5,162,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,29,162,29,162,24,194,24"/>
+</map>

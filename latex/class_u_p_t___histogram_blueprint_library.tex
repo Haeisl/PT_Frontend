@@ -1,0 +1,72 @@
+\doxysection{UPT\+\_\+\+Histogram\+Blueprint\+Library Class Reference}
+\hypertarget{class_u_p_t___histogram_blueprint_library}{}\label{class_u_p_t___histogram_blueprint_library}\index{UPT\_HistogramBlueprintLibrary@{UPT\_HistogramBlueprintLibrary}}
+
+
+A blueprint function library class for creating histogram textures.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Histogram\+Blueprint\+Library.\+h$>$}
+
+
+
+Inheritance diagram for UPT\+\_\+\+Histogram\+Blueprint\+Library\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_u_p_t___histogram_blueprint_library__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UPT\+\_\+\+Histogram\+Blueprint\+Library\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_u_p_t___histogram_blueprint_library__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static UTexture2D \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_p_t___histogram_blueprint_library_adb1207078793bdddd3df249569825a85}{Create\+Histogram\+Texture}} (const TArray$<$ double $>$ \&In\+Data, const int32 Num\+Bins, bool b\+Log\+Scale, bool b\+Constrain\+XMin, float XMin, bool b\+Constrain\+XMax, float XMax, bool b\+Grid\+Lines)
+\begin{DoxyCompactList}\small\item\em Creates a histogram texture from the given data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A blueprint function library class for creating histogram textures. 
+
+This class provides functionality to create histogram textures from data arrays. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_p_t___histogram_blueprint_library_adb1207078793bdddd3df249569825a85}\index{UPT\_HistogramBlueprintLibrary@{UPT\_HistogramBlueprintLibrary}!CreateHistogramTexture@{CreateHistogramTexture}}
+\index{CreateHistogramTexture@{CreateHistogramTexture}!UPT\_HistogramBlueprintLibrary@{UPT\_HistogramBlueprintLibrary}}
+\doxysubsubsection{\texorpdfstring{CreateHistogramTexture()}{CreateHistogramTexture()}}
+{\footnotesize\ttfamily \label{class_u_p_t___histogram_blueprint_library_adb1207078793bdddd3df249569825a85} 
+UTexture2D \texorpdfstring{$\ast$}{*} UPT\+\_\+\+Histogram\+Blueprint\+Library\+::\+Create\+Histogram\+Texture (\begin{DoxyParamCaption}\item[{const TArray$<$ double $>$ \&}]{In\+Data}{, }\item[{const int32}]{Num\+Bins}{, }\item[{bool}]{b\+Log\+Scale}{, }\item[{bool}]{b\+Constrain\+XMin}{, }\item[{float}]{XMin}{, }\item[{bool}]{b\+Constrain\+XMax}{, }\item[{float}]{XMax}{, }\item[{bool}]{b\+Grid\+Lines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a histogram texture from the given data. 
+
+This function creates a histogram texture from the provided data array and number of bins.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Data} & The input data array. \\
+\hline
+{\em Num\+Bins} & The number of bins for the histogram. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+UTexture2\+D\texorpdfstring{$\ast$}{*} The created histogram texture. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___histogram_blueprint_library_8h}{PT\+\_\+\+Histogram\+Blueprint\+Library.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___histogram_blueprint_library_8cpp}{PT\+\_\+\+Histogram\+Blueprint\+Library.\+cpp}}\end{DoxyCompactItemize}

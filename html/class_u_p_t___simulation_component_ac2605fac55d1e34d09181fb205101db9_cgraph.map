@@ -1,0 +1,25 @@
+<map id="UPT_SimulationComponent::GetSimulationDataFromJSONObject" name="UPT_SimulationComponent::GetSimulationDataFromJSONObject">
+<area shape="rect" id="Node000001" title="Retrieves simulation data from a JSON object." alt="" coords="5,269,249,312"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___j_s_o_n_converter.html#a77d30c9e8b027c8da2ce98371a115067" title="Converts a JSON object to an array of integers." alt="" coords="298,5,493,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,267,163,227,198,176,243,122,295,74,300,70,303,75,298,78,247,126,202,179,167,230,143,270"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___j_s_o_n_converter.html#a1ba17e54c0adff9d588774a39652bcc3" title="Converts a JSON object to an integer." alt="" coords="317,88,474,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,267,208,205,250,171,295,140,305,135,307,140,298,145,253,175,212,209,149,271"/>
+<area shape="rect" id="Node000004" href="$class_u_p_t___config_manager.html#a300fe850ee9747d6fd253425a8c57bbc" title="Gets the data tag array." alt="" coords="320,179,471,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,266,315,224,317,229,194,271"/>
+<area shape="rect" id="Node000005" href="$class_u_p_t___config_manager.html#a8c74dca0e2da85e92a49eab962b01787" title="Gets the data tag index array." alt="" coords="318,269,472,312"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="249,288,303,288,303,293,249,293"/>
+<area shape="rect" id="Node000006" href="$class_u_p_t___config_manager.html#ad2232370224cb1dcc97d8ad93c2ae841" title="Gets the data tag mesh index array." alt="" coords="302,360,488,403"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="194,310,317,352,315,357,192,315"/>
+<area shape="rect" id="Node000007" href="$class_u_p_t___config_manager.html#a6ac1ace95c7c1fb061031432161f7e21" title="Gets the data tag volume index array." alt="" coords="297,451,494,493"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="158,311,221,358,298,412,343,440,340,445,295,417,218,363,155,315"/>
+<area shape="rect" id="Node000008" href="$class_u_p_t___simulation_component.html#a35c508f431cbfefe07042f0bfc42783f" title="Processes electrode data." alt="" coords="304,517,487,560"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="142,311,166,352,201,403,246,457,298,503,305,507,302,512,295,507,242,461,197,406,161,355,137,314"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="346,179,344,169,353,160,370,154,395,152,423,154,440,161,438,166,422,160,395,157,371,159,355,164,349,170,351,177"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="346,269,344,259,353,250,370,245,395,243,423,245,440,251,438,256,422,250,395,248,371,250,355,255,349,261,351,268"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="346,360,344,350,353,341,370,335,395,333,423,336,440,342,438,347,422,341,395,339,371,341,355,345,349,351,351,359"/>
+<area shape="poly" id="edge10_Node000007_Node000007" title=" " alt="" coords="346,451,344,441,353,432,370,426,395,424,423,426,440,433,438,438,422,432,395,429,371,431,355,436,349,442,351,449"/>
+<area shape="rect" id="Node000009" href="$class_u_p_t___j_s_o_n_converter.html#a9bf5ddfd3a7b31044faaf04519ca153d" title="Converts a JSON object to an array of doubles." alt="" coords="542,484,769,527"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="487,524,526,519,527,524,488,530"/>
+<area shape="rect" id="Node000010" href="$class_u_p_t___j_s_o_n_converter.html#a2598aaf8a9a48fa1e9ef95b8053c8eef" title="Converts a JSON object to an array of FVector." alt="" coords="544,551,767,593"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="488,548,529,553,528,558,487,553"/>
+</map>

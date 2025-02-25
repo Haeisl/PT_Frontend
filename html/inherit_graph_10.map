@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,56,135,83"/>
+<area shape="rect" id="Node000001" href="$class_u_p_t___clickable_component.html" title="A class that represents a clickable component." alt="" coords="186,5,362,32"/>
+<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="141,49,217,30,218,35,142,54"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___h_t_t_p_component.html" title="A component for handling HTTP requests and responses in Unreal Engine." alt="" coords="196,56,353,83"/>
+<area shape="poly" id="edge12_Node000000_Node000002" title=" " alt="" coords="150,67,195,67,195,72,150,72"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html" title="Simulation component for the Epilepsy Therapy Planning Tool." alt="" coords="183,107,366,133"/>
+<area shape="poly" id="edge13_Node000000_Node000003" title=" " alt="" coords="142,84,218,103,217,109,141,90"/>
+</map>

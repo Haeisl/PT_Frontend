@@ -1,0 +1,696 @@
+\doxysection{APT\+\_\+\+ROIActor Class Reference}
+\hypertarget{class_a_p_t___r_o_i_actor}{}\label{class_a_p_t___r_o_i_actor}\index{APT\_ROIActor@{APT\_ROIActor}}
+
+
+A class representing the Region of Interest (ROI) actor.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+ROIActor.\+h$>$}
+
+
+
+Inheritance diagram for APT\+\_\+\+ROIActor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_a_p_t___r_o_i_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for APT\+\_\+\+ROIActor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_a_p_t___r_o_i_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_t___r_o_i_actor_a5ca4f65fd32a87eb16591504fa782fba}{APT\+\_\+\+ROIActor}} ()
+\begin{DoxyCompactList}\small\item\em Sets default values for this actor\textquotesingle{}s properties. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_aebfe324c22c7f525e3cba6b8a0a28516}{Tick}} (float Delta\+Time) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_aba0169836e92b97c4fd447c94d772c47}{get\+ROIBounds\+To\+World\+Space}} ()
+\begin{DoxyCompactList}\small\item\em Transforms the ROI bounds to world space coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a66bcf5d9549694d6fb3eb155fb6fc054}{Print\+Corner\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Logs the corner points of the ROI to the console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a51875d7df5515cd97ffe85fbc95a498c}{Init\+Current\+Camera\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the current camera manager by getting the Player\+Camera\+Manager from the first player controller. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a023f69a334c1d6b8d7a2582605acbb81}{Set\+ROIPosition}} (const float \&In\+PosX, const float \&In\+PosY, const float \&In\+PosZ)
+\begin{DoxyCompactList}\small\item\em Sets the position of the ROI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a804b904c74c01607b1a74e0a378e44d4}{Move\+ROIPosition}} (const FVector \&In\+New\+Position)
+\begin{DoxyCompactList}\small\item\em Moves the ROI position by the specified amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a8a9a838509c7c2ef1222d9c0feccbc02}{Set\+ROISize}} (const float \&In\+SizeX, const float \&In\+SizeY, const float \&In\+SizeZ)
+\begin{DoxyCompactList}\small\item\em Sets the size of the ROI and applies the transformation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_ad6bcdd64a2631fdc13d3f45d08998527}{Set\+ROIRotation}} (const float \&In\+Pitch, const float \&In\+Yaw, const float \&In\+Roll)
+\begin{DoxyCompactList}\small\item\em Sets the rotation of the ROI and applies the transformation. \end{DoxyCompactList}\item 
+FString \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a01d8a33ef51278a61eeffb4d6bdab2a7}{Convert\+Roi\+To\+Json}} (const FString \&In\+Patient\+Id, const FString \&In\+Roi\+Id, const TArray$<$ FVector $>$ \&In\+Vector\+Array, const FVector \&In\+Center\+Position)
+\begin{DoxyCompactList}\small\item\em Converts the ROI data to a JSON string. \end{DoxyCompactList}\item 
+FVector \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a3b745e291f793c1e09b81dbf444eed46}{Get\+Current\+ROISize}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current size of the ROI. \end{DoxyCompactList}\item 
+FVector \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a7b666b9e608020c9f04d4071f2831204}{Get\+Current\+ROIPosition}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current position of the ROI. \end{DoxyCompactList}\item 
+FRotator \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a9d32735720c30140822086e9fbc1c66c}{Get\+Current\+ROIRotation}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current rotation of the ROI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707}{APT\+\_\+\+Single3\+DActor}} ()
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a167008919b32a3d177057b4f7c7b17ca}{Get\+Vertex\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the vertex array. \end{DoxyCompactList}\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a93a32b1ffd19680faf89040d21b7e0cc}{Get\+Vertex\+Color\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the vertex color array. \end{DoxyCompactList}\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a7eab857de9c5215e2947562ff2815254}{Get\+Triangle\+Index\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the triangle index array. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8e9dab58abdf56e917aa7fe7ddec6bcc}{Get\+Normal\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the normal array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a0149913b56d5ba144d7ae6cec09c22e7}{Create\+Point\+Cloud\+Array}} (const TArray$<$ int32 $>$ \&In\+Vertex\+Index\+Array, const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ FLinear\+Color $>$ \&In\+Vertex\+Color\+Array, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud\+Array)
+\begin{DoxyCompactList}\small\item\em Creates an array of FLidar\+Point\+Cloud\+Point from given vertex indices, vertex array, and vertex color array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_aeaf883636af0394186f05690534b2917}{Update\+Lidar\+Point\+Cloud\+Color}} (const TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&In\+Point\+Cloud, const TArray$<$ FLinear\+Color $>$ \&In\+Color\+Array, const TArray$<$ int32 $>$ \&In\+Vertex\+Index\+Array, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud)
+\begin{DoxyCompactList}\small\item\em Updates the color of a Lidar point cloud. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_aa66f0711724e833a781e44011a7f9f3c}{Convert\+JSONResponse\+Body\+To\+Mesh}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FVector $>$ \&Out\+Vertex\+Array, TArray$<$ int32 $>$ \&Out\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to a mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a9ce628a69546652c564d9b95d8da7ed2}{Convert\+JSONResponse\+Body\+To\+Volume}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to a volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a37e361d670c1290c63b501c7ec8b26b8}{Set\+Vertex\+Array\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, TArray$<$ FVector $>$ \&Out\+Vertex\+Array)
+\begin{DoxyCompactList}\small\item\em Sets the vertex array from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a047e787ea313e91b392a6749642f3aac}{Set\+Vertex\+Color\+Array\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, TArray$<$ FLinear\+Color $>$ \&In\+Vertex\+Color\+Array)
+\begin{DoxyCompactList}\small\item\em Sets the vertex color array from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac7259989da2d7a5b2de67e87450112c7}{Calculate\+Normals}} (const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ int32 $>$ In\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Calculates the normals of the vertices of a 3D model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a47abcd7e44ed2e809c9afb5c665c711a}{Calculate\+Inverted\+Normals}} (const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ int32 $>$ In\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Inverted\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Calculates the inverted normals of the vertices of a 3D model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac98e2f0e9b475be2abaa210cc00249ba}{Reset\+Single3\+DActor\+Arrays}} ()
+\begin{DoxyCompactList}\small\item\em Resets the arrays of the single 3D actor. \end{DoxyCompactList}\item 
+int32 \mbox{\hyperlink{class_a_p_t___single3_d_actor_abd98047846a9040e34c20d58122e1043}{Get\+Vertex\+Array\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Gets the length of the vertex array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+UProcedural\+Mesh\+Component \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a0fdbb457456041368ebe2f303467e02d}{Procedural\+Mesh}}
+\item 
+class UInput\+Mapping\+Context \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a656044c1564966cd2371b3803a2daafd}{IMC\+\_\+\+PT\+\_\+\+ROIActor}}
+\item 
+class UInput\+Action \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_p_t___r_o_i_actor_abf57b44c7357655407a87a0fc15440d2}{IA\+\_\+\+Move\+Box}}
+\item 
+UMaterial\+Interface \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a51d0ae04dc2c73226b27d78088446941}{Material}}
+\item 
+FRoi\+Changed\+Event\+Delegate \mbox{\hyperlink{class_a_p_t___r_o_i_actor_ab0a96b50dbe76e82a75651ac1d743641}{Roi\+Changed\+Event}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor}}}
+\begin{DoxyCompactItemize}
+\item 
+FMesh\+Data\+Callback\+Event\+Delegate \mbox{\hyperlink{class_a_p_t___single3_d_actor_a895f153034951a3dc3b8b107f469cbc8}{Mesh\+Data\+Loaded\+Callback\+Event}}
+\item 
+FVolume\+Data\+Callback\+Event\+Delegate \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8992e3301ec4511f1c66181970e427ef}{Volume\+Data\+Loaded\+Callback\+Event}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a9187e9cf17cdcd8dcd43da6b7a7e77b8}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Called when the game starts or when spawned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a488438715c994b19c625a41173015c21}{Init\+White\+Vertex\+Color}} (const int32 \&In\+Vertex\+Array\+Length, const float \&In\+Alpha\+Value=1.f)
+\begin{DoxyCompactList}\small\item\em Initializes the vertex color array with white color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a93f73bbae49c2ea7f0e9484a4ac5d49d}{Generate\+Box\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Generates the box mesh for the ROI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a98775029206b38e73be0166206e3237c}{Apply\+Transformations}} (const FVector \&New\+Size, const FVector \&New\+Position, const FRotator \&New\+Rotation)
+\begin{DoxyCompactList}\small\item\em Applies the transformations to the ROI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a442faed02cc87040949cc61a488a434d}{Reset\+Vertex\+Array\+To\+Standard\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Resets the vertex array to the standard size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a5db649b8bd5881a7cf8adfabab72ed2b}{On\+Move\+ROI}} (const FInput\+Action\+Value \&Value)
+\begin{DoxyCompactList}\small\item\em Handles the input action to move the ROI. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a5224fd3462d5d921ba206c11837c88ef}{Get\+ROIBounds\+To\+World\+Space\+Relative\+To}} (AActor \texorpdfstring{$\ast$}{*}Other\+Actor)
+\begin{DoxyCompactList}\small\item\em Transforms the ROI bounds to world space coordinates relative to another actor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___r_o_i_actor_ad3dab860f4835c2043c1e16246a1d1be}{Calculate\+Normals\+Manually}} ()
+\begin{DoxyCompactList}\small\item\em Manually calculates the normals for the current vertex and triangle index arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+FVector \mbox{\hyperlink{class_a_p_t___r_o_i_actor_acbaa43aa4dd8908667a17dc749efddc2}{Current\+ROISize}}
+\item 
+FVector \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a83fe975a5347d773eac7d7130f065e99}{Current\+ROIPosition}}
+\item 
+FRotator \mbox{\hyperlink{class_a_p_t___r_o_i_actor_af5ca6edd9efcb249a25214661eb2dead}{Current\+ROIRotation}}
+\item 
+APlayer\+Camera\+Manager \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_a_p_t___r_o_i_actor_acd0138e1a163fabd6259316ea478214a}{Camera\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor}}}
+\begin{DoxyCompactItemize}
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ab1d1a62192718897a53ac93e6ea248d1}{Vertex\+Array}}
+\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8e2242899fb6e9ab41006050fd5b3e01}{Vertex\+Color\+Array}}
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_afce31e08cf5540225dae5717ce4cbca9}{Normal\+Array}}
+\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_afba7b1deb017920e17247c446f2d281d}{Triangle\+Index\+Array}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing the Region of Interest (ROI) actor. 
+
+This class handles the ROI in the Planning Tool, including its position, size, rotation, and other properties. It also provides methods for transforming the ROI bounds to world space coordinates, logging corner points, and converting ROI data to JSON. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_p_t___r_o_i_actor_a5ca4f65fd32a87eb16591504fa782fba}\index{APT\_ROIActor@{APT\_ROIActor}!APT\_ROIActor@{APT\_ROIActor}}
+\index{APT\_ROIActor@{APT\_ROIActor}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{APT\_ROIActor()}{APT\_ROIActor()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a5ca4f65fd32a87eb16591504fa782fba} 
+APT\+\_\+\+ROIActor\+::\+APT\+\_\+\+ROIActor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sets default values for this actor\textquotesingle{}s properties. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_p_t___r_o_i_actor_a98775029206b38e73be0166206e3237c}\index{APT\_ROIActor@{APT\_ROIActor}!ApplyTransformations@{ApplyTransformations}}
+\index{ApplyTransformations@{ApplyTransformations}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{ApplyTransformations()}{ApplyTransformations()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a98775029206b38e73be0166206e3237c} 
+void APT\+\_\+\+ROIActor\+::\+Apply\+Transformations (\begin{DoxyParamCaption}\item[{const FVector \&}]{New\+Size}{, }\item[{const FVector \&}]{New\+Position}{, }\item[{const FRotator \&}]{New\+Rotation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Applies the transformations to the ROI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Size} & New size of the ROI. \\
+\hline
+{\em New\+Position} & New position of the ROI. \\
+\hline
+{\em New\+Rotation} & New rotation of the ROI. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a98775029206b38e73be0166206e3237c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a98775029206b38e73be0166206e3237c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a9187e9cf17cdcd8dcd43da6b7a7e77b8}\index{APT\_ROIActor@{APT\_ROIActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a9187e9cf17cdcd8dcd43da6b7a7e77b8} 
+void APT\+\_\+\+ROIActor\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when the game starts or when spawned. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_a_p_t___single3_d_actor_a0b2969f0c88384528171a0c20e74c498}{APT\+\_\+\+Single3\+DActor}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a9187e9cf17cdcd8dcd43da6b7a7e77b8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_ad3dab860f4835c2043c1e16246a1d1be}\index{APT\_ROIActor@{APT\_ROIActor}!CalculateNormalsManually@{CalculateNormalsManually}}
+\index{CalculateNormalsManually@{CalculateNormalsManually}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{CalculateNormalsManually()}{CalculateNormalsManually()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_ad3dab860f4835c2043c1e16246a1d1be} 
+void APT\+\_\+\+ROIActor\+::\+Calculate\+Normals\+Manually (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Manually calculates the normals for the current vertex and triangle index arrays. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_ad3dab860f4835c2043c1e16246a1d1be_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a01d8a33ef51278a61eeffb4d6bdab2a7}\index{APT\_ROIActor@{APT\_ROIActor}!ConvertRoiToJson@{ConvertRoiToJson}}
+\index{ConvertRoiToJson@{ConvertRoiToJson}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{ConvertRoiToJson()}{ConvertRoiToJson()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a01d8a33ef51278a61eeffb4d6bdab2a7} 
+FString APT\+\_\+\+ROIActor\+::\+Convert\+Roi\+To\+Json (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const FString \&}]{In\+Roi\+Id}{, }\item[{const TArray$<$ FVector $>$ \&}]{In\+Vector\+Array}{, }\item[{const FVector \&}]{In\+Center\+Position}{}\end{DoxyParamCaption})}
+
+
+
+Converts the ROI data to a JSON string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & Patient ID. \\
+\hline
+{\em In\+Roi\+Id} & ROI ID. \\
+\hline
+{\em In\+Vector\+Array} & Array of vectors representing the ROI bounds. \\
+\hline
+{\em In\+Center\+Position} & Center position of the ROI. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+JSON string representing the ROI data. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a01d8a33ef51278a61eeffb4d6bdab2a7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a93f73bbae49c2ea7f0e9484a4ac5d49d}\index{APT\_ROIActor@{APT\_ROIActor}!GenerateBoxMesh@{GenerateBoxMesh}}
+\index{GenerateBoxMesh@{GenerateBoxMesh}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{GenerateBoxMesh()}{GenerateBoxMesh()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a93f73bbae49c2ea7f0e9484a4ac5d49d} 
+void APT\+\_\+\+ROIActor\+::\+Generate\+Box\+Mesh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generates the box mesh for the ROI. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a93f73bbae49c2ea7f0e9484a4ac5d49d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a93f73bbae49c2ea7f0e9484a4ac5d49d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a7b666b9e608020c9f04d4071f2831204}\index{APT\_ROIActor@{APT\_ROIActor}!GetCurrentROIPosition@{GetCurrentROIPosition}}
+\index{GetCurrentROIPosition@{GetCurrentROIPosition}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{GetCurrentROIPosition()}{GetCurrentROIPosition()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a7b666b9e608020c9f04d4071f2831204} 
+FVector APT\+\_\+\+ROIActor\+::\+Get\+Current\+ROIPosition (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current position of the ROI. 
+
+\begin{DoxyReturn}{Returns}
+Current position of the ROI. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_a_p_t___r_o_i_actor_a7b666b9e608020c9f04d4071f2831204_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_a_p_t___r_o_i_actor_a7b666b9e608020c9f04d4071f2831204_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a9d32735720c30140822086e9fbc1c66c}\index{APT\_ROIActor@{APT\_ROIActor}!GetCurrentROIRotation@{GetCurrentROIRotation}}
+\index{GetCurrentROIRotation@{GetCurrentROIRotation}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{GetCurrentROIRotation()}{GetCurrentROIRotation()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a9d32735720c30140822086e9fbc1c66c} 
+FRotator APT\+\_\+\+ROIActor\+::\+Get\+Current\+ROIRotation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current rotation of the ROI. 
+
+\begin{DoxyReturn}{Returns}
+Current rotation of the ROI. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_a_p_t___r_o_i_actor_a9d32735720c30140822086e9fbc1c66c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_a_p_t___r_o_i_actor_a9d32735720c30140822086e9fbc1c66c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a3b745e291f793c1e09b81dbf444eed46}\index{APT\_ROIActor@{APT\_ROIActor}!GetCurrentROISize@{GetCurrentROISize}}
+\index{GetCurrentROISize@{GetCurrentROISize}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{GetCurrentROISize()}{GetCurrentROISize()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a3b745e291f793c1e09b81dbf444eed46} 
+FVector APT\+\_\+\+ROIActor\+::\+Get\+Current\+ROISize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current size of the ROI. 
+
+\begin{DoxyReturn}{Returns}
+Current size of the ROI. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_a_p_t___r_o_i_actor_a3b745e291f793c1e09b81dbf444eed46_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_a_p_t___r_o_i_actor_a3b745e291f793c1e09b81dbf444eed46_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_aba0169836e92b97c4fd447c94d772c47}\index{APT\_ROIActor@{APT\_ROIActor}!getROIBoundsToWorldSpace@{getROIBoundsToWorldSpace}}
+\index{getROIBoundsToWorldSpace@{getROIBoundsToWorldSpace}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{getROIBoundsToWorldSpace()}{getROIBoundsToWorldSpace()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_aba0169836e92b97c4fd447c94d772c47} 
+TArray$<$ FVector $>$ APT\+\_\+\+ROIActor\+::get\+ROIBounds\+To\+World\+Space (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Transforms the ROI bounds to world space coordinates. 
+
+\begin{DoxyReturn}{Returns}
+Array of transformed vertices in world space. 
+\end{DoxyReturn}
+\Hypertarget{class_a_p_t___r_o_i_actor_a5224fd3462d5d921ba206c11837c88ef}\index{APT\_ROIActor@{APT\_ROIActor}!GetROIBoundsToWorldSpaceRelativeTo@{GetROIBoundsToWorldSpaceRelativeTo}}
+\index{GetROIBoundsToWorldSpaceRelativeTo@{GetROIBoundsToWorldSpaceRelativeTo}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{GetROIBoundsToWorldSpaceRelativeTo()}{GetROIBoundsToWorldSpaceRelativeTo()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a5224fd3462d5d921ba206c11837c88ef} 
+TArray$<$ FVector $>$ APT\+\_\+\+ROIActor\+::\+Get\+ROIBounds\+To\+World\+Space\+Relative\+To (\begin{DoxyParamCaption}\item[{AActor \texorpdfstring{$\ast$}{*}}]{Other\+Actor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transforms the ROI bounds to world space coordinates relative to another actor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other\+Actor} & The actor to which the coordinates should be relative. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of transformed vertices in world space relative to the other actor. 
+\end{DoxyReturn}
+\Hypertarget{class_a_p_t___r_o_i_actor_a51875d7df5515cd97ffe85fbc95a498c}\index{APT\_ROIActor@{APT\_ROIActor}!InitCurrentCameraManager@{InitCurrentCameraManager}}
+\index{InitCurrentCameraManager@{InitCurrentCameraManager}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{InitCurrentCameraManager()}{InitCurrentCameraManager()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a51875d7df5515cd97ffe85fbc95a498c} 
+void APT\+\_\+\+ROIActor\+::\+Init\+Current\+Camera\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the current camera manager by getting the Player\+Camera\+Manager from the first player controller. 
+
+\Hypertarget{class_a_p_t___r_o_i_actor_a804b904c74c01607b1a74e0a378e44d4}\index{APT\_ROIActor@{APT\_ROIActor}!MoveROIPosition@{MoveROIPosition}}
+\index{MoveROIPosition@{MoveROIPosition}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{MoveROIPosition()}{MoveROIPosition()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a804b904c74c01607b1a74e0a378e44d4} 
+void APT\+\_\+\+ROIActor\+::\+Move\+ROIPosition (\begin{DoxyParamCaption}\item[{const FVector \&}]{In\+New\+Position}{}\end{DoxyParamCaption})}
+
+
+
+Moves the ROI position by the specified amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+New\+Position} & New position to move the ROI to. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a804b904c74c01607b1a74e0a378e44d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a804b904c74c01607b1a74e0a378e44d4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a5db649b8bd5881a7cf8adfabab72ed2b}\index{APT\_ROIActor@{APT\_ROIActor}!OnMoveROI@{OnMoveROI}}
+\index{OnMoveROI@{OnMoveROI}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{OnMoveROI()}{OnMoveROI()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a5db649b8bd5881a7cf8adfabab72ed2b} 
+void APT\+\_\+\+ROIActor\+::\+On\+Move\+ROI (\begin{DoxyParamCaption}\item[{const FInput\+Action\+Value \&}]{Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the input action to move the ROI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Input action value representing the new position. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a5db649b8bd5881a7cf8adfabab72ed2b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a5db649b8bd5881a7cf8adfabab72ed2b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a66bcf5d9549694d6fb3eb155fb6fc054}\index{APT\_ROIActor@{APT\_ROIActor}!PrintCornerPoints@{PrintCornerPoints}}
+\index{PrintCornerPoints@{PrintCornerPoints}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{PrintCornerPoints()}{PrintCornerPoints()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a66bcf5d9549694d6fb3eb155fb6fc054} 
+void APT\+\_\+\+ROIActor\+::\+Print\+Corner\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Logs the corner points of the ROI to the console. 
+
+\Hypertarget{class_a_p_t___r_o_i_actor_a442faed02cc87040949cc61a488a434d}\index{APT\_ROIActor@{APT\_ROIActor}!ResetVertexArrayToStandardSize@{ResetVertexArrayToStandardSize}}
+\index{ResetVertexArrayToStandardSize@{ResetVertexArrayToStandardSize}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{ResetVertexArrayToStandardSize()}{ResetVertexArrayToStandardSize()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a442faed02cc87040949cc61a488a434d} 
+void APT\+\_\+\+ROIActor\+::\+Reset\+Vertex\+Array\+To\+Standard\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resets the vertex array to the standard size. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a442faed02cc87040949cc61a488a434d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a023f69a334c1d6b8d7a2582605acbb81}\index{APT\_ROIActor@{APT\_ROIActor}!SetROIPosition@{SetROIPosition}}
+\index{SetROIPosition@{SetROIPosition}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{SetROIPosition()}{SetROIPosition()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a023f69a334c1d6b8d7a2582605acbb81} 
+void APT\+\_\+\+ROIActor\+::\+Set\+ROIPosition (\begin{DoxyParamCaption}\item[{const float \&}]{In\+PosX}{, }\item[{const float \&}]{In\+PosY}{, }\item[{const float \&}]{In\+PosZ}{}\end{DoxyParamCaption})}
+
+
+
+Sets the position of the ROI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+PosX} & Position in the X dimension. \\
+\hline
+{\em In\+PosY} & Position in the Y dimension. \\
+\hline
+{\em In\+PosZ} & Position in the Z dimension. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a023f69a334c1d6b8d7a2582605acbb81_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_ad6bcdd64a2631fdc13d3f45d08998527}\index{APT\_ROIActor@{APT\_ROIActor}!SetROIRotation@{SetROIRotation}}
+\index{SetROIRotation@{SetROIRotation}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{SetROIRotation()}{SetROIRotation()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_ad6bcdd64a2631fdc13d3f45d08998527} 
+void APT\+\_\+\+ROIActor\+::\+Set\+ROIRotation (\begin{DoxyParamCaption}\item[{const float \&}]{In\+Pitch}{, }\item[{const float \&}]{In\+Yaw}{, }\item[{const float \&}]{In\+Roll}{}\end{DoxyParamCaption})}
+
+
+
+Sets the rotation of the ROI and applies the transformation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Pitch} & Pitch rotation. \\
+\hline
+{\em In\+Yaw} & Yaw rotation. \\
+\hline
+{\em In\+Roll} & Roll rotation. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_ad6bcdd64a2631fdc13d3f45d08998527_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_a8a9a838509c7c2ef1222d9c0feccbc02}\index{APT\_ROIActor@{APT\_ROIActor}!SetROISize@{SetROISize}}
+\index{SetROISize@{SetROISize}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{SetROISize()}{SetROISize()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a8a9a838509c7c2ef1222d9c0feccbc02} 
+void APT\+\_\+\+ROIActor\+::\+Set\+ROISize (\begin{DoxyParamCaption}\item[{const float \&}]{In\+SizeX}{, }\item[{const float \&}]{In\+SizeY}{, }\item[{const float \&}]{In\+SizeZ}{}\end{DoxyParamCaption})}
+
+
+
+Sets the size of the ROI and applies the transformation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+SizeX} & Size in the X dimension. \\
+\hline
+{\em In\+SizeY} & Size in the Y dimension. \\
+\hline
+{\em In\+SizeZ} & Size in the Z dimension. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___r_o_i_actor_a8a9a838509c7c2ef1222d9c0feccbc02_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___r_o_i_actor_aebfe324c22c7f525e3cba6b8a0a28516}\index{APT\_ROIActor@{APT\_ROIActor}!Tick@{Tick}}
+\index{Tick@{Tick}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_aebfe324c22c7f525e3cba6b8a0a28516} 
+void APT\+\_\+\+ROIActor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & The time elapsed since the last frame. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_a_p_t___single3_d_actor_a7451f79e24c4143a22a8d3d55c1c9fb5}{APT\+\_\+\+Single3\+DActor}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_p_t___r_o_i_actor_acd0138e1a163fabd6259316ea478214a}\index{APT\_ROIActor@{APT\_ROIActor}!CameraManager@{CameraManager}}
+\index{CameraManager@{CameraManager}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{CameraManager}{CameraManager}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_acd0138e1a163fabd6259316ea478214a} 
+APlayer\+Camera\+Manager\texorpdfstring{$\ast$}{*} APT\+\_\+\+ROIActor\+::\+Camera\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_a_p_t___r_o_i_actor_a83fe975a5347d773eac7d7130f065e99}\index{APT\_ROIActor@{APT\_ROIActor}!CurrentROIPosition@{CurrentROIPosition}}
+\index{CurrentROIPosition@{CurrentROIPosition}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{CurrentROIPosition}{CurrentROIPosition}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a83fe975a5347d773eac7d7130f065e99} 
+FVector APT\+\_\+\+ROIActor\+::\+Current\+ROIPosition\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_a_p_t___r_o_i_actor_af5ca6edd9efcb249a25214661eb2dead}\index{APT\_ROIActor@{APT\_ROIActor}!CurrentROIRotation@{CurrentROIRotation}}
+\index{CurrentROIRotation@{CurrentROIRotation}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{CurrentROIRotation}{CurrentROIRotation}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_af5ca6edd9efcb249a25214661eb2dead} 
+FRotator APT\+\_\+\+ROIActor\+::\+Current\+ROIRotation\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_a_p_t___r_o_i_actor_acbaa43aa4dd8908667a17dc749efddc2}\index{APT\_ROIActor@{APT\_ROIActor}!CurrentROISize@{CurrentROISize}}
+\index{CurrentROISize@{CurrentROISize}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{CurrentROISize}{CurrentROISize}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_acbaa43aa4dd8908667a17dc749efddc2} 
+FVector APT\+\_\+\+ROIActor\+::\+Current\+ROISize\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_a_p_t___r_o_i_actor_abf57b44c7357655407a87a0fc15440d2}\index{APT\_ROIActor@{APT\_ROIActor}!IA\_MoveBox@{IA\_MoveBox}}
+\index{IA\_MoveBox@{IA\_MoveBox}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{IA\_MoveBox}{IA\_MoveBox}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_abf57b44c7357655407a87a0fc15440d2} 
+class UInput\+Action\texorpdfstring{$\ast$}{*} APT\+\_\+\+ROIActor\+::\+IA\+\_\+\+Move\+Box}
+
+\Hypertarget{class_a_p_t___r_o_i_actor_a656044c1564966cd2371b3803a2daafd}\index{APT\_ROIActor@{APT\_ROIActor}!IMC\_PT\_ROIActor@{IMC\_PT\_ROIActor}}
+\index{IMC\_PT\_ROIActor@{IMC\_PT\_ROIActor}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{IMC\_PT\_ROIActor}{IMC\_PT\_ROIActor}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a656044c1564966cd2371b3803a2daafd} 
+class UInput\+Mapping\+Context\texorpdfstring{$\ast$}{*} APT\+\_\+\+ROIActor\+::\+IMC\+\_\+\+PT\+\_\+\+ROIActor}
+
+\Hypertarget{class_a_p_t___r_o_i_actor_a51d0ae04dc2c73226b27d78088446941}\index{APT\_ROIActor@{APT\_ROIActor}!Material@{Material}}
+\index{Material@{Material}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{Material}{Material}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a51d0ae04dc2c73226b27d78088446941} 
+UMaterial\+Interface\texorpdfstring{$\ast$}{*} APT\+\_\+\+ROIActor\+::\+Material}
+
+\Hypertarget{class_a_p_t___r_o_i_actor_a0fdbb457456041368ebe2f303467e02d}\index{APT\_ROIActor@{APT\_ROIActor}!ProceduralMesh@{ProceduralMesh}}
+\index{ProceduralMesh@{ProceduralMesh}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{ProceduralMesh}{ProceduralMesh}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_a0fdbb457456041368ebe2f303467e02d} 
+UProcedural\+Mesh\+Component\texorpdfstring{$\ast$}{*} APT\+\_\+\+ROIActor\+::\+Procedural\+Mesh}
+
+\Hypertarget{class_a_p_t___r_o_i_actor_ab0a96b50dbe76e82a75651ac1d743641}\index{APT\_ROIActor@{APT\_ROIActor}!RoiChangedEvent@{RoiChangedEvent}}
+\index{RoiChangedEvent@{RoiChangedEvent}!APT\_ROIActor@{APT\_ROIActor}}
+\doxysubsubsection{\texorpdfstring{RoiChangedEvent}{RoiChangedEvent}}
+{\footnotesize\ttfamily \label{class_a_p_t___r_o_i_actor_ab0a96b50dbe76e82a75651ac1d743641} 
+FRoi\+Changed\+Event\+Delegate APT\+\_\+\+ROIActor\+::\+Roi\+Changed\+Event}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___r_o_i_actor_8h}{PT\+\_\+\+ROIActor.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___r_o_i_actor_8cpp}{PT\+\_\+\+ROIActor.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\doxysection{PT\+\_\+\+Electrode\+Area\+Actor.\+h}
+\hypertarget{_p_t___electrode_area_actor_8h_source}{}\label{_p_t___electrode_area_actor_8h_source}\index{Source/PlanningTool\_ET/PT\_ElectrodeAreaActor.h@{Source/PlanningTool\_ET/PT\_ElectrodeAreaActor.h}}
+\mbox{\hyperlink{_p_t___electrode_area_actor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___h_t_t_p_component_8h}{PT\_HTTPComponent.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}GameFramework/Actor.h"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}PT\_ElectrodeAreaActor.generated.h"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00029\ UCLASS()}
+\DoxyCodeLine{00030\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_a37c49e3a3dac2c6b1e1684bcdae7cfc6}{APT\_ElectrodeAreaActor}}\ :\ public\ AActor}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_a37c49e3a3dac2c6b1e1684bcdae7cfc6}{APT\_ElectrodeAreaActor}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_a591bef110560814398b099b8bc0b4160}{Tick}}(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00062\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}ELECTRODE\_AREA"{}})}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_ab795722f63a08909139f9003d0bd4625}{ProcessResponseData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHttpComponent,\ FVector\&\ OutCenter,\ FVector\&\ OutA,\ FVector\&\ OutB,\ FVector\&\ OutC,\ FVector\&\ OutD,\ FRotator\&\ OutRotation,\ \textcolor{keywordtype}{int}\&\ OutRows,\ \textcolor{keywordtype}{int}\&\ outColumns,\ \textcolor{keywordtype}{double}\&\ outCellSize,\ \textcolor{keywordtype}{int}\&\ OutNumber,\ TArray<FVector>\&\ OutElectrodePositions);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00073\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}ELECTRODE\_AREA"{}})}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_ae1f0614fb38a205abd3b8644801034c5}{ProcessValidationResponseData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHttpComponent,\ int32\&\ OutElectrodeCount,\ TArray<int32>\&\ OutSuccessfullElectrodeIndex,\ \textcolor{keywordtype}{bool}\&\ OutIsCorrupted);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00084\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}ELECTRODE\_AREA"{}})}
+\DoxyCodeLine{00085\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_a2c50d6f6d7fc49c6baff31b0a42b4e69}{FindNearestNeighbors}}(\textcolor{keyword}{const}\ FVector\&\ InPoint,\ \textcolor{keyword}{const}\ TArray<FVector>\&\ InGrid,\ TArray<int>\&\ OutNearestNeighborsGridIndicies);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00098\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}ELECTRODE\_AREA"{}})}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_a94abae196cf27ae1c797eabcb0e5ca40}{BarycentricWeightCalculation}}(\textcolor{keyword}{const}\ FVector\&\ InPoint,\ \textcolor{keyword}{const}\ FVector\&\ InA,\ \textcolor{keyword}{const}\ FVector\&\ InB,\ \textcolor{keyword}{const}\ FVector\&\ InC,\ \textcolor{keywordtype}{double}\&\ OutWeightA,\ \textcolor{keywordtype}{double}\&\ OutWeightB,\ \textcolor{keywordtype}{double}\&\ OutWeightC);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_ad726451abb2374d4b2bf2f3d1d66d05e}{BeginPlay}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_a_p_t___electrode_area_actor_1_1_f_distance_and_point}{FDistanceAndPoint}}}
+\DoxyCodeLine{00113\ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_a_p_t___electrode_area_actor_1_1_f_distance_and_point_a86f7576ffa7f1637f8596a569e078d0d}{Distance}};\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ FVector\ \mbox{\hyperlink{struct_a_p_t___electrode_area_actor_1_1_f_distance_and_point_ac34a548202a606f2ad642ff8d3c9ff55}{Point}};\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_a_p_t___electrode_area_actor_1_1_f_distance_and_point_a89f89dbee8a83283da1d03bc70a35d0f}{gridIndex}};\ }
+\DoxyCodeLine{00117\ \ \ \ \ \};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,96 @@
+\doxysection{PT\+\_\+\+Single3\+DActor.\+h}
+\hypertarget{_p_t___single3_d_actor_8h_source}{}\label{_p_t___single3_d_actor_8h_source}\index{Source/PlanningTool\_ET/PT\_Single3DActor.h@{Source/PlanningTool\_ET/PT\_Single3DActor.h}}
+\mbox{\hyperlink{_p_t___single3_d_actor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}GameFramework/Actor.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___struct_container_8h}{PT\_StructContainer.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <LidarPointCloudShared.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}PT\_Single3DActor.generated.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \mbox{\hyperlink{_p_t___single3_d_actor_8h_a4ec90cff276b08355c6320308e6a17d6}{DECLARE\_DYNAMIC\_MULTICAST\_DELEGATE}}(FMeshDataCallbackEventDelegate);}
+\DoxyCodeLine{00013\ \mbox{\hyperlink{_p_t___single3_d_actor_8h_a4ec90cff276b08355c6320308e6a17d6}{DECLARE\_DYNAMIC\_MULTICAST\_DELEGATE}}(FVolumeDataCallbackEventDelegate);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00022\ UCLASS()}
+\DoxyCodeLine{00023\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707}{APT\_Single3DActor}}\ :\ public\ AActor}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Sets\ default\ values\ for\ this\ actor's\ properties}}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707}{APT\_Single3DActor}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Called\ when\ the\ game\ starts\ or\ when\ spawned}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a0b2969f0c88384528171a0c20e74c498}{BeginPlay}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Called\ every\ frame}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a7451f79e24c4143a22a8d3d55c1c9fb5}{Tick}}(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00049\ \ \ \ \ UPROPERTY(BlueprintAssignable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_Event"{}})}
+\DoxyCodeLine{00050\ \ \ \ \ FMeshDataCallbackEventDelegate\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a895f153034951a3dc3b8b107f469cbc8}{MeshDataLoadedCallbackEvent}};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00062\ \ \ \ \ UPROPERTY(BlueprintAssignable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_Event"{}})}
+\DoxyCodeLine{00063\ \ \ \ \ FVolumeDataCallbackEventDelegate\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8992e3301ec4511f1c66181970e427ef}{VolumeDataLoadedCallbackEvent}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00074\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00075\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a167008919b32a3d177057b4f7c7b17ca}{GetVertexArray}}()\ const;}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00086\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00087\ \ \ \ \ TArray<FLinearColor>\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a93a32b1ffd19680faf89040d21b7e0cc}{GetVertexColorArray}}()\ const;}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00098\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00099\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a7eab857de9c5215e2947562ff2815254}{GetTriangleIndexArray}}()\ const;}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00110\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00111\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8e9dab58abdf56e917aa7fe7ddec6bcc}{GetNormalArray}}()\ const;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00129\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a0149913b56d5ba144d7ae6cec09c22e7}{CreatePointCloudArray}}(const\ TArray<int32>\&\ InVertexIndexArray,\ const\ TArray<FVector>\&\ InVertexArray,\ const\ TArray<FLinearColor>\&\ InVertexColorArray,\ TArray<FLidarPointCloudPoint>\&\ OutPointCloudArray);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00144\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_aeaf883636af0394186f05690534b2917}{UpdateLidarPointCloudColor}}(const\ TArray<FLidarPointCloudPoint>\&\ InPointCloud,\ const\ TArray<FLinearColor>\&\ InColorArray,\ const\ TArray<int32>\&\ InVertexIndexArray,\ TArray<FLidarPointCloudPoint>\&\ OutPointCloud);}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00160\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_aa66f0711724e833a781e44011a7f9f3c}{ConvertJSONResponseBodyToMesh}}(const\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ TArray<FVector>\&\ OutVertexArray,\ TArray<int32>\&\ OutTriangleIndexArray,\ TArray<FVector>\&\ OutNormalArray);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00174\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a9ce628a69546652c564d9b95d8da7ed2}{ConvertJSONResponseBodyToVolume}}(const\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ TArray<FLidarPointCloudPoint>\&\ OutPointCloudArray);}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00188\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a37e361d670c1290c63b501c7ec8b26b8}{SetVertexArrayFromJSONResponseBody}}(const\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ const\ FString\&\ InFieldName,\ TArray<FVector>\&\ OutVertexArray);}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00202\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a047e787ea313e91b392a6749642f3aac}{SetVertexColorArrayFromJSONResponseBody}}(const\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ const\ FString\&\ InFieldName,\ TArray<FLinearColor>\&\ InVertexColorArray);}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00216\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00217\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac7259989da2d7a5b2de67e87450112c7}{CalculateNormals}}(const\ TArray<FVector>\&\ InVertexArray,\ const\ TArray<int32>\ InTriangleIndexArray,\ TArray<FVector>\&\ OutNormalArray);}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00230\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00231\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a47abcd7e44ed2e809c9afb5c665c711a}{CalculateInvertedNormals}}(const\ TArray<FVector>\&\ InVertexArray,\ const\ TArray<int32>\ InTriangleIndexArray,\ TArray<FVector>\&\ OutInvertedNormalArray);}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00239\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00240\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac98e2f0e9b475be2abaa210cc00249ba}{ResetSingle3DActorArrays}}();}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00250\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00251\ \ \ \ \ int32\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_abd98047846a9040e34c20d58122e1043}{GetVertexArrayLength}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_a_p_t___single3_d_actor_ab1d1a62192718897a53ac93e6ea248d1}{VertexArray}}.Num();\ \}}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00263\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ab1d1a62192718897a53ac93e6ea248d1}{VertexArray}};}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00274\ \ \ \ \ TArray<FLinearColor>\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8e2242899fb6e9ab41006050fd5b3e01}{VertexColorArray}};}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00285\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_afce31e08cf5540225dae5717ce4cbca9}{NormalArray}};}
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00296\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_afba7b1deb017920e17247c446f2d281d}{TriangleIndexArray}};}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00307\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a488438715c994b19c625a41173015c21}{InitWhiteVertexColor}}(\textcolor{keyword}{const}\ int32\&\ InVertexArrayLength,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\&\ InAlphaValue\ =\ 1.f);}
+\DoxyCodeLine{00308\ \};}
+
+\end{DoxyCode}

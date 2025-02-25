@@ -1,0 +1,382 @@
+\doxysection{UPT\+\_\+\+HTTPComponent Class Reference}
+\hypertarget{class_u_p_t___h_t_t_p_component}{}\label{class_u_p_t___h_t_t_p_component}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+
+
+A component for handling HTTP requests and responses in Unreal Engine.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+HTTPComponent.\+h$>$}
+
+
+
+Inheritance diagram for UPT\+\_\+\+HTTPComponent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_u_p_t___h_t_t_p_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UPT\+\_\+\+HTTPComponent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_u_p_t___h_t_t_p_component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a42f07ec3a91c09b1e461e217d455141a}{UPT\+\_\+\+HTTPComponent}} ()
+\begin{DoxyCompactList}\small\item\em Sets default values for this component\textquotesingle{}s properties. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_aca1328fae31d7d445200f7ebc05f2ff6}{Tick\+Component}} (float Delta\+Time, ELevel\+Tick Tick\+Type, FActor\+Component\+Tick\+Function \texorpdfstring{$\ast$}{*}This\+Tick\+Function) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_aa4e12b157cee754376980580f0b8cf0f}{Check\+Server\+Status}} (const FString \&In\+Address)
+\begin{DoxyCompactList}\small\item\em Checks the server status at the specified address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a82a1b987aefd255e92ee41193713f78e}{Send\+Run\+Simulation\+Data}} (const FString \&In\+Address, const FString \&Patient\+ID, const FString \&Config\+ID, const FString \&ROIID)
+\begin{DoxyCompactList}\small\item\em Sends simulation data to the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a5efefb469a23a7d2b5a4bddd9a527c57}{Call\+Api}} (const FString \&In\+Address, const FString \&In\+Verb)
+\begin{DoxyCompactList}\small\item\em Sends an HTTP request to the specified address using the specified HTTP verb. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_ac1d659007872513f61d5abeb12d390a4}{Call\+Api\+With\+Compressed\+Response}} (const FString \&In\+Address, const FString \&In\+Verb)
+\begin{DoxyCompactList}\small\item\em Sends an HTTP request to the specified address using the specified HTTP verb and expects a compressed response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_ae6b67e84300df6d6192ab4e27b878230}{Call\+Api\+With\+JSONBody}} (const FString \&In\+Address, const FString \&In\+Verb, const FString \&In\+Json\+String)
+\begin{DoxyCompactList}\small\item\em Sends an HTTP request with a JSON body to the specified address using the specified HTTP verb. \end{DoxyCompactList}\item 
+TShared\+Ptr$<$ FJson\+Object $>$ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a2cde73780c0f4dabab2d76630c1be1f3}{Get\+Response\+Object}} () const
+\begin{DoxyCompactList}\small\item\em Returns the JSON object received from the last HTTP request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+FHttp\+Callback\+Event\+Delegate \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_afa4a9eb24427c17e1e6d633b07c0356b}{Http\+Callback\+Event}}
+\begin{DoxyCompactList}\small\item\em A delegate that is called when an HTTP request is completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_afca0d3d7abb76aa073426ee265b20e9d}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Called when the game starts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a40359c5d8c00601d266d6fb7856b3447}{On\+Check\+Server\+Status\+Response}} (FHttp\+Request\+Ptr Request, FHttp\+Response\+Ptr Response, bool b\+Connected\+Succesfully)
+\begin{DoxyCompactList}\small\item\em Handles the response for the Check\+Server\+Status request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a07c83eb92150f15d8c7205cbc40c1e98}{On\+Response\+Received}} (FHttp\+Request\+Ptr Request, FHttp\+Response\+Ptr Response, bool b\+Connected\+Succesfully)
+\begin{DoxyCompactList}\small\item\em Handles the response received from an HTTP request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a27cf3bd214a4e90c84d6259f77f6e09f}{On\+Response\+Received\+With\+Decompressing}} (FHttp\+Request\+Ptr Request, FHttp\+Response\+Ptr Response, bool b\+Connected\+Succesfully)
+\begin{DoxyCompactList}\small\item\em Handles the response received from an HTTP request that returned compressed data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TShared\+Ptr$<$ FJson\+Object $>$ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_aaba218fbed519fa07782d80c4d9c6702}{Response\+Obj}}
+\begin{DoxyCompactList}\small\item\em A shared pointer to a JSON object that stores the response from the last HTTP request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component for handling HTTP requests and responses in Unreal Engine. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_u_p_t___h_t_t_p_component_a42f07ec3a91c09b1e461e217d455141a}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{UPT\_HTTPComponent()}{UPT\_HTTPComponent()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_a42f07ec3a91c09b1e461e217d455141a} 
+UPT\+\_\+\+HTTPComponent\+::\+UPT\+\_\+\+HTTPComponent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sets default values for this component\textquotesingle{}s properties. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_p_t___h_t_t_p_component_afca0d3d7abb76aa073426ee265b20e9d}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_afca0d3d7abb76aa073426ee265b20e9d} 
+void UPT\+\_\+\+HTTPComponent\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when the game starts. 
+
+\Hypertarget{class_u_p_t___h_t_t_p_component_a5efefb469a23a7d2b5a4bddd9a527c57}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!CallApi@{CallApi}}
+\index{CallApi@{CallApi}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{CallApi()}{CallApi()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_a5efefb469a23a7d2b5a4bddd9a527c57} 
+void UPT\+\_\+\+HTTPComponent\+::\+Call\+Api (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Address}{, }\item[{const FString \&}]{In\+Verb}{}\end{DoxyParamCaption})}
+
+
+
+Sends an HTTP request to the specified address using the specified HTTP verb. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Address} & The URL to send the request to. \\
+\hline
+{\em In\+Verb} & The HTTP verb to use for the request (e.\+g., "{}\+GET"{}, "{}\+POST"{}). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_a5efefb469a23a7d2b5a4bddd9a527c57_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_ac1d659007872513f61d5abeb12d390a4}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!CallApiWithCompressedResponse@{CallApiWithCompressedResponse}}
+\index{CallApiWithCompressedResponse@{CallApiWithCompressedResponse}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{CallApiWithCompressedResponse()}{CallApiWithCompressedResponse()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_ac1d659007872513f61d5abeb12d390a4} 
+void UPT\+\_\+\+HTTPComponent\+::\+Call\+Api\+With\+Compressed\+Response (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Address}{, }\item[{const FString \&}]{In\+Verb}{}\end{DoxyParamCaption})}
+
+
+
+Sends an HTTP request to the specified address using the specified HTTP verb and expects a compressed response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Address} & The URL to send the request to. \\
+\hline
+{\em In\+Verb} & The HTTP verb to use for the request (e.\+g., "{}\+GET"{}, "{}\+POST"{}). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_ac1d659007872513f61d5abeb12d390a4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_ae6b67e84300df6d6192ab4e27b878230}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!CallApiWithJSONBody@{CallApiWithJSONBody}}
+\index{CallApiWithJSONBody@{CallApiWithJSONBody}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{CallApiWithJSONBody()}{CallApiWithJSONBody()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_ae6b67e84300df6d6192ab4e27b878230} 
+void UPT\+\_\+\+HTTPComponent\+::\+Call\+Api\+With\+JSONBody (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Address}{, }\item[{const FString \&}]{In\+Verb}{, }\item[{const FString \&}]{In\+Json\+String}{}\end{DoxyParamCaption})}
+
+
+
+Sends an HTTP request with a JSON body to the specified address using the specified HTTP verb. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Address} & The URL to send the request to. \\
+\hline
+{\em In\+Verb} & The HTTP verb to use for the request (e.\+g., "{}\+GET"{}, "{}\+POST"{}). \\
+\hline
+{\em In\+Json\+String} & The JSON body to include in the request. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_ae6b67e84300df6d6192ab4e27b878230_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_aa4e12b157cee754376980580f0b8cf0f}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!CheckServerStatus@{CheckServerStatus}}
+\index{CheckServerStatus@{CheckServerStatus}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{CheckServerStatus()}{CheckServerStatus()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_aa4e12b157cee754376980580f0b8cf0f} 
+void UPT\+\_\+\+HTTPComponent\+::\+Check\+Server\+Status (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Address}{}\end{DoxyParamCaption})}
+
+
+
+Checks the server status at the specified address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Address} & The address of the server to check. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_aa4e12b157cee754376980580f0b8cf0f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_a2cde73780c0f4dabab2d76630c1be1f3}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!GetResponseObject@{GetResponseObject}}
+\index{GetResponseObject@{GetResponseObject}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{GetResponseObject()}{GetResponseObject()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_a2cde73780c0f4dabab2d76630c1be1f3} 
+TShared\+Ptr$<$ FJson\+Object $>$ UPT\+\_\+\+HTTPComponent\+::\+Get\+Response\+Object (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns the JSON object received from the last HTTP request. 
+
+\begin{DoxyReturn}{Returns}
+The JSON object from the last HTTP request. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_a2cde73780c0f4dabab2d76630c1be1f3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_a40359c5d8c00601d266d6fb7856b3447}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!OnCheckServerStatusResponse@{OnCheckServerStatusResponse}}
+\index{OnCheckServerStatusResponse@{OnCheckServerStatusResponse}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{OnCheckServerStatusResponse()}{OnCheckServerStatusResponse()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_a40359c5d8c00601d266d6fb7856b3447} 
+void UPT\+\_\+\+HTTPComponent\+::\+On\+Check\+Server\+Status\+Response (\begin{DoxyParamCaption}\item[{FHttp\+Request\+Ptr}]{Request}{, }\item[{FHttp\+Response\+Ptr}]{Response}{, }\item[{bool}]{b\+Connected\+Succesfully}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the response for the Check\+Server\+Status request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Request} & The original HTTP request. \\
+\hline
+{\em Response} & The HTTP response. \\
+\hline
+{\em b\+Connected\+Succesfully} & Whether the request was successful. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_a40359c5d8c00601d266d6fb7856b3447_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_a07c83eb92150f15d8c7205cbc40c1e98}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!OnResponseReceived@{OnResponseReceived}}
+\index{OnResponseReceived@{OnResponseReceived}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{OnResponseReceived()}{OnResponseReceived()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_a07c83eb92150f15d8c7205cbc40c1e98} 
+void UPT\+\_\+\+HTTPComponent\+::\+On\+Response\+Received (\begin{DoxyParamCaption}\item[{FHttp\+Request\+Ptr}]{Request}{, }\item[{FHttp\+Response\+Ptr}]{Response}{, }\item[{bool}]{b\+Connected\+Succesfully}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the response received from an HTTP request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Request} & The original HTTP request. \\
+\hline
+{\em Response} & The HTTP response. \\
+\hline
+{\em b\+Connected\+Succesfully} & Whether the request was successful. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_a07c83eb92150f15d8c7205cbc40c1e98_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_a27cf3bd214a4e90c84d6259f77f6e09f}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!OnResponseReceivedWithDecompressing@{OnResponseReceivedWithDecompressing}}
+\index{OnResponseReceivedWithDecompressing@{OnResponseReceivedWithDecompressing}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{OnResponseReceivedWithDecompressing()}{OnResponseReceivedWithDecompressing()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_a27cf3bd214a4e90c84d6259f77f6e09f} 
+void UPT\+\_\+\+HTTPComponent\+::\+On\+Response\+Received\+With\+Decompressing (\begin{DoxyParamCaption}\item[{FHttp\+Request\+Ptr}]{Request}{, }\item[{FHttp\+Response\+Ptr}]{Response}{, }\item[{bool}]{b\+Connected\+Succesfully}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the response received from an HTTP request that returned compressed data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Request} & The original HTTP request. \\
+\hline
+{\em Response} & The HTTP response. \\
+\hline
+{\em b\+Connected\+Succesfully} & Whether the request was successful. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_a27cf3bd214a4e90c84d6259f77f6e09f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_a82a1b987aefd255e92ee41193713f78e}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!SendRunSimulationData@{SendRunSimulationData}}
+\index{SendRunSimulationData@{SendRunSimulationData}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{SendRunSimulationData()}{SendRunSimulationData()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_a82a1b987aefd255e92ee41193713f78e} 
+void UPT\+\_\+\+HTTPComponent\+::\+Send\+Run\+Simulation\+Data (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Address}{, }\item[{const FString \&}]{Patient\+ID}{, }\item[{const FString \&}]{Config\+ID}{, }\item[{const FString \&}]{ROIID}{}\end{DoxyParamCaption})}
+
+
+
+Sends simulation data to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Address} & The address of the server. \\
+\hline
+{\em Patient\+ID} & The ID of the patient. \\
+\hline
+{\em Config\+ID} & The ID of the configuration. \\
+\hline
+{\em ROIID} & The ID of the region of interest. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___h_t_t_p_component_a82a1b987aefd255e92ee41193713f78e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___h_t_t_p_component_aca1328fae31d7d445200f7ebc05f2ff6}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!TickComponent@{TickComponent}}
+\index{TickComponent@{TickComponent}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{TickComponent()}{TickComponent()}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_aca1328fae31d7d445200f7ebc05f2ff6} 
+void UPT\+\_\+\+HTTPComponent\+::\+Tick\+Component (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{, }\item[{ELevel\+Tick}]{Tick\+Type}{, }\item[{FActor\+Component\+Tick\+Function \texorpdfstring{$\ast$}{*}}]{This\+Tick\+Function}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & The time since the last tick. \\
+\hline
+{\em Tick\+Type} & The type of tick this is. \\
+\hline
+{\em This\+Tick\+Function} & The tick function that is being executed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_p_t___h_t_t_p_component_afa4a9eb24427c17e1e6d633b07c0356b}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!HttpCallbackEvent@{HttpCallbackEvent}}
+\index{HttpCallbackEvent@{HttpCallbackEvent}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{HttpCallbackEvent}{HttpCallbackEvent}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_afa4a9eb24427c17e1e6d633b07c0356b} 
+FHttp\+Callback\+Event\+Delegate UPT\+\_\+\+HTTPComponent\+::\+Http\+Callback\+Event}
+
+
+
+A delegate that is called when an HTTP request is completed. 
+
+\Hypertarget{class_u_p_t___h_t_t_p_component_aaba218fbed519fa07782d80c4d9c6702}\index{UPT\_HTTPComponent@{UPT\_HTTPComponent}!ResponseObj@{ResponseObj}}
+\index{ResponseObj@{ResponseObj}!UPT\_HTTPComponent@{UPT\_HTTPComponent}}
+\doxysubsubsection{\texorpdfstring{ResponseObj}{ResponseObj}}
+{\footnotesize\ttfamily \label{class_u_p_t___h_t_t_p_component_aaba218fbed519fa07782d80c4d9c6702} 
+TShared\+Ptr$<$FJson\+Object$>$ UPT\+\_\+\+HTTPComponent\+::\+Response\+Obj\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A shared pointer to a JSON object that stores the response from the last HTTP request. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___h_t_t_p_component_8h}{PT\+\_\+\+HTTPComponent.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___h_t_t_p_component_8cpp}{PT\+\_\+\+HTTPComponent.\+cpp}}\end{DoxyCompactItemize}

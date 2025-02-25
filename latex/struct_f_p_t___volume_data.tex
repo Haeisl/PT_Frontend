@@ -1,0 +1,51 @@
+\doxysection{FPT\+\_\+\+Volume\+Data Struct Reference}
+\hypertarget{struct_f_p_t___volume_data}{}\label{struct_f_p_t___volume_data}\index{FPT\_VolumeData@{FPT\_VolumeData}}
+
+
+A structure to hold volume data.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Struct\+Container.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+FString \mbox{\hyperlink{struct_f_p_t___volume_data_a5f8714da16048a4cb50710e2776c3762}{Id}}
+\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{struct_f_p_t___volume_data_a45e906bbfa2f45d2f9161fdac2539769}{Vertex\+Index\+Array}}
+\item 
+TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \mbox{\hyperlink{struct_f_p_t___volume_data_aec13f8dc5e68e716c0607fcc48dbd916}{Point\+Cloud\+Array}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A structure to hold volume data. 
+
+This structure is Blueprint\+Type, meaning it can be used in Blueprint. It contains an ID of type FString, a vertex index array of type TArray$<$int32$>$, and a point cloud array of type TArray$<$\+FLidar\+Point\+Cloud\+Point$>$. The ID is used to uniquely identify the volume data. The vertex index array is used to store the indices of the vertices that make up the volume. The point cloud array is used to store the points that make up the point cloud representation of the volume. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_f_p_t___volume_data_a5f8714da16048a4cb50710e2776c3762}\index{FPT\_VolumeData@{FPT\_VolumeData}!Id@{Id}}
+\index{Id@{Id}!FPT\_VolumeData@{FPT\_VolumeData}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily \label{struct_f_p_t___volume_data_a5f8714da16048a4cb50710e2776c3762} 
+FString FPT\+\_\+\+Volume\+Data\+::\+Id}
+
+The ID used to uniquely identify the volume data. \Hypertarget{struct_f_p_t___volume_data_aec13f8dc5e68e716c0607fcc48dbd916}\index{FPT\_VolumeData@{FPT\_VolumeData}!PointCloudArray@{PointCloudArray}}
+\index{PointCloudArray@{PointCloudArray}!FPT\_VolumeData@{FPT\_VolumeData}}
+\doxysubsubsection{\texorpdfstring{PointCloudArray}{PointCloudArray}}
+{\footnotesize\ttfamily \label{struct_f_p_t___volume_data_aec13f8dc5e68e716c0607fcc48dbd916} 
+TArray$<$FLidar\+Point\+Cloud\+Point$>$ FPT\+\_\+\+Volume\+Data\+::\+Point\+Cloud\+Array}
+
+The array of points that make up the point cloud representation of the volume. \Hypertarget{struct_f_p_t___volume_data_a45e906bbfa2f45d2f9161fdac2539769}\index{FPT\_VolumeData@{FPT\_VolumeData}!VertexIndexArray@{VertexIndexArray}}
+\index{VertexIndexArray@{VertexIndexArray}!FPT\_VolumeData@{FPT\_VolumeData}}
+\doxysubsubsection{\texorpdfstring{VertexIndexArray}{VertexIndexArray}}
+{\footnotesize\ttfamily \label{struct_f_p_t___volume_data_a45e906bbfa2f45d2f9161fdac2539769} 
+TArray$<$int32$>$ FPT\+\_\+\+Volume\+Data\+::\+Vertex\+Index\+Array}
+
+The array of vertex indices that make up the volume. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___struct_container_8h}{PT\+\_\+\+Struct\+Container.\+h}}\end{DoxyCompactItemize}

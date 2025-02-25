@@ -1,0 +1,25 @@
+\doxysection{PT\+\_\+\+Lidar\+Point\+Cloud\+Actor.\+h}
+\hypertarget{_p_t___lidar_point_cloud_actor_8h_source}{}\label{_p_t___lidar_point_cloud_actor_8h_source}\index{Source/PlanningTool\_ET/PT\_LidarPointCloudActor.h@{Source/PlanningTool\_ET/PT\_LidarPointCloudActor.h}}
+\mbox{\hyperlink{_p_t___lidar_point_cloud_actor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}LidarPointCloudActor.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <LidarPointCloudShared.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}PT\_LidarPointCloudActor.generated.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00017\ UCLASS()}
+\DoxyCodeLine{00018\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_a_p_t___lidar_point_cloud_actor}{APT\_LidarPointCloudActor}}\ :\ public\ ALidarPointCloudActor}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_LIDAR\_POINT\_CLOUD"{}})}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___lidar_point_cloud_actor_ad03e2954288d7ae1f0c1c7e3c2f7b942}{UpdateLidarPointCloudColor}}(\textcolor{keyword}{const}\ TArray<FLidarPointCloudPoint>\&\ InPointCloud,\ \textcolor{keyword}{const}\ TArray<FLinearColor>\&\ InColorArray,\ \textcolor{keyword}{const}\ TArray<int32>\&\ InVertexIndexArray,\ TArray<FLidarPointCloudPoint>\&\ OutPointCloud);}
+\DoxyCodeLine{00037\ \};}
+
+\end{DoxyCode}

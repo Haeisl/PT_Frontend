@@ -1,0 +1,143 @@
+\doxysection{PT\+\_\+\+Simulation\+Component.\+h}
+\hypertarget{_p_t___simulation_component_8h_source}{}\label{_p_t___simulation_component_8h_source}\index{Source/PlanningTool\_ET/PT\_SimulationComponent.h@{Source/PlanningTool\_ET/PT\_SimulationComponent.h}}
+\mbox{\hyperlink{_p_t___simulation_component_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Components/ActorComponent.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___struct_container_8h}{PT\_StructContainer.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___h_t_t_p_component_8h}{PT\_HTTPComponent.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}PT\_SimulationComponent.generated.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ UCLASS(ClassGroup\ =\ (Custom),\ meta\ =\ (BlueprintSpawnableComponent))}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_u_p_t___simulation_component_aeea01518c9215dd74b5b56a865d91231}{UPT\_SimulationComponent}}\ :\ \textcolor{keyword}{public}\ UActorComponent}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_u_p_t___simulation_component_aeea01518c9215dd74b5b56a865d91231}{UPT\_SimulationComponent}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a4744313dfa7e4add7e6a22e13523aedd}{TickComponent}}(\textcolor{keywordtype}{float}\ DeltaTime,\ ELevelTick\ TickType,\ FActorComponentTickFunction*\ ThisTickFunction)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00042\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00043\ \ \ \ \ TArray<FLinearColor>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a1670b8682485084943fcf232aa332bdf}{MapToPlasmaColormap}}(\textcolor{keyword}{const}\ TArray<double>\&\ InData,\ \textcolor{keyword}{const}\ int32\&\ InDataTagIndex,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InPercentileMinValue,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InPercentileMaxValue);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00053\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00054\ \ \ \ \ TArray<FLinearColor>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a2563f26f136d54bb6c2b17d1fd61063e}{MapToJetColormap}}(\textcolor{keyword}{const}\ TArray<double>\&\ Data,\ \textcolor{keyword}{const}\ int32\&\ InDataTagIndex,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InPercentileMinValue,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InPercentileMaxValue);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00064\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00065\ \ \ \ \ TArray<FLinearColor>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a7c2cc9f2011b55a26a85cab8e1806a09}{MapToGreyscaleColormap}}(\textcolor{keyword}{const}\ TArray<double>\&\ InData,\ \textcolor{keyword}{const}\ int32\&\ InDataTagIndex,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InPercentileMinValue,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InPercentileMaxValue);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00072\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00073\ \ \ \ \ TArray<FLinearColor>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a78d08dc729e9f4e82c4b2c7df79e4c81}{CalculateVertexColors}}(\textcolor{keyword}{const}\ int32\&\ InVertexArrayLength);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00089\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a1c2172529ef17f65b1bdda430d9e6e08}{BarycentricInterpolation}}(\textcolor{keyword}{const}\ int32\&\ InElectrodeIndexA,\ \textcolor{keyword}{const}\ int32\&\ InElectrodeIndexB,\ \textcolor{keyword}{const}\ int32\&\ InElectrodeIndexC,\ \textcolor{keyword}{const}\ int32\&\ InDataTagIndex,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InWeightA,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InWeightB,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InWeightC,\ TArray<double>\&\ OutInterpolatedSimulationMagnitudeDataArray,\ TArray<FVector>\&\ OutInterpolatedSimulationVectorfieldDataArray,\ \textcolor{keywordtype}{double}\&\ OutMeanMagnitude,\ FVector\&\ OutMeanVectorField);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00101\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a694de51fcc8d63e5b972879ff0d1d29d}{ProcessInterpolation}}(\textcolor{keyword}{const}\ int32\&\ InElectrodeIndexA,\ \textcolor{keyword}{const}\ int32\&\ InElectrodeIndexB,\ \textcolor{keyword}{const}\ int32\&\ InElectrodeIndexC,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InWeightA,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InWeightB,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InWeightC);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00110\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_p_t___simulation_component_aca06cef1199c82ffa53eedd7effe179f}{CalculatePercentile}}(\textcolor{keyword}{const}\ TArray<double>\&\ InData,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InPercentile);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00118\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_p_t___simulation_component_aafc6ef8f7aec3022ddc3a05112ceb8d6}{CalculatePercentileForInterpolatedMagnitudeDataPerTagArray}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InPercentile);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00127\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a57b42939f12c19af9b851a8b323f01dd}{GetSimulationDataFromJSONResponseBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHttpComponent,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InDataTagArray,\ \textcolor{keyword}{const}\ int32\&\ InNumberOfElectrodes);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00140\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_af1fe8c56b3ed362127bc6cc30495f7cb}{CreateInterpolatedDataJson}}(\textcolor{keyword}{const}\ FString\&\ InPatientId,\ \textcolor{keyword}{const}\ FString\&\ InConfigId,\ \textcolor{keyword}{const}\ FString\&\ InRoiId,\ \textcolor{keyword}{const}\ FString\&\ InInterpolationId,\ \textcolor{keyword}{const}\ FVector\&\ InElectrodePosition,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ InGridSpacing,\ FString\&\ OutJsonString);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00146\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a4058c8d82deda414d5bb00c86a686e45}{ResetSimulationDataArrays}}();}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00154\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00155\ \ \ \ \ void\ \mbox{\hyperlink{class_u_p_t___simulation_component_a321866dd79ae2abb04d7be965b8ae058}{SetDataColorArrayPerTag}}(const\ int32\&\ InDataTagIndex,\ const\ TArray<FLinearColor>\&\ InDataColorArray)\ \{\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_a2b167dc4f8bfe9c3f4576df0f38dbabe}{DataColorArrayPerTag}}[InDataTagIndex]\ =\ InDataColorArray;\ \};}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00163\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00164\ \ \ \ \ void\ CalculateMeanAngleBetweenNormalAndVectorField(const\ TArray<FVector>\&\ InNormalArray,\ const\ TArray<FVector>\&\ InVectorFieldArray,\ \textcolor{keywordtype}{double}\&\ OutMeanAngle);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00170\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00171\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___simulation_component_aa044c69a748de8c06431606511c28533}{GetTagLengthArray}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_aae36147c434f00708b39869a27a08d53}{TagLengthArray}};\ \};}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00179\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00180\ \ \ \ \ double\ GetAverageMagnitudePerTag(const\ int32\&\ InTagIndex,\ \textcolor{keywordtype}{bool}\&\ OutIsValid);}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00188\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00189\ \ \ \ \ FVector\ GetAverageVectorFieldPerTag(const\ int32\&\ InTagIndex,\ \textcolor{keywordtype}{bool}\&\ OutIsValid);}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00195\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a658266c4c16dced4db67498e14419b28}{GetAverageMagnitude}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_a3cfd83a63971a3db1b19061a07c37d4b}{MeanMagnitude}};\ \};}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00202\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00203\ \ \ \ \ FVector\ \mbox{\hyperlink{class_u_p_t___simulation_component_a2c1839d48e65a426162d160515a158de}{GetAverageVectorField}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_a3ca93b6e0daa9f537fb7d81a173783b0}{MeanVectorField}};\ \};}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00210\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00211\ \ \ \ \ TArray<\textcolor{keywordtype}{double}>\ \mbox{\hyperlink{class_u_p_t___simulation_component_aab5b34b84f5eacc449444e2a6d744d72}{GetInterpolatedMagnitudeDataPerTag}}(const\ int32\&\ InTagIndex)\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_a9f62e4da04e2dc03754a8446851b41f3}{InterpolatedMagnitudeDataPerTagArray}}[InTagIndex];\ \};}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00218\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00219\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a90d7eacb0eba4f506830b97d781a1869}{GetInterpolatedVectorfieldDataPerTag}}(const\ int32\&\ InTagIndex)\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_a7830f45b3d18a3833c8cb69b354d8dad}{InterpolatedVectorfieldDataPerTagArray}}[InTagIndex];\ \};}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00226\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00227\ \ \ \ \ TArray<FLinearColor>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a79fcfe953ffedf8172190729cb5f0a5f}{GetDataColorArrayPerTag}}(const\ int32\&\ InTagIndex)\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_a2b167dc4f8bfe9c3f4576df0f38dbabe}{DataColorArrayPerTag}}[InTagIndex];\ \};}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00233\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00234\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a5ca80edcba3ba255b8d2a2b40ba0b8b5}{GetVerticesInRoiArray}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_aec49aada4f3b2a124bebcfb12773b6bc}{VerticesInRoiArray}};\ \};}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00240\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00241\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_u_p_t___simulation_component_aa09b9e1d43776316febdb2a662ddd0de}{GetVectorfieldInRoi}}()\ \{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{class_u_p_t___simulation_component_a2879966eb473a0fb67c5868b7297076a}{VectorfieldInRoi}};\ \};}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00244\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_SIMULATION\_DATA"{}})}
+\DoxyCodeLine{00245\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___simulation_component_ad8f18d3a48704021fdf1b9253ad50840}{ElectrodeIndexArray}};}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ protected:}
+\DoxyCodeLine{00251\ \ \ \ \ virtual\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a5a8fddf58e505464e5526ba98aa91bd9}{BeginPlay}}()\ override;}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ private:}
+\DoxyCodeLine{00261\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a732cb9e0f9a8389354ce72d55378766d}{GetSimulationDataPerElectrodePerTag}}(const\ int32\&\ InElectrodeIndex,\ const\ int32\&\ InTagIndex,\ TArray<\textcolor{keywordtype}{double}>\&\ OutSimulationMagnitudeDataArray,\ TArray<FVector>\&\ OutSimulationVectorfieldDataArray);}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a9ec2072afd524e4d4b85fe9f205f105f}{GetInterpolatedSimulationDataPerTag}}(const\ int32\&\ InTagIndex,\ TArray<\textcolor{keywordtype}{double}>\&\ OutInterpolatedSimulationMagnitudeDataArray,\ TArray<FVector>\&\ OutInterpolatedSimulationVectorfieldDataArray);}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00277\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_ac2605fac55d1e34d09181fb205101db9}{GetSimulationDataFromJSONObject}}(const\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ const\ TArray<FString>\&\ InDataTagArray,\ const\ int32\&\ InNumberOfElectrodes);}
+\DoxyCodeLine{00278\ }
+\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a35c508f431cbfefe07042f0bfc42783f}{ProcessElectrodeData}}(const\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ const\ TArray<FString>\&\ InDataTagArray,\ const\ int32\&\ InCurrentElectrodeIndex);}
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00288\ \ \ \ \ TArray<TArray<TArray<\textcolor{keywordtype}{double}>>>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a542efbecdfaa04abf25245de2b4bd1ce}{SimulationMagnitudeDataPerElectrodePerTagArray}};}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00291\ \ \ \ \ TArray<TArray<TArray<FVector>>>\ \mbox{\hyperlink{class_u_p_t___simulation_component_acfcd13981d9347756139217a2d683710}{SimulationVectorfieldDataPerElectrodePerTagArray}};}
+\DoxyCodeLine{00292\ }
+\DoxyCodeLine{00294\ \ \ \ \ TArray<TArray<\textcolor{keywordtype}{double}>>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a9f62e4da04e2dc03754a8446851b41f3}{InterpolatedMagnitudeDataPerTagArray}};}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00297\ \ \ \ \ TArray<TArray<FVector>>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a7830f45b3d18a3833c8cb69b354d8dad}{InterpolatedVectorfieldDataPerTagArray}};}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00300\ \ \ \ \ TArray<TArray<int32>>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a96e3f675146d89e7fb02e3ba0bb186f6}{RoiIndexMappingPerTagArray}};}
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00303\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___simulation_component_aae36147c434f00708b39869a27a08d53}{TagLengthArray}};}
+\DoxyCodeLine{00304\ }
+\DoxyCodeLine{00306\ \ \ \ \ TArray<\textcolor{keywordtype}{double}>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a2f36782afa39a135c4d44103717fae14}{PerVertexDataArray}};}
+\DoxyCodeLine{00307\ }
+\DoxyCodeLine{00309\ \ \ \ \ TArray<TArray<\mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\_TetraData}}>>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a05b003583c2e4daecec9e80f9aae5229}{RawTetraDataArray}};}
+\DoxyCodeLine{00310\ }
+\DoxyCodeLine{00312\ \ \ \ \ TArray<\textcolor{keywordtype}{double}>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a737d3c1f6bacd20f17071b05e8a2461d}{MeanMagnitudePerTag}};}
+\DoxyCodeLine{00313\ }
+\DoxyCodeLine{00315\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_u_p_t___simulation_component_ab81e525c18acbbeba8b10229e6ca5d42}{MeanVectorFieldPerTag}};}
+\DoxyCodeLine{00316\ }
+\DoxyCodeLine{00318\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_u_p_t___simulation_component_a3cfd83a63971a3db1b19061a07c37d4b}{MeanMagnitude}};}
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00321\ \ \ \ \ FVector\ \mbox{\hyperlink{class_u_p_t___simulation_component_a3ca93b6e0daa9f537fb7d81a173783b0}{MeanVectorField}};}
+\DoxyCodeLine{00322\ }
+\DoxyCodeLine{00324\ \ \ \ \ TMap<int32,\ TArray<TArray<int32>>>\ \mbox{\hyperlink{class_u_p_t___simulation_component_abd6d666ff123883270fabf5b3add2748}{VertexTagCellMapping}};}
+\DoxyCodeLine{00325\ }
+\DoxyCodeLine{00327\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_u_p_t___simulation_component_aec49aada4f3b2a124bebcfb12773b6bc}{VerticesInRoiArray}};}
+\DoxyCodeLine{00328\ }
+\DoxyCodeLine{00330\ \ \ \ \ TArray<TArray<FLinearColor>>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a2b167dc4f8bfe9c3f4576df0f38dbabe}{DataColorArrayPerTag}};}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00333\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_u_p_t___simulation_component_a2879966eb473a0fb67c5868b7297076a}{VectorfieldInRoi}};}
+\DoxyCodeLine{00334\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+<map id="UPT_JSONConverter::ConvertJSONResponseBodyToColorArray" name="UPT_JSONConverter::ConvertJSONResponseBodyToColorArray">
+<area shape="rect" id="Node000001" title="Converts a JSON response body to an array of FLinearColor." alt="" coords="349,5,586,64"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___single3_d_actor.html#a047e787ea313e91b392a6749642f3aac" title="Sets the vertex color array from a JSON response body." alt="" coords="5,13,301,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,37,301,37,301,32,333,32"/>
+</map>

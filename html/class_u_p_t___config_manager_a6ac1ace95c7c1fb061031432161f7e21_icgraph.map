@@ -1,0 +1,12 @@
+<map id="UPT_ConfigManager::GetDataTagVolumeIndexArray" name="UPT_ConfigManager::GetDataTagVolumeIndexArray">
+<area shape="rect" id="Node000001" title="Gets the data tag volume index array." alt="" coords="639,88,836,131"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="782,75,766,69,738,67,712,69,696,73,690,79,692,87,687,88,685,78,694,69,711,63,738,61,767,64,784,70"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___simulation_component.html#aafc6ef8f7aec3022ddc3a05112ceb8d6" title="Calculates the percentile value for the interpolated magnitude data per tag array." alt="" coords="355,5,584,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="643,86,576,67,578,62,644,81"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html#a78d08dc729e9f4e82c4b2c7df79e4c81" title="Calculates vertex colors." alt="" coords="378,88,561,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="624,112,562,112,562,107,624,107"/>
+<area shape="rect" id="Node000004" href="$class_u_p_t___simulation_component.html#ac2605fac55d1e34d09181fb205101db9" title="Retrieves simulation data from a JSON object." alt="" coords="348,155,591,197"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="635,138,559,157,557,151,634,132"/>
+<area shape="rect" id="Node000005" href="$class_u_p_t___simulation_component.html#a57b42939f12c19af9b851a8b323f01dd" title="Retrieves simulation data from a JSON response body." alt="" coords="5,155,300,197"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="332,179,300,179,300,173,332,173"/>
+</map>

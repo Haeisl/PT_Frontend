@@ -1,0 +1,7 @@
+<map id="UPT_JSONConverter::ConvertJSONObjectToVector" name="UPT_JSONConverter::ConvertJSONObjectToVector">
+<area shape="rect" id="Node000001" title="Converts a JSON object to a FVector." alt="" coords="297,39,489,81"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___j_s_o_n_converter.html#aa4df3bbd7b886b6a9513f8f96e2211a4" title="Converts a JSON response body to a FVector." alt="" coords="5,5,249,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,49,249,45,249,39,282,43"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___electrode_area_actor.html#ab795722f63a08909139f9003d0bd4625" title="Processes the response data from an HTTP component and extracts various parameters." alt="" coords="43,72,211,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,77,212,85,211,80,281,71"/>
+</map>

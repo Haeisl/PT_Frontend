@@ -1,0 +1,231 @@
+\doxysection{APT\+\_\+\+Electrode\+Area\+Actor Class Reference}
+\hypertarget{class_a_p_t___electrode_area_actor}{}\label{class_a_p_t___electrode_area_actor}\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+
+
+A class that represents an electrode area actor.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Electrode\+Area\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for APT\+\_\+\+Electrode\+Area\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_a_p_t___electrode_area_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for APT\+\_\+\+Electrode\+Area\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_a_p_t___electrode_area_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_a_p_t___electrode_area_actor_1_1_f_distance_and_point}{FDistance\+And\+Point}}
+\begin{DoxyCompactList}\small\item\em A structure to hold distance and point information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_t___electrode_area_actor_a37c49e3a3dac2c6b1e1684bcdae7cfc6}{APT\+\_\+\+Electrode\+Area\+Actor}} ()
+\begin{DoxyCompactList}\small\item\em Sets default values for this actor\textquotesingle{}s properties. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_p_t___electrode_area_actor_a591bef110560814398b099b8bc0b4160}{Tick}} (float Delta\+Time) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___electrode_area_actor_ab795722f63a08909139f9003d0bd4625}{Process\+Response\+Data}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+Http\+Component, FVector \&Out\+Center, FVector \&OutA, FVector \&OutB, FVector \&OutC, FVector \&OutD, FRotator \&Out\+Rotation, int \&Out\+Rows, int \&out\+Columns, double \&out\+Cell\+Size, int \&Out\+Number, TArray$<$ FVector $>$ \&Out\+Electrode\+Positions)
+\begin{DoxyCompactList}\small\item\em Processes the response data from an HTTP component and extracts various parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___electrode_area_actor_ae1f0614fb38a205abd3b8644801034c5}{Process\+Validation\+Response\+Data}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+Http\+Component, int32 \&Out\+Electrode\+Count, TArray$<$ int32 $>$ \&Out\+Successfull\+Electrode\+Index, bool \&Out\+Is\+Corrupted)
+\begin{DoxyCompactList}\small\item\em Processes the validation response data from an HTTP component and extracts various parameters. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___electrode_area_actor_a2c50d6f6d7fc49c6baff31b0a42b4e69}{Find\+Nearest\+Neighbors}} (const FVector \&In\+Point, const TArray$<$ FVector $>$ \&In\+Grid, TArray$<$ int $>$ \&Out\+Nearest\+Neighbors\+Grid\+Indicies)
+\begin{DoxyCompactList}\small\item\em Finds the nearest neighbors to a given point within a grid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___electrode_area_actor_a94abae196cf27ae1c797eabcb0e5ca40}{Barycentric\+Weight\+Calculation}} (const FVector \&In\+Point, const FVector \&InA, const FVector \&InB, const FVector \&InC, double \&Out\+WeightA, double \&Out\+WeightB, double \&Out\+WeightC)
+\begin{DoxyCompactList}\small\item\em Calculates the barycentric weights for a point within a triangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_p_t___electrode_area_actor_ad726451abb2374d4b2bf2f3d1d66d05e}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Called when the game starts or when spawned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents an electrode area actor. 
+
+This class is responsible for handling various operations related to electrode areas, such as processing HTTP response data, finding nearest neighbors, and calculating barycentric weights. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_p_t___electrode_area_actor_a37c49e3a3dac2c6b1e1684bcdae7cfc6}\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}!APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}!APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+\doxysubsubsection{\texorpdfstring{APT\_ElectrodeAreaActor()}{APT\_ElectrodeAreaActor()}}
+{\footnotesize\ttfamily \label{class_a_p_t___electrode_area_actor_a37c49e3a3dac2c6b1e1684bcdae7cfc6} 
+APT\+\_\+\+Electrode\+Area\+Actor\+::\+APT\+\_\+\+Electrode\+Area\+Actor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sets default values for this actor\textquotesingle{}s properties. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_p_t___electrode_area_actor_a94abae196cf27ae1c797eabcb0e5ca40}\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}!BarycentricWeightCalculation@{BarycentricWeightCalculation}}
+\index{BarycentricWeightCalculation@{BarycentricWeightCalculation}!APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+\doxysubsubsection{\texorpdfstring{BarycentricWeightCalculation()}{BarycentricWeightCalculation()}}
+{\footnotesize\ttfamily \label{class_a_p_t___electrode_area_actor_a94abae196cf27ae1c797eabcb0e5ca40} 
+void APT\+\_\+\+Electrode\+Area\+Actor\+::\+Barycentric\+Weight\+Calculation (\begin{DoxyParamCaption}\item[{const FVector \&}]{In\+Point}{, }\item[{const FVector \&}]{InA}{, }\item[{const FVector \&}]{InB}{, }\item[{const FVector \&}]{InC}{, }\item[{double \&}]{Out\+WeightA}{, }\item[{double \&}]{Out\+WeightB}{, }\item[{double \&}]{Out\+WeightC}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the barycentric weights for a point within a triangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Point} & The point for which to calculate the weights. \\
+\hline
+{\em InA} & The first vertex of the triangle. \\
+\hline
+{\em InB} & The second vertex of the triangle. \\
+\hline
+{\em InC} & The third vertex of the triangle. \\
+\hline
+{\em Out\+WeightA} & The weight corresponding to the first vertex. \\
+\hline
+{\em Out\+WeightB} & The weight corresponding to the second vertex. \\
+\hline
+{\em Out\+WeightC} & The weight corresponding to the third vertex. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_p_t___electrode_area_actor_ad726451abb2374d4b2bf2f3d1d66d05e}\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_p_t___electrode_area_actor_ad726451abb2374d4b2bf2f3d1d66d05e} 
+void APT\+\_\+\+Electrode\+Area\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when the game starts or when spawned. 
+
+\Hypertarget{class_a_p_t___electrode_area_actor_a2c50d6f6d7fc49c6baff31b0a42b4e69}\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}!FindNearestNeighbors@{FindNearestNeighbors}}
+\index{FindNearestNeighbors@{FindNearestNeighbors}!APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+\doxysubsubsection{\texorpdfstring{FindNearestNeighbors()}{FindNearestNeighbors()}}
+{\footnotesize\ttfamily \label{class_a_p_t___electrode_area_actor_a2c50d6f6d7fc49c6baff31b0a42b4e69} 
+TArray$<$ FVector $>$ APT\+\_\+\+Electrode\+Area\+Actor\+::\+Find\+Nearest\+Neighbors (\begin{DoxyParamCaption}\item[{const FVector \&}]{In\+Point}{, }\item[{const TArray$<$ FVector $>$ \&}]{In\+Grid}{, }\item[{TArray$<$ int $>$ \&}]{Out\+Nearest\+Neighbors\+Grid\+Indicies}{}\end{DoxyParamCaption})}
+
+
+
+Finds the nearest neighbors to a given point within a grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Point} & The point for which to find the nearest neighbors. \\
+\hline
+{\em In\+Grid} & The grid of points to search within. \\
+\hline
+{\em Out\+Nearest\+Neighbors\+Grid\+Indicies} & The indices of the nearest neighbors within the grid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of the nearest neighbor points. 
+\end{DoxyReturn}
+\Hypertarget{class_a_p_t___electrode_area_actor_ab795722f63a08909139f9003d0bd4625}\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}!ProcessResponseData@{ProcessResponseData}}
+\index{ProcessResponseData@{ProcessResponseData}!APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+\doxysubsubsection{\texorpdfstring{ProcessResponseData()}{ProcessResponseData()}}
+{\footnotesize\ttfamily \label{class_a_p_t___electrode_area_actor_ab795722f63a08909139f9003d0bd4625} 
+void APT\+\_\+\+Electrode\+Area\+Actor\+::\+Process\+Response\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+Http\+Component}{, }\item[{FVector \&}]{Out\+Center}{, }\item[{FVector \&}]{OutA}{, }\item[{FVector \&}]{OutB}{, }\item[{FVector \&}]{OutC}{, }\item[{FVector \&}]{OutD}{, }\item[{FRotator \&}]{Out\+Rotation}{, }\item[{int \&}]{Out\+Rows}{, }\item[{int \&}]{out\+Columns}{, }\item[{double \&}]{out\+Cell\+Size}{, }\item[{int \&}]{Out\+Number}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Electrode\+Positions}{}\end{DoxyParamCaption})}
+
+
+
+Processes the response data from an HTTP component and extracts various parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Http\+Component} & The HTTP component containing the response data. \\
+\hline
+{\em Out\+Center} & The center point extracted from the response data. \\
+\hline
+{\em OutA} & The first corner point extracted from the response data. \\
+\hline
+{\em OutB} & The second corner point extracted from the response data. \\
+\hline
+{\em OutC} & The third corner point extracted from the response data. \\
+\hline
+{\em OutD} & The fourth corner point extracted from the response data. \\
+\hline
+{\em Out\+Rotation} & The rotation extracted from the response data. \\
+\hline
+{\em Out\+Rows} & The number of rows extracted from the response data. \\
+\hline
+{\em out\+Columns} & The number of columns extracted from the response data. \\
+\hline
+{\em out\+Cell\+Size} & The cell size extracted from the response data. \\
+\hline
+{\em Out\+Number} & The number of electrodes extracted from the response data. \\
+\hline
+{\em Out\+Electrode\+Positions} & The positions of the electrodes extracted from the response data. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___electrode_area_actor_ab795722f63a08909139f9003d0bd4625_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___electrode_area_actor_ae1f0614fb38a205abd3b8644801034c5}\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}!ProcessValidationResponseData@{ProcessValidationResponseData}}
+\index{ProcessValidationResponseData@{ProcessValidationResponseData}!APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+\doxysubsubsection{\texorpdfstring{ProcessValidationResponseData()}{ProcessValidationResponseData()}}
+{\footnotesize\ttfamily \label{class_a_p_t___electrode_area_actor_ae1f0614fb38a205abd3b8644801034c5} 
+void APT\+\_\+\+Electrode\+Area\+Actor\+::\+Process\+Validation\+Response\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+Http\+Component}{, }\item[{int32 \&}]{Out\+Electrode\+Count}{, }\item[{TArray$<$ int32 $>$ \&}]{Out\+Successfull\+Electrode\+Index}{, }\item[{bool \&}]{Out\+Is\+Corrupted}{}\end{DoxyParamCaption})}
+
+
+
+Processes the validation response data from an HTTP component and extracts various parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Http\+Component} & The HTTP component containing the response data. \\
+\hline
+{\em Out\+Electrode\+Count} & The number of electrodes extracted from the response data. \\
+\hline
+{\em Out\+Successfull\+Electrode\+Index} & The indices of successfully simulated electrodes. \\
+\hline
+{\em Out\+Is\+Corrupted} & Indicates whether the data is corrupted. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___electrode_area_actor_ae1f0614fb38a205abd3b8644801034c5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___electrode_area_actor_a591bef110560814398b099b8bc0b4160}\index{APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}!Tick@{Tick}}
+\index{Tick@{Tick}!APT\_ElectrodeAreaActor@{APT\_ElectrodeAreaActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_p_t___electrode_area_actor_a591bef110560814398b099b8bc0b4160} 
+void APT\+\_\+\+Electrode\+Area\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & The time elapsed since the last frame. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___electrode_area_actor_8h}{PT\+\_\+\+Electrode\+Area\+Actor.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___electrode_area_actor_8cpp}{PT\+\_\+\+Electrode\+Area\+Actor.\+cpp}}\end{DoxyCompactItemize}

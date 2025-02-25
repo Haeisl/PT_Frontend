@@ -1,0 +1,6 @@
+<map id="UPT_ConfigManager::GetUrlROI" name="UPT_ConfigManager::GetUrlROI">
+<area shape="rect" id="Node000001" title="Gets the URL for ROI." alt="" coords="205,29,356,72"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="312,16,300,10,280,8,262,10,250,15,246,21,247,28,242,29,241,19,247,10,260,5,280,3,302,5,315,11"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#ad5286cdef0de33276f2489308ce97a92" title="Gets the ROI address URL for a given patient ID and ROI ID." alt="" coords="5,29,157,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,53,157,53,157,48,189,48"/>
+</map>

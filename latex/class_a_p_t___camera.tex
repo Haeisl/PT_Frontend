@@ -1,0 +1,112 @@
+\doxysection{APT\+\_\+\+Camera Class Reference}
+\hypertarget{class_a_p_t___camera}{}\label{class_a_p_t___camera}\index{APT\_Camera@{APT\_Camera}}
+
+
+A class that represents a camera character.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Camera.\+h$>$}
+
+
+
+Inheritance diagram for APT\+\_\+\+Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_a_p_t___camera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for APT\+\_\+\+Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_a_p_t___camera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_t___camera_aeac2c31eae4b9b5b51ea1d74184f3c90}{APT\+\_\+\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Sets default values for this character\textquotesingle{}s properties. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_p_t___camera_aad7ca30123505e6ab153cc97ab3da4c2}{Tick}} (float Delta\+Time) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_p_t___camera_a1c02c55294dcbb73e99fc0352351ab9e}{Setup\+Player\+Input\+Component}} (class UInput\+Component \texorpdfstring{$\ast$}{*}Player\+Input\+Component) override
+\begin{DoxyCompactList}\small\item\em Called to bind functionality to input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_p_t___camera_ac576a7885e7b18fc80529ea22d605de3}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Called when the game starts or when spawned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a camera character. 
+
+This class is responsible for handling the behavior of the camera character within the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_p_t___camera_aeac2c31eae4b9b5b51ea1d74184f3c90}\index{APT\_Camera@{APT\_Camera}!APT\_Camera@{APT\_Camera}}
+\index{APT\_Camera@{APT\_Camera}!APT\_Camera@{APT\_Camera}}
+\doxysubsubsection{\texorpdfstring{APT\_Camera()}{APT\_Camera()}}
+{\footnotesize\ttfamily \label{class_a_p_t___camera_aeac2c31eae4b9b5b51ea1d74184f3c90} 
+APT\+\_\+\+Camera\+::\+APT\+\_\+\+Camera (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sets default values for this character\textquotesingle{}s properties. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_p_t___camera_ac576a7885e7b18fc80529ea22d605de3}\index{APT\_Camera@{APT\_Camera}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APT\_Camera@{APT\_Camera}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_p_t___camera_ac576a7885e7b18fc80529ea22d605de3} 
+void APT\+\_\+\+Camera\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when the game starts or when spawned. 
+
+\Hypertarget{class_a_p_t___camera_a1c02c55294dcbb73e99fc0352351ab9e}\index{APT\_Camera@{APT\_Camera}!SetupPlayerInputComponent@{SetupPlayerInputComponent}}
+\index{SetupPlayerInputComponent@{SetupPlayerInputComponent}!APT\_Camera@{APT\_Camera}}
+\doxysubsubsection{\texorpdfstring{SetupPlayerInputComponent()}{SetupPlayerInputComponent()}}
+{\footnotesize\ttfamily \label{class_a_p_t___camera_a1c02c55294dcbb73e99fc0352351ab9e} 
+void APT\+\_\+\+Camera\+::\+Setup\+Player\+Input\+Component (\begin{DoxyParamCaption}\item[{class UInput\+Component \texorpdfstring{$\ast$}{*}}]{Player\+Input\+Component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called to bind functionality to input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Player\+Input\+Component} & The input component to bind functionality to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_p_t___camera_aad7ca30123505e6ab153cc97ab3da4c2}\index{APT\_Camera@{APT\_Camera}!Tick@{Tick}}
+\index{Tick@{Tick}!APT\_Camera@{APT\_Camera}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_p_t___camera_aad7ca30123505e6ab153cc97ab3da4c2} 
+void APT\+\_\+\+Camera\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & The time elapsed since the last frame. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___camera_8h}{PT\+\_\+\+Camera.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___camera_8cpp}{PT\+\_\+\+Camera.\+cpp}}\end{DoxyCompactItemize}

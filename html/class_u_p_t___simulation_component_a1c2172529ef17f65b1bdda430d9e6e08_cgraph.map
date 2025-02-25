@@ -1,0 +1,5 @@
+<map id="UPT_SimulationComponent::BarycentricInterpolation" name="UPT_SimulationComponent::BarycentricInterpolation">
+<area shape="rect" id="Node000001" title="Performs barycentric interpolation for simulation data." alt="" coords="5,13,189,56"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___simulation_component.html#a732cb9e0f9a8389354ce72d55378766d" title="Retrieves simulation data per electrode per tag." alt="" coords="237,5,451,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,32,221,32,221,37,189,37"/>
+</map>

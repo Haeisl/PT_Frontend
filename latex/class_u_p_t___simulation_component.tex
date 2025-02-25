@@ -1,0 +1,1140 @@
+\doxysection{UPT\+\_\+\+Simulation\+Component Class Reference}
+\hypertarget{class_u_p_t___simulation_component}{}\label{class_u_p_t___simulation_component}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+
+
+Simulation component for the Epilepsy Therapy Planning Tool.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Simulation\+Component.\+h$>$}
+
+
+
+Inheritance diagram for UPT\+\_\+\+Simulation\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UPT\+\_\+\+Simulation\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_p_t___simulation_component_aeea01518c9215dd74b5b56a865d91231}{UPT\+\_\+\+Simulation\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Sets default values for this component\textquotesingle{}s properties. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_u_p_t___simulation_component_a4744313dfa7e4add7e6a22e13523aedd}{Tick\+Component}} (float Delta\+Time, ELevel\+Tick Tick\+Type, FActor\+Component\+Tick\+Function \texorpdfstring{$\ast$}{*}This\+Tick\+Function) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a1670b8682485084943fcf232aa332bdf}{Map\+To\+Plasma\+Colormap}} (const TArray$<$ double $>$ \&In\+Data, const int32 \&In\+Data\+Tag\+Index, const double \&In\+Percentile\+Min\+Value, const double \&In\+Percentile\+Max\+Value)
+\begin{DoxyCompactList}\small\item\em Maps input data to a Plasma colormap. \end{DoxyCompactList}\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a2563f26f136d54bb6c2b17d1fd61063e}{Map\+To\+Jet\+Colormap}} (const TArray$<$ double $>$ \&Data, const int32 \&In\+Data\+Tag\+Index, const double \&In\+Percentile\+Min\+Value, const double \&In\+Percentile\+Max\+Value)
+\begin{DoxyCompactList}\small\item\em Maps input data to a Jet colormap. \end{DoxyCompactList}\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a7c2cc9f2011b55a26a85cab8e1806a09}{Map\+To\+Greyscale\+Colormap}} (const TArray$<$ double $>$ \&In\+Data, const int32 \&In\+Data\+Tag\+Index, const double \&In\+Percentile\+Min\+Value, const double \&In\+Percentile\+Max\+Value)
+\begin{DoxyCompactList}\small\item\em Maps input data to a greyscale colormap. \end{DoxyCompactList}\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a78d08dc729e9f4e82c4b2c7df79e4c81}{Calculate\+Vertex\+Colors}} (const int32 \&In\+Vertex\+Array\+Length)
+\begin{DoxyCompactList}\small\item\em Calculates vertex colors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_a1c2172529ef17f65b1bdda430d9e6e08}{Barycentric\+Interpolation}} (const int32 \&In\+Electrode\+IndexA, const int32 \&In\+Electrode\+IndexB, const int32 \&In\+Electrode\+IndexC, const int32 \&In\+Data\+Tag\+Index, const double \&In\+WeightA, const double \&In\+WeightB, const double \&In\+WeightC, TArray$<$ double $>$ \&Out\+Interpolated\+Simulation\+Magnitude\+Data\+Array, TArray$<$ FVector $>$ \&Out\+Interpolated\+Simulation\+Vectorfield\+Data\+Array, double \&Out\+Mean\+Magnitude, FVector \&Out\+Mean\+Vector\+Field)
+\begin{DoxyCompactList}\small\item\em Performs barycentric interpolation for simulation data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_a694de51fcc8d63e5b972879ff0d1d29d}{Process\+Interpolation}} (const int32 \&In\+Electrode\+IndexA, const int32 \&In\+Electrode\+IndexB, const int32 \&In\+Electrode\+IndexC, const double \&In\+WeightA, const double \&In\+WeightB, const double \&In\+WeightC)
+\begin{DoxyCompactList}\small\item\em Processes interpolation for simulation data. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_u_p_t___simulation_component_aca06cef1199c82ffa53eedd7effe179f}{Calculate\+Percentile}} (const TArray$<$ double $>$ \&In\+Data, const double \&In\+Percentile)
+\begin{DoxyCompactList}\small\item\em Calculates the percentile value for the input data. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_u_p_t___simulation_component_aafc6ef8f7aec3022ddc3a05112ceb8d6}{Calculate\+Percentile\+For\+Interpolated\+Magnitude\+Data\+Per\+Tag\+Array}} (const double \&In\+Percentile)
+\begin{DoxyCompactList}\small\item\em Calculates the percentile value for the interpolated magnitude data per tag array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_a57b42939f12c19af9b851a8b323f01dd}{Get\+Simulation\+Data\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+Http\+Component, const TArray$<$ FString $>$ \&In\+Data\+Tag\+Array, const int32 \&In\+Number\+Of\+Electrodes)
+\begin{DoxyCompactList}\small\item\em Retrieves simulation data from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_af1fe8c56b3ed362127bc6cc30495f7cb}{Create\+Interpolated\+Data\+Json}} (const FString \&In\+Patient\+Id, const FString \&In\+Config\+Id, const FString \&In\+Roi\+Id, const FString \&In\+Interpolation\+Id, const FVector \&In\+Electrode\+Position, const double \&In\+Grid\+Spacing, FString \&Out\+Json\+String)
+\begin{DoxyCompactList}\small\item\em Creates a JSON string for interpolated data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_a4058c8d82deda414d5bb00c86a686e45}{Reset\+Simulation\+Data\+Arrays}} ()
+\begin{DoxyCompactList}\small\item\em Resets the simulation data arrays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_a321866dd79ae2abb04d7be965b8ae058}{Set\+Data\+Color\+Array\+Per\+Tag}} (const int32 \&In\+Data\+Tag\+Index, const TArray$<$ FLinear\+Color $>$ \&In\+Data\+Color\+Array)
+\begin{DoxyCompactList}\small\item\em Sets the data color array for a specific tag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_ae537a8df0def386f0fdf101f593e0c37}{Calculate\+Mean\+Angle\+Between\+Normal\+And\+Vector\+Field}} (const TArray$<$ FVector $>$ \&In\+Normal\+Array, const TArray$<$ FVector $>$ \&In\+Vector\+Field\+Array, double \&Out\+Mean\+Angle)
+\begin{DoxyCompactList}\small\item\em Calculates the mean angle between normal and vector field. \end{DoxyCompactList}\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_aa044c69a748de8c06431606511c28533}{Get\+Tag\+Length\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets the tag length array. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_u_p_t___simulation_component_a0be8411640ffbfe64f52964b8ab1b6e3}{Get\+Average\+Magnitude\+Per\+Tag}} (const int32 \&In\+Tag\+Index, bool \&Out\+Is\+Valid)
+\begin{DoxyCompactList}\small\item\em Gets the average magnitude per tag. \end{DoxyCompactList}\item 
+FVector \mbox{\hyperlink{class_u_p_t___simulation_component_a4838b4a0474625ebee92ec7651ab4265}{Get\+Average\+Vector\+Field\+Per\+Tag}} (const int32 \&In\+Tag\+Index, bool \&Out\+Is\+Valid)
+\begin{DoxyCompactList}\small\item\em Gets the average vector field per tag. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_u_p_t___simulation_component_a658266c4c16dced4db67498e14419b28}{Get\+Average\+Magnitude}} ()
+\begin{DoxyCompactList}\small\item\em Gets the average magnitude. \end{DoxyCompactList}\item 
+FVector \mbox{\hyperlink{class_u_p_t___simulation_component_a2c1839d48e65a426162d160515a158de}{Get\+Average\+Vector\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Gets the average vector field. \end{DoxyCompactList}\item 
+TArray$<$ double $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_aab5b34b84f5eacc449444e2a6d744d72}{Get\+Interpolated\+Magnitude\+Data\+Per\+Tag}} (const int32 \&In\+Tag\+Index)
+\begin{DoxyCompactList}\small\item\em Gets the interpolated magnitude data per tag. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a90d7eacb0eba4f506830b97d781a1869}{Get\+Interpolated\+Vectorfield\+Data\+Per\+Tag}} (const int32 \&In\+Tag\+Index)
+\begin{DoxyCompactList}\small\item\em Gets the interpolated vector field data per tag. \end{DoxyCompactList}\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a79fcfe953ffedf8172190729cb5f0a5f}{Get\+Data\+Color\+Array\+Per\+Tag}} (const int32 \&In\+Tag\+Index)
+\begin{DoxyCompactList}\small\item\em Gets the data color array per tag. \end{DoxyCompactList}\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a5ca80edcba3ba255b8d2a2b40ba0b8b5}{Get\+Vertices\+In\+Roi\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vertices in ROI array. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_aa09b9e1d43776316febdb2a662ddd0de}{Get\+Vectorfield\+In\+Roi}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vector field in ROI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_ad8f18d3a48704021fdf1b9253ad50840}{Electrode\+Index\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of electrode indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_p_t___simulation_component_a5a8fddf58e505464e5526ba98aa91bd9}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Called when the game starts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_a732cb9e0f9a8389354ce72d55378766d}{Get\+Simulation\+Data\+Per\+Electrode\+Per\+Tag}} (const int32 \&In\+Electrode\+Index, const int32 \&In\+Tag\+Index, TArray$<$ double $>$ \&Out\+Simulation\+Magnitude\+Data\+Array, TArray$<$ FVector $>$ \&Out\+Simulation\+Vectorfield\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Retrieves simulation data per electrode per tag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_a9ec2072afd524e4d4b85fe9f205f105f}{Get\+Interpolated\+Simulation\+Data\+Per\+Tag}} (const int32 \&In\+Tag\+Index, TArray$<$ double $>$ \&Out\+Interpolated\+Simulation\+Magnitude\+Data\+Array, TArray$<$ FVector $>$ \&Out\+Interpolated\+Simulation\+Vectorfield\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Retrieves interpolated simulation data per tag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_ac2605fac55d1e34d09181fb205101db9}{Get\+Simulation\+Data\+From\+JSONObject}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const TArray$<$ FString $>$ \&In\+Data\+Tag\+Array, const int32 \&In\+Number\+Of\+Electrodes)
+\begin{DoxyCompactList}\small\item\em Retrieves simulation data from a JSON object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_p_t___simulation_component_a35c508f431cbfefe07042f0bfc42783f}{Process\+Electrode\+Data}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const TArray$<$ FString $>$ \&In\+Data\+Tag\+Array, const int32 \&In\+Current\+Electrode\+Index)
+\begin{DoxyCompactList}\small\item\em Processes electrode data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TArray$<$ TArray$<$ TArray$<$ double $>$ $>$ $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a542efbecdfaa04abf25245de2b4bd1ce}{Simulation\+Magnitude\+Data\+Per\+Electrode\+Per\+Tag\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of simulation magnitude data per electrode per tag. \end{DoxyCompactList}\item 
+TArray$<$ TArray$<$ TArray$<$ FVector $>$ $>$ $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_acfcd13981d9347756139217a2d683710}{Simulation\+Vectorfield\+Data\+Per\+Electrode\+Per\+Tag\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of simulation vector field data per electrode per tag. \end{DoxyCompactList}\item 
+TArray$<$ TArray$<$ double $>$ $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a9f62e4da04e2dc03754a8446851b41f3}{Interpolated\+Magnitude\+Data\+Per\+Tag\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of interpolated magnitude data per tag. \end{DoxyCompactList}\item 
+TArray$<$ TArray$<$ FVector $>$ $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a7830f45b3d18a3833c8cb69b354d8dad}{Interpolated\+Vectorfield\+Data\+Per\+Tag\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of interpolated vector field data per tag. \end{DoxyCompactList}\item 
+TArray$<$ TArray$<$ int32 $>$ $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a96e3f675146d89e7fb02e3ba0bb186f6}{Roi\+Index\+Mapping\+Per\+Tag\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of ROI index mappings per tag. \end{DoxyCompactList}\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_aae36147c434f00708b39869a27a08d53}{Tag\+Length\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of tag lengths. \end{DoxyCompactList}\item 
+TArray$<$ double $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a2f36782afa39a135c4d44103717fae14}{Per\+Vertex\+Data\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of per-\/vertex data. \end{DoxyCompactList}\item 
+TArray$<$ TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a05b003583c2e4daecec9e80f9aae5229}{Raw\+Tetra\+Data\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of raw tetra data. \end{DoxyCompactList}\item 
+TArray$<$ double $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a737d3c1f6bacd20f17071b05e8a2461d}{Mean\+Magnitude\+Per\+Tag}}
+\begin{DoxyCompactList}\small\item\em Array of mean magnitudes per tag. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_ab81e525c18acbbeba8b10229e6ca5d42}{Mean\+Vector\+Field\+Per\+Tag}}
+\begin{DoxyCompactList}\small\item\em Array of mean vector fields per tag. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_u_p_t___simulation_component_a3cfd83a63971a3db1b19061a07c37d4b}{Mean\+Magnitude}}
+\begin{DoxyCompactList}\small\item\em Mean magnitude. \end{DoxyCompactList}\item 
+FVector \mbox{\hyperlink{class_u_p_t___simulation_component_a3ca93b6e0daa9f537fb7d81a173783b0}{Mean\+Vector\+Field}}
+\begin{DoxyCompactList}\small\item\em Mean vector field. \end{DoxyCompactList}\item 
+TMap$<$ int32, TArray$<$ TArray$<$ int32 $>$ $>$ $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_abd6d666ff123883270fabf5b3add2748}{Vertex\+Tag\+Cell\+Mapping}}
+\begin{DoxyCompactList}\small\item\em Map of vertex tag cell mappings. \end{DoxyCompactList}\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_aec49aada4f3b2a124bebcfb12773b6bc}{Vertices\+In\+Roi\+Array}}
+\begin{DoxyCompactList}\small\item\em Array of vertices in ROI. \end{DoxyCompactList}\item 
+TArray$<$ TArray$<$ FLinear\+Color $>$ $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a2b167dc4f8bfe9c3f4576df0f38dbabe}{Data\+Color\+Array\+Per\+Tag}}
+\begin{DoxyCompactList}\small\item\em Array of data color arrays per tag. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_u_p_t___simulation_component_a2879966eb473a0fb67c5868b7297076a}{Vectorfield\+In\+Roi}}
+\begin{DoxyCompactList}\small\item\em Array of vector fields in ROI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simulation component for the Epilepsy Therapy Planning Tool. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_u_p_t___simulation_component_aeea01518c9215dd74b5b56a865d91231}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{UPT\_SimulationComponent()}{UPT\_SimulationComponent()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_aeea01518c9215dd74b5b56a865d91231} 
+UPT\+\_\+\+Simulation\+Component\+::\+UPT\+\_\+\+Simulation\+Component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sets default values for this component\textquotesingle{}s properties. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_p_t___simulation_component_a1c2172529ef17f65b1bdda430d9e6e08}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!BarycentricInterpolation@{BarycentricInterpolation}}
+\index{BarycentricInterpolation@{BarycentricInterpolation}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{BarycentricInterpolation()}{BarycentricInterpolation()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a1c2172529ef17f65b1bdda430d9e6e08} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Barycentric\+Interpolation (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Electrode\+IndexA}{, }\item[{const int32 \&}]{In\+Electrode\+IndexB}{, }\item[{const int32 \&}]{In\+Electrode\+IndexC}{, }\item[{const int32 \&}]{In\+Data\+Tag\+Index}{, }\item[{const double \&}]{In\+WeightA}{, }\item[{const double \&}]{In\+WeightB}{, }\item[{const double \&}]{In\+WeightC}{, }\item[{TArray$<$ double $>$ \&}]{Out\+Interpolated\+Simulation\+Magnitude\+Data\+Array}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Interpolated\+Simulation\+Vectorfield\+Data\+Array}{, }\item[{double \&}]{Out\+Mean\+Magnitude}{, }\item[{FVector \&}]{Out\+Mean\+Vector\+Field}{}\end{DoxyParamCaption})}
+
+
+
+Performs barycentric interpolation for simulation data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Electrode\+IndexA} & The index of the first electrode. \\
+\hline
+{\em In\+Electrode\+IndexB} & The index of the second electrode. \\
+\hline
+{\em In\+Electrode\+IndexC} & The index of the third electrode. \\
+\hline
+{\em In\+Data\+Tag\+Index} & The index of the data tag. \\
+\hline
+{\em In\+WeightA} & The weight for the first electrode. \\
+\hline
+{\em In\+WeightB} & The weight for the second electrode. \\
+\hline
+{\em In\+WeightC} & The weight for the third electrode. \\
+\hline
+{\em Out\+Interpolated\+Simulation\+Magnitude\+Data\+Array} & The output array for interpolated magnitude data. \\
+\hline
+{\em Out\+Interpolated\+Simulation\+Vectorfield\+Data\+Array} & The output array for interpolated vector field data. \\
+\hline
+{\em Out\+Mean\+Magnitude} & The output mean magnitude. \\
+\hline
+{\em Out\+Mean\+Vector\+Field} & The output mean vector field. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a1c2172529ef17f65b1bdda430d9e6e08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a1c2172529ef17f65b1bdda430d9e6e08_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a5a8fddf58e505464e5526ba98aa91bd9}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a5a8fddf58e505464e5526ba98aa91bd9} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when the game starts. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a5a8fddf58e505464e5526ba98aa91bd9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_ae537a8df0def386f0fdf101f593e0c37}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!CalculateMeanAngleBetweenNormalAndVectorField@{CalculateMeanAngleBetweenNormalAndVectorField}}
+\index{CalculateMeanAngleBetweenNormalAndVectorField@{CalculateMeanAngleBetweenNormalAndVectorField}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{CalculateMeanAngleBetweenNormalAndVectorField()}{CalculateMeanAngleBetweenNormalAndVectorField()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_ae537a8df0def386f0fdf101f593e0c37} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Calculate\+Mean\+Angle\+Between\+Normal\+And\+Vector\+Field (\begin{DoxyParamCaption}\item[{const TArray$<$ FVector $>$ \&}]{In\+Normal\+Array}{, }\item[{const TArray$<$ FVector $>$ \&}]{In\+Vector\+Field\+Array}{, }\item[{double \&}]{Out\+Mean\+Angle}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the mean angle between normal and vector field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Normal\+Array} & The array of normal vectors. \\
+\hline
+{\em In\+Vector\+Field\+Array} & The array of vector field vectors. \\
+\hline
+{\em Out\+Mean\+Angle} & The output mean angle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_p_t___simulation_component_aca06cef1199c82ffa53eedd7effe179f}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!CalculatePercentile@{CalculatePercentile}}
+\index{CalculatePercentile@{CalculatePercentile}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{CalculatePercentile()}{CalculatePercentile()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_aca06cef1199c82ffa53eedd7effe179f} 
+double UPT\+\_\+\+Simulation\+Component\+::\+Calculate\+Percentile (\begin{DoxyParamCaption}\item[{const TArray$<$ double $>$ \&}]{In\+Data}{, }\item[{const double \&}]{In\+Percentile}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the percentile value for the input data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Data} & The input data array. \\
+\hline
+{\em In\+Percentile} & The percentile to calculate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated percentile value. 
+\end{DoxyReturn}
+\Hypertarget{class_u_p_t___simulation_component_aafc6ef8f7aec3022ddc3a05112ceb8d6}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!CalculatePercentileForInterpolatedMagnitudeDataPerTagArray@{CalculatePercentileForInterpolatedMagnitudeDataPerTagArray}}
+\index{CalculatePercentileForInterpolatedMagnitudeDataPerTagArray@{CalculatePercentileForInterpolatedMagnitudeDataPerTagArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{CalculatePercentileForInterpolatedMagnitudeDataPerTagArray()}{CalculatePercentileForInterpolatedMagnitudeDataPerTagArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_aafc6ef8f7aec3022ddc3a05112ceb8d6} 
+double UPT\+\_\+\+Simulation\+Component\+::\+Calculate\+Percentile\+For\+Interpolated\+Magnitude\+Data\+Per\+Tag\+Array (\begin{DoxyParamCaption}\item[{const double \&}]{In\+Percentile}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the percentile value for the interpolated magnitude data per tag array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Percentile} & The percentile to calculate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated percentile value. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_aafc6ef8f7aec3022ddc3a05112ceb8d6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a78d08dc729e9f4e82c4b2c7df79e4c81}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!CalculateVertexColors@{CalculateVertexColors}}
+\index{CalculateVertexColors@{CalculateVertexColors}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{CalculateVertexColors()}{CalculateVertexColors()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a78d08dc729e9f4e82c4b2c7df79e4c81} 
+TArray$<$ FLinear\+Color $>$ UPT\+\_\+\+Simulation\+Component\+::\+Calculate\+Vertex\+Colors (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Vertex\+Array\+Length}{}\end{DoxyParamCaption})}
+
+
+
+Calculates vertex colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Vertex\+Array\+Length} & Length of the vertex array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TArray$<$\+FLinear\+Color$>$ Array of vertex colors. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a78d08dc729e9f4e82c4b2c7df79e4c81_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_af1fe8c56b3ed362127bc6cc30495f7cb}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!CreateInterpolatedDataJson@{CreateInterpolatedDataJson}}
+\index{CreateInterpolatedDataJson@{CreateInterpolatedDataJson}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{CreateInterpolatedDataJson()}{CreateInterpolatedDataJson()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_af1fe8c56b3ed362127bc6cc30495f7cb} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Create\+Interpolated\+Data\+Json (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const FString \&}]{In\+Config\+Id}{, }\item[{const FString \&}]{In\+Roi\+Id}{, }\item[{const FString \&}]{In\+Interpolation\+Id}{, }\item[{const FVector \&}]{In\+Electrode\+Position}{, }\item[{const double \&}]{In\+Grid\+Spacing}{, }\item[{FString \&}]{Out\+Json\+String}{}\end{DoxyParamCaption})}
+
+
+
+Creates a JSON string for interpolated data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+{\em In\+Config\+Id} & The configuration ID. \\
+\hline
+{\em In\+Roi\+Id} & The ROI ID. \\
+\hline
+{\em In\+Interpolation\+Id} & The interpolation ID. \\
+\hline
+{\em In\+Electrode\+Position} & The position of the electrode. \\
+\hline
+{\em In\+Grid\+Spacing} & The grid spacing. \\
+\hline
+{\em Out\+Json\+String} & The output JSON string. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_af1fe8c56b3ed362127bc6cc30495f7cb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a658266c4c16dced4db67498e14419b28}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetAverageMagnitude@{GetAverageMagnitude}}
+\index{GetAverageMagnitude@{GetAverageMagnitude}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetAverageMagnitude()}{GetAverageMagnitude()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a658266c4c16dced4db67498e14419b28} 
+double UPT\+\_\+\+Simulation\+Component\+::\+Get\+Average\+Magnitude (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the average magnitude. 
+
+\begin{DoxyReturn}{Returns}
+The average magnitude. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a658266c4c16dced4db67498e14419b28_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a658266c4c16dced4db67498e14419b28_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a0be8411640ffbfe64f52964b8ab1b6e3}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetAverageMagnitudePerTag@{GetAverageMagnitudePerTag}}
+\index{GetAverageMagnitudePerTag@{GetAverageMagnitudePerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetAverageMagnitudePerTag()}{GetAverageMagnitudePerTag()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a0be8411640ffbfe64f52964b8ab1b6e3} 
+double UPT\+\_\+\+Simulation\+Component\+::\+Get\+Average\+Magnitude\+Per\+Tag (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Tag\+Index}{, }\item[{bool \&}]{Out\+Is\+Valid}{}\end{DoxyParamCaption})}
+
+
+
+Gets the average magnitude per tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Tag\+Index} & The index of the tag. \\
+\hline
+{\em Out\+Is\+Valid} & Output flag indicating if the value is valid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average magnitude per tag. 
+\end{DoxyReturn}
+\Hypertarget{class_u_p_t___simulation_component_a2c1839d48e65a426162d160515a158de}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetAverageVectorField@{GetAverageVectorField}}
+\index{GetAverageVectorField@{GetAverageVectorField}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetAverageVectorField()}{GetAverageVectorField()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a2c1839d48e65a426162d160515a158de} 
+FVector UPT\+\_\+\+Simulation\+Component\+::\+Get\+Average\+Vector\+Field (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the average vector field. 
+
+\begin{DoxyReturn}{Returns}
+The average vector field. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a2c1839d48e65a426162d160515a158de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a2c1839d48e65a426162d160515a158de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a4838b4a0474625ebee92ec7651ab4265}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetAverageVectorFieldPerTag@{GetAverageVectorFieldPerTag}}
+\index{GetAverageVectorFieldPerTag@{GetAverageVectorFieldPerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetAverageVectorFieldPerTag()}{GetAverageVectorFieldPerTag()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a4838b4a0474625ebee92ec7651ab4265} 
+FVector UPT\+\_\+\+Simulation\+Component\+::\+Get\+Average\+Vector\+Field\+Per\+Tag (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Tag\+Index}{, }\item[{bool \&}]{Out\+Is\+Valid}{}\end{DoxyParamCaption})}
+
+
+
+Gets the average vector field per tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Tag\+Index} & The index of the tag. \\
+\hline
+{\em Out\+Is\+Valid} & Output flag indicating if the value is valid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average vector field per tag. 
+\end{DoxyReturn}
+\Hypertarget{class_u_p_t___simulation_component_a79fcfe953ffedf8172190729cb5f0a5f}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetDataColorArrayPerTag@{GetDataColorArrayPerTag}}
+\index{GetDataColorArrayPerTag@{GetDataColorArrayPerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetDataColorArrayPerTag()}{GetDataColorArrayPerTag()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a79fcfe953ffedf8172190729cb5f0a5f} 
+TArray$<$ FLinear\+Color $>$ UPT\+\_\+\+Simulation\+Component\+::\+Get\+Data\+Color\+Array\+Per\+Tag (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Tag\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the data color array per tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Tag\+Index} & The index of the tag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TArray$<$\+FLinear\+Color$>$ The data color array per tag. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a79fcfe953ffedf8172190729cb5f0a5f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a79fcfe953ffedf8172190729cb5f0a5f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_aab5b34b84f5eacc449444e2a6d744d72}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetInterpolatedMagnitudeDataPerTag@{GetInterpolatedMagnitudeDataPerTag}}
+\index{GetInterpolatedMagnitudeDataPerTag@{GetInterpolatedMagnitudeDataPerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetInterpolatedMagnitudeDataPerTag()}{GetInterpolatedMagnitudeDataPerTag()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_aab5b34b84f5eacc449444e2a6d744d72} 
+TArray$<$ double $>$ UPT\+\_\+\+Simulation\+Component\+::\+Get\+Interpolated\+Magnitude\+Data\+Per\+Tag (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Tag\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the interpolated magnitude data per tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Tag\+Index} & The index of the tag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TArray$<$double$>$ The interpolated magnitude data per tag. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_u_p_t___simulation_component_aab5b34b84f5eacc449444e2a6d744d72_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_u_p_t___simulation_component_aab5b34b84f5eacc449444e2a6d744d72_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a9ec2072afd524e4d4b85fe9f205f105f}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetInterpolatedSimulationDataPerTag@{GetInterpolatedSimulationDataPerTag}}
+\index{GetInterpolatedSimulationDataPerTag@{GetInterpolatedSimulationDataPerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetInterpolatedSimulationDataPerTag()}{GetInterpolatedSimulationDataPerTag()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a9ec2072afd524e4d4b85fe9f205f105f} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Get\+Interpolated\+Simulation\+Data\+Per\+Tag (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Tag\+Index}{, }\item[{TArray$<$ double $>$ \&}]{Out\+Interpolated\+Simulation\+Magnitude\+Data\+Array}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Interpolated\+Simulation\+Vectorfield\+Data\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retrieves interpolated simulation data per tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Tag\+Index} & The index of the tag. \\
+\hline
+{\em Out\+Interpolated\+Simulation\+Magnitude\+Data\+Array} & The output array for interpolated magnitude data. \\
+\hline
+{\em Out\+Interpolated\+Simulation\+Vectorfield\+Data\+Array} & The output array for interpolated vector field data. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_p_t___simulation_component_a90d7eacb0eba4f506830b97d781a1869}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetInterpolatedVectorfieldDataPerTag@{GetInterpolatedVectorfieldDataPerTag}}
+\index{GetInterpolatedVectorfieldDataPerTag@{GetInterpolatedVectorfieldDataPerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetInterpolatedVectorfieldDataPerTag()}{GetInterpolatedVectorfieldDataPerTag()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a90d7eacb0eba4f506830b97d781a1869} 
+TArray$<$ FVector $>$ UPT\+\_\+\+Simulation\+Component\+::\+Get\+Interpolated\+Vectorfield\+Data\+Per\+Tag (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Tag\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the interpolated vector field data per tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Tag\+Index} & The index of the tag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TArray$<$\+FVector$>$ The interpolated vector field data per tag. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a90d7eacb0eba4f506830b97d781a1869_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a90d7eacb0eba4f506830b97d781a1869_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_ac2605fac55d1e34d09181fb205101db9}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetSimulationDataFromJSONObject@{GetSimulationDataFromJSONObject}}
+\index{GetSimulationDataFromJSONObject@{GetSimulationDataFromJSONObject}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetSimulationDataFromJSONObject()}{GetSimulationDataFromJSONObject()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_ac2605fac55d1e34d09181fb205101db9} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Get\+Simulation\+Data\+From\+JSONObject (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Data\+Tag\+Array}{, }\item[{const int32 \&}]{In\+Number\+Of\+Electrodes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retrieves simulation data from a JSON object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & The JSON object pointer. \\
+\hline
+{\em In\+Data\+Tag\+Array} & The array of data tags. \\
+\hline
+{\em In\+Number\+Of\+Electrodes} & The number of electrodes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_ac2605fac55d1e34d09181fb205101db9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_ac2605fac55d1e34d09181fb205101db9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a57b42939f12c19af9b851a8b323f01dd}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetSimulationDataFromJSONResponseBody@{GetSimulationDataFromJSONResponseBody}}
+\index{GetSimulationDataFromJSONResponseBody@{GetSimulationDataFromJSONResponseBody}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetSimulationDataFromJSONResponseBody()}{GetSimulationDataFromJSONResponseBody()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a57b42939f12c19af9b851a8b323f01dd} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Get\+Simulation\+Data\+From\+JSONResponse\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+Http\+Component}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Data\+Tag\+Array}{, }\item[{const int32 \&}]{In\+Number\+Of\+Electrodes}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves simulation data from a JSON response body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Http\+Component} & The HTTP component containing the response. \\
+\hline
+{\em In\+Data\+Tag\+Array} & The array of data tags. \\
+\hline
+{\em In\+Number\+Of\+Electrodes} & The number of electrodes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a57b42939f12c19af9b851a8b323f01dd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a732cb9e0f9a8389354ce72d55378766d}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetSimulationDataPerElectrodePerTag@{GetSimulationDataPerElectrodePerTag}}
+\index{GetSimulationDataPerElectrodePerTag@{GetSimulationDataPerElectrodePerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetSimulationDataPerElectrodePerTag()}{GetSimulationDataPerElectrodePerTag()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a732cb9e0f9a8389354ce72d55378766d} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Get\+Simulation\+Data\+Per\+Electrode\+Per\+Tag (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Electrode\+Index}{, }\item[{const int32 \&}]{In\+Tag\+Index}{, }\item[{TArray$<$ double $>$ \&}]{Out\+Simulation\+Magnitude\+Data\+Array}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Simulation\+Vectorfield\+Data\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retrieves simulation data per electrode per tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Electrode\+Index} & The index of the electrode. \\
+\hline
+{\em In\+Tag\+Index} & The index of the tag. \\
+\hline
+{\em Out\+Simulation\+Magnitude\+Data\+Array} & The output array for simulation magnitude data. \\
+\hline
+{\em Out\+Simulation\+Vectorfield\+Data\+Array} & The output array for simulation vector field data. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a732cb9e0f9a8389354ce72d55378766d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_aa044c69a748de8c06431606511c28533}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetTagLengthArray@{GetTagLengthArray}}
+\index{GetTagLengthArray@{GetTagLengthArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetTagLengthArray()}{GetTagLengthArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_aa044c69a748de8c06431606511c28533} 
+TArray$<$ int32 $>$ UPT\+\_\+\+Simulation\+Component\+::\+Get\+Tag\+Length\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the tag length array. 
+
+\begin{DoxyReturn}{Returns}
+TArray$<$int32$>$ The tag length array. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_aa044c69a748de8c06431606511c28533_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_aa044c69a748de8c06431606511c28533_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_aa09b9e1d43776316febdb2a662ddd0de}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetVectorfieldInRoi@{GetVectorfieldInRoi}}
+\index{GetVectorfieldInRoi@{GetVectorfieldInRoi}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetVectorfieldInRoi()}{GetVectorfieldInRoi()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_aa09b9e1d43776316febdb2a662ddd0de} 
+TArray$<$ FVector $>$ UPT\+\_\+\+Simulation\+Component\+::\+Get\+Vectorfield\+In\+Roi (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the vector field in ROI. 
+
+\begin{DoxyReturn}{Returns}
+TArray$<$\+FVector$>$ The vector field in ROI. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_aa09b9e1d43776316febdb2a662ddd0de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_aa09b9e1d43776316febdb2a662ddd0de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a5ca80edcba3ba255b8d2a2b40ba0b8b5}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!GetVerticesInRoiArray@{GetVerticesInRoiArray}}
+\index{GetVerticesInRoiArray@{GetVerticesInRoiArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{GetVerticesInRoiArray()}{GetVerticesInRoiArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a5ca80edcba3ba255b8d2a2b40ba0b8b5} 
+TArray$<$ int32 $>$ UPT\+\_\+\+Simulation\+Component\+::\+Get\+Vertices\+In\+Roi\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the vertices in ROI array. 
+
+\begin{DoxyReturn}{Returns}
+TArray$<$int32$>$ The vertices in ROI array. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a5ca80edcba3ba255b8d2a2b40ba0b8b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a5ca80edcba3ba255b8d2a2b40ba0b8b5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a7c2cc9f2011b55a26a85cab8e1806a09}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!MapToGreyscaleColormap@{MapToGreyscaleColormap}}
+\index{MapToGreyscaleColormap@{MapToGreyscaleColormap}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{MapToGreyscaleColormap()}{MapToGreyscaleColormap()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a7c2cc9f2011b55a26a85cab8e1806a09} 
+TArray$<$ FLinear\+Color $>$ UPT\+\_\+\+Simulation\+Component\+::\+Map\+To\+Greyscale\+Colormap (\begin{DoxyParamCaption}\item[{const TArray$<$ double $>$ \&}]{In\+Data}{, }\item[{const int32 \&}]{In\+Data\+Tag\+Index}{, }\item[{const double \&}]{In\+Percentile\+Min\+Value}{, }\item[{const double \&}]{In\+Percentile\+Max\+Value}{}\end{DoxyParamCaption})}
+
+
+
+Maps input data to a greyscale colormap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Data} & Input data array. \\
+\hline
+{\em In\+Data\+Tag\+Index} & Index of the data tag. \\
+\hline
+{\em In\+Percentile\+Min\+Value} & Minimum percentile value. \\
+\hline
+{\em In\+Percentile\+Max\+Value} & Maximum percentile value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TArray$<$\+FLinear\+Color$>$ Array of colors mapped to the greyscale colormap. 
+\end{DoxyReturn}
+\Hypertarget{class_u_p_t___simulation_component_a2563f26f136d54bb6c2b17d1fd61063e}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!MapToJetColormap@{MapToJetColormap}}
+\index{MapToJetColormap@{MapToJetColormap}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{MapToJetColormap()}{MapToJetColormap()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a2563f26f136d54bb6c2b17d1fd61063e} 
+TArray$<$ FLinear\+Color $>$ UPT\+\_\+\+Simulation\+Component\+::\+Map\+To\+Jet\+Colormap (\begin{DoxyParamCaption}\item[{const TArray$<$ double $>$ \&}]{Data}{, }\item[{const int32 \&}]{In\+Data\+Tag\+Index}{, }\item[{const double \&}]{In\+Percentile\+Min\+Value}{, }\item[{const double \&}]{In\+Percentile\+Max\+Value}{}\end{DoxyParamCaption})}
+
+
+
+Maps input data to a Jet colormap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Data} & Input data array. \\
+\hline
+{\em In\+Data\+Tag\+Index} & Index of the data tag. \\
+\hline
+{\em In\+Percentile\+Min\+Value} & Minimum percentile value. \\
+\hline
+{\em In\+Percentile\+Max\+Value} & Maximum percentile value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TArray$<$\+FLinear\+Color$>$ Array of colors mapped to the Jet colormap. 
+\end{DoxyReturn}
+\Hypertarget{class_u_p_t___simulation_component_a1670b8682485084943fcf232aa332bdf}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!MapToPlasmaColormap@{MapToPlasmaColormap}}
+\index{MapToPlasmaColormap@{MapToPlasmaColormap}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{MapToPlasmaColormap()}{MapToPlasmaColormap()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a1670b8682485084943fcf232aa332bdf} 
+TArray$<$ FLinear\+Color $>$ UPT\+\_\+\+Simulation\+Component\+::\+Map\+To\+Plasma\+Colormap (\begin{DoxyParamCaption}\item[{const TArray$<$ double $>$ \&}]{In\+Data}{, }\item[{const int32 \&}]{In\+Data\+Tag\+Index}{, }\item[{const double \&}]{In\+Percentile\+Min\+Value}{, }\item[{const double \&}]{In\+Percentile\+Max\+Value}{}\end{DoxyParamCaption})}
+
+
+
+Maps input data to a Plasma colormap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Data} & Input data array. \\
+\hline
+{\em In\+Data\+Tag\+Index} & Index of the data tag. \\
+\hline
+{\em In\+Percentile\+Min\+Value} & Minimum percentile value. \\
+\hline
+{\em In\+Percentile\+Max\+Value} & Maximum percentile value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TArray$<$\+FLinear\+Color$>$ Array of colors mapped to the Plasma colormap. 
+\end{DoxyReturn}
+\Hypertarget{class_u_p_t___simulation_component_a35c508f431cbfefe07042f0bfc42783f}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!ProcessElectrodeData@{ProcessElectrodeData}}
+\index{ProcessElectrodeData@{ProcessElectrodeData}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{ProcessElectrodeData()}{ProcessElectrodeData()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a35c508f431cbfefe07042f0bfc42783f} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Process\+Electrode\+Data (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Data\+Tag\+Array}{, }\item[{const int32 \&}]{In\+Current\+Electrode\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Processes electrode data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & The JSON object pointer. \\
+\hline
+{\em In\+Data\+Tag\+Array} & The array of data tags. \\
+\hline
+{\em In\+Current\+Electrode\+Index} & The current electrode index. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a35c508f431cbfefe07042f0bfc42783f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a35c508f431cbfefe07042f0bfc42783f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a694de51fcc8d63e5b972879ff0d1d29d}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!ProcessInterpolation@{ProcessInterpolation}}
+\index{ProcessInterpolation@{ProcessInterpolation}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{ProcessInterpolation()}{ProcessInterpolation()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a694de51fcc8d63e5b972879ff0d1d29d} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Process\+Interpolation (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Electrode\+IndexA}{, }\item[{const int32 \&}]{In\+Electrode\+IndexB}{, }\item[{const int32 \&}]{In\+Electrode\+IndexC}{, }\item[{const double \&}]{In\+WeightA}{, }\item[{const double \&}]{In\+WeightB}{, }\item[{const double \&}]{In\+WeightC}{}\end{DoxyParamCaption})}
+
+
+
+Processes interpolation for simulation data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Electrode\+IndexA} & The index of the first electrode. \\
+\hline
+{\em In\+Electrode\+IndexB} & The index of the second electrode. \\
+\hline
+{\em In\+Electrode\+IndexC} & The index of the third electrode. \\
+\hline
+{\em In\+WeightA} & The weight for the first electrode. \\
+\hline
+{\em In\+WeightB} & The weight for the second electrode. \\
+\hline
+{\em In\+WeightC} & The weight for the third electrode. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a694de51fcc8d63e5b972879ff0d1d29d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a4058c8d82deda414d5bb00c86a686e45}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!ResetSimulationDataArrays@{ResetSimulationDataArrays}}
+\index{ResetSimulationDataArrays@{ResetSimulationDataArrays}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{ResetSimulationDataArrays()}{ResetSimulationDataArrays()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a4058c8d82deda414d5bb00c86a686e45} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Reset\+Simulation\+Data\+Arrays (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Resets the simulation data arrays. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___simulation_component_a4058c8d82deda414d5bb00c86a686e45_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a321866dd79ae2abb04d7be965b8ae058}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!SetDataColorArrayPerTag@{SetDataColorArrayPerTag}}
+\index{SetDataColorArrayPerTag@{SetDataColorArrayPerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{SetDataColorArrayPerTag()}{SetDataColorArrayPerTag()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a321866dd79ae2abb04d7be965b8ae058} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Set\+Data\+Color\+Array\+Per\+Tag (\begin{DoxyParamCaption}\item[{const int32 \&}]{In\+Data\+Tag\+Index}{, }\item[{const TArray$<$ FLinear\+Color $>$ \&}]{In\+Data\+Color\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the data color array for a specific tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Data\+Tag\+Index} & The index of the data tag. \\
+\hline
+{\em In\+Data\+Color\+Array} & The data color array. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a321866dd79ae2abb04d7be965b8ae058_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_u_p_t___simulation_component_a321866dd79ae2abb04d7be965b8ae058_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___simulation_component_a4744313dfa7e4add7e6a22e13523aedd}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!TickComponent@{TickComponent}}
+\index{TickComponent@{TickComponent}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{TickComponent()}{TickComponent()}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a4744313dfa7e4add7e6a22e13523aedd} 
+void UPT\+\_\+\+Simulation\+Component\+::\+Tick\+Component (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{, }\item[{ELevel\+Tick}]{Tick\+Type}{, }\item[{FActor\+Component\+Tick\+Function \texorpdfstring{$\ast$}{*}}]{This\+Tick\+Function}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & Time since the last frame. \\
+\hline
+{\em Tick\+Type} & Type of tick. \\
+\hline
+{\em This\+Tick\+Function} & Tick function. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_p_t___simulation_component_a2b167dc4f8bfe9c3f4576df0f38dbabe}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!DataColorArrayPerTag@{DataColorArrayPerTag}}
+\index{DataColorArrayPerTag@{DataColorArrayPerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{DataColorArrayPerTag}{DataColorArrayPerTag}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a2b167dc4f8bfe9c3f4576df0f38dbabe} 
+TArray$<$TArray$<$FLinear\+Color$>$ $>$ UPT\+\_\+\+Simulation\+Component\+::\+Data\+Color\+Array\+Per\+Tag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of data color arrays per tag. 
+
+\Hypertarget{class_u_p_t___simulation_component_ad8f18d3a48704021fdf1b9253ad50840}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!ElectrodeIndexArray@{ElectrodeIndexArray}}
+\index{ElectrodeIndexArray@{ElectrodeIndexArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{ElectrodeIndexArray}{ElectrodeIndexArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_ad8f18d3a48704021fdf1b9253ad50840} 
+TArray$<$int32$>$ UPT\+\_\+\+Simulation\+Component\+::\+Electrode\+Index\+Array}
+
+
+
+Array of electrode indices. 
+
+\Hypertarget{class_u_p_t___simulation_component_a9f62e4da04e2dc03754a8446851b41f3}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!InterpolatedMagnitudeDataPerTagArray@{InterpolatedMagnitudeDataPerTagArray}}
+\index{InterpolatedMagnitudeDataPerTagArray@{InterpolatedMagnitudeDataPerTagArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{InterpolatedMagnitudeDataPerTagArray}{InterpolatedMagnitudeDataPerTagArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a9f62e4da04e2dc03754a8446851b41f3} 
+TArray$<$TArray$<$double$>$ $>$ UPT\+\_\+\+Simulation\+Component\+::\+Interpolated\+Magnitude\+Data\+Per\+Tag\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of interpolated magnitude data per tag. 
+
+\Hypertarget{class_u_p_t___simulation_component_a7830f45b3d18a3833c8cb69b354d8dad}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!InterpolatedVectorfieldDataPerTagArray@{InterpolatedVectorfieldDataPerTagArray}}
+\index{InterpolatedVectorfieldDataPerTagArray@{InterpolatedVectorfieldDataPerTagArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{InterpolatedVectorfieldDataPerTagArray}{InterpolatedVectorfieldDataPerTagArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a7830f45b3d18a3833c8cb69b354d8dad} 
+TArray$<$TArray$<$FVector$>$ $>$ UPT\+\_\+\+Simulation\+Component\+::\+Interpolated\+Vectorfield\+Data\+Per\+Tag\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of interpolated vector field data per tag. 
+
+\Hypertarget{class_u_p_t___simulation_component_a3cfd83a63971a3db1b19061a07c37d4b}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!MeanMagnitude@{MeanMagnitude}}
+\index{MeanMagnitude@{MeanMagnitude}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{MeanMagnitude}{MeanMagnitude}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a3cfd83a63971a3db1b19061a07c37d4b} 
+double UPT\+\_\+\+Simulation\+Component\+::\+Mean\+Magnitude\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mean magnitude. 
+
+\Hypertarget{class_u_p_t___simulation_component_a737d3c1f6bacd20f17071b05e8a2461d}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!MeanMagnitudePerTag@{MeanMagnitudePerTag}}
+\index{MeanMagnitudePerTag@{MeanMagnitudePerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{MeanMagnitudePerTag}{MeanMagnitudePerTag}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a737d3c1f6bacd20f17071b05e8a2461d} 
+TArray$<$double$>$ UPT\+\_\+\+Simulation\+Component\+::\+Mean\+Magnitude\+Per\+Tag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of mean magnitudes per tag. 
+
+\Hypertarget{class_u_p_t___simulation_component_a3ca93b6e0daa9f537fb7d81a173783b0}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!MeanVectorField@{MeanVectorField}}
+\index{MeanVectorField@{MeanVectorField}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{MeanVectorField}{MeanVectorField}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a3ca93b6e0daa9f537fb7d81a173783b0} 
+FVector UPT\+\_\+\+Simulation\+Component\+::\+Mean\+Vector\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mean vector field. 
+
+\Hypertarget{class_u_p_t___simulation_component_ab81e525c18acbbeba8b10229e6ca5d42}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!MeanVectorFieldPerTag@{MeanVectorFieldPerTag}}
+\index{MeanVectorFieldPerTag@{MeanVectorFieldPerTag}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{MeanVectorFieldPerTag}{MeanVectorFieldPerTag}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_ab81e525c18acbbeba8b10229e6ca5d42} 
+TArray$<$FVector$>$ UPT\+\_\+\+Simulation\+Component\+::\+Mean\+Vector\+Field\+Per\+Tag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of mean vector fields per tag. 
+
+\Hypertarget{class_u_p_t___simulation_component_a2f36782afa39a135c4d44103717fae14}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!PerVertexDataArray@{PerVertexDataArray}}
+\index{PerVertexDataArray@{PerVertexDataArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{PerVertexDataArray}{PerVertexDataArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a2f36782afa39a135c4d44103717fae14} 
+TArray$<$double$>$ UPT\+\_\+\+Simulation\+Component\+::\+Per\+Vertex\+Data\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of per-\/vertex data. 
+
+\Hypertarget{class_u_p_t___simulation_component_a05b003583c2e4daecec9e80f9aae5229}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!RawTetraDataArray@{RawTetraDataArray}}
+\index{RawTetraDataArray@{RawTetraDataArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{RawTetraDataArray}{RawTetraDataArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a05b003583c2e4daecec9e80f9aae5229} 
+TArray$<$TArray$<$\mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}}$>$ $>$ UPT\+\_\+\+Simulation\+Component\+::\+Raw\+Tetra\+Data\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of raw tetra data. 
+
+\Hypertarget{class_u_p_t___simulation_component_a96e3f675146d89e7fb02e3ba0bb186f6}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!RoiIndexMappingPerTagArray@{RoiIndexMappingPerTagArray}}
+\index{RoiIndexMappingPerTagArray@{RoiIndexMappingPerTagArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{RoiIndexMappingPerTagArray}{RoiIndexMappingPerTagArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a96e3f675146d89e7fb02e3ba0bb186f6} 
+TArray$<$TArray$<$int32$>$ $>$ UPT\+\_\+\+Simulation\+Component\+::\+Roi\+Index\+Mapping\+Per\+Tag\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of ROI index mappings per tag. 
+
+\Hypertarget{class_u_p_t___simulation_component_a542efbecdfaa04abf25245de2b4bd1ce}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!SimulationMagnitudeDataPerElectrodePerTagArray@{SimulationMagnitudeDataPerElectrodePerTagArray}}
+\index{SimulationMagnitudeDataPerElectrodePerTagArray@{SimulationMagnitudeDataPerElectrodePerTagArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{SimulationMagnitudeDataPerElectrodePerTagArray}{SimulationMagnitudeDataPerElectrodePerTagArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a542efbecdfaa04abf25245de2b4bd1ce} 
+TArray$<$TArray$<$TArray$<$double$>$ $>$ $>$ UPT\+\_\+\+Simulation\+Component\+::\+Simulation\+Magnitude\+Data\+Per\+Electrode\+Per\+Tag\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of simulation magnitude data per electrode per tag. 
+
+\Hypertarget{class_u_p_t___simulation_component_acfcd13981d9347756139217a2d683710}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!SimulationVectorfieldDataPerElectrodePerTagArray@{SimulationVectorfieldDataPerElectrodePerTagArray}}
+\index{SimulationVectorfieldDataPerElectrodePerTagArray@{SimulationVectorfieldDataPerElectrodePerTagArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{SimulationVectorfieldDataPerElectrodePerTagArray}{SimulationVectorfieldDataPerElectrodePerTagArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_acfcd13981d9347756139217a2d683710} 
+TArray$<$TArray$<$TArray$<$FVector$>$ $>$ $>$ UPT\+\_\+\+Simulation\+Component\+::\+Simulation\+Vectorfield\+Data\+Per\+Electrode\+Per\+Tag\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of simulation vector field data per electrode per tag. 
+
+\Hypertarget{class_u_p_t___simulation_component_aae36147c434f00708b39869a27a08d53}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!TagLengthArray@{TagLengthArray}}
+\index{TagLengthArray@{TagLengthArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{TagLengthArray}{TagLengthArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_aae36147c434f00708b39869a27a08d53} 
+TArray$<$int32$>$ UPT\+\_\+\+Simulation\+Component\+::\+Tag\+Length\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of tag lengths. 
+
+\Hypertarget{class_u_p_t___simulation_component_a2879966eb473a0fb67c5868b7297076a}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!VectorfieldInRoi@{VectorfieldInRoi}}
+\index{VectorfieldInRoi@{VectorfieldInRoi}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{VectorfieldInRoi}{VectorfieldInRoi}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_a2879966eb473a0fb67c5868b7297076a} 
+TArray$<$FVector$>$ UPT\+\_\+\+Simulation\+Component\+::\+Vectorfield\+In\+Roi\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of vector fields in ROI. 
+
+\Hypertarget{class_u_p_t___simulation_component_abd6d666ff123883270fabf5b3add2748}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!VertexTagCellMapping@{VertexTagCellMapping}}
+\index{VertexTagCellMapping@{VertexTagCellMapping}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{VertexTagCellMapping}{VertexTagCellMapping}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_abd6d666ff123883270fabf5b3add2748} 
+TMap$<$int32, TArray$<$TArray$<$int32$>$ $>$ $>$ UPT\+\_\+\+Simulation\+Component\+::\+Vertex\+Tag\+Cell\+Mapping\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Map of vertex tag cell mappings. 
+
+\Hypertarget{class_u_p_t___simulation_component_aec49aada4f3b2a124bebcfb12773b6bc}\index{UPT\_SimulationComponent@{UPT\_SimulationComponent}!VerticesInRoiArray@{VerticesInRoiArray}}
+\index{VerticesInRoiArray@{VerticesInRoiArray}!UPT\_SimulationComponent@{UPT\_SimulationComponent}}
+\doxysubsubsection{\texorpdfstring{VerticesInRoiArray}{VerticesInRoiArray}}
+{\footnotesize\ttfamily \label{class_u_p_t___simulation_component_aec49aada4f3b2a124bebcfb12773b6bc} 
+TArray$<$int32$>$ UPT\+\_\+\+Simulation\+Component\+::\+Vertices\+In\+Roi\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array of vertices in ROI. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___simulation_component_8h}{PT\+\_\+\+Simulation\+Component.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___simulation_component_8cpp}{PT\+\_\+\+Simulation\+Component.\+cpp}}\end{DoxyCompactItemize}

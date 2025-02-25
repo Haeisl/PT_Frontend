@@ -1,0 +1,1021 @@
+\doxysection{UPT\+\_\+\+Config\+Manager Class Reference}
+\hypertarget{class_u_p_t___config_manager}{}\label{class_u_p_t___config_manager}\index{UPT\_ConfigManager@{UPT\_ConfigManager}}
+
+
+A class that manages configuration settings and provides various URLs for server communication.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Config\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for UPT\+\_\+\+Config\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_u_p_t___config_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UPT\+\_\+\+Config\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_u_p_t___config_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_p_t___config_manager_a259a1f16f06f59bfbb9e54f4e969edaa}{UPT\+\_\+\+Config\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_u_p_t___config_manager}{UPT\+\_\+\+Config\+Manager}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_u_p_t___config_manager_a89032635cf6f9aa05af3acc90ca46c7b}{\texorpdfstring{$\sim$}{\string~}\+UPT\+\_\+\+Config\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_u_p_t___config_manager}{UPT\+\_\+\+Config\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_u_p_t___config_manager_a0e2a9d235ce5686c97d97766b04443f9}{Set\+Server\+Address}} (const FString \&New\+Address)
+\begin{DoxyCompactList}\small\item\em Sets the server address. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a6ae375becb9a9ba415971bf986e29c57}{Get\+Reached\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Gets the reached address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_af2f990e4ee3b3793887be01b231dfa08}{Get\+Run\+Simulations\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Gets the run simulations address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a652bbd9df021f443f04c91f0b30322a0}{Get\+Configuration\+Mesh\+Address}} (const FString \&In\+Patient\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the configuration mesh address URL for a given patient ID. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a4e5d916db4b6c4473475d5521f4c36ec}{Get\+Skin\+Mesh\+Address}} (const FString \&In\+Patient\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the skin mesh address URL for a given patient ID. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a43635d07f6d0b5bee658d0024b4ecfb7}{Get\+Electrodes\+Position\+Address}} (const FString \&In\+Patient\+Id, const FString \&In\+Config\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the electrodes position address URL for a given patient ID and configuration ID. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a59bcc19aa5b2104fae73c34697c4e65f}{Get\+Data\+Vallidation\+Address}} (const FString \&In\+Patient\+Id, const FString \&In\+Config\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the data validation address URL for a given patient ID and configuration ID. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_ad5286cdef0de33276f2489308ce97a92}{Get\+Roi\+Address}} (const FString \&In\+Patient\+Id, const FString \&In\+Roi\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the ROI address URL for a given patient ID and ROI ID. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a41c26ab6a05e2bcdc9285bcd88095604}{Get\+Simulated3\+DAddress}} (const FString \&In\+Patient\+Id, const FString \&In\+Config\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the simulated 3D address URL for a given patient ID and configuration ID. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a3fddf7bb37267c034132ba2e43bd6fff}{Get\+Simulated\+Data\+Address}} (const FString \&In\+Patient\+Id, const FString \&In\+Config\+Id, const FString \&In\+Roi\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the simulated data address URL for a given patient ID, configuration ID, and ROI ID. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a901b0d5ab7ba0cf558540430eb4d4b72}{Get\+Interpolated\+Data\+Address}} (const FString \&In\+Patient\+Id, const FString \&In\+Config\+Id, const FString \&In\+Roi\+Id, const FString \&In\+Interpolation\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the interpolated data address URL for a given patient ID, configuration ID, ROI ID, and interpolation ID. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a2c9bfa7be7dd6e91551037efed9e70cd}{Get\+Server\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Gets the server address. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_af2451f60d48311dac0bbc153117816ea}{Get\+Url\+Configuration\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Gets the URL for the configuration mesh. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_addd543b6ccc566db91be4704c1bfc55f}{Get\+Url\+Skin\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Gets the URL for the skin mesh. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a93a589b06e93263a60dcd82bf0c5cf68}{Get\+Url\+Electrodes\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Gets the URL for the electrodes position. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a5ab134a0b3ff40877ca5590ba7cd0919}{Get\+Url\+Data\+Validation}} ()
+\begin{DoxyCompactList}\small\item\em Gets the URL for data validation. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a502ccd0eb24d2c25c3f5a3ffcf469217}{Get\+Url\+ROI}} ()
+\begin{DoxyCompactList}\small\item\em Gets the URL for ROI. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_adbe2075b96fc494d121bfc075b5c7dcd}{Get\+Url\+Simulated3D}} ()
+\begin{DoxyCompactList}\small\item\em Gets the URL for simulated 3D data. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_ad6460d1b3f28f431e16e8df397d13541}{Get\+Url\+Simulated\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Gets the URL for simulated data. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_ac6ed879f9237324d2519b7a314fa9327}{Get\+Url\+Interpolated\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Gets the URL for interpolated data. \end{DoxyCompactList}\item 
+static TArray$<$ FString $>$ \mbox{\hyperlink{class_u_p_t___config_manager_a300fe850ee9747d6fd253425a8c57bbc}{Get\+Data\+Tag\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets the data tag array. \end{DoxyCompactList}\item 
+static TArray$<$ FString $>$ \mbox{\hyperlink{class_u_p_t___config_manager_aea1369c0413d7b8b4b9a9a86ef234f38}{Get\+Data\+Tag\+Name\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets the data tag name array. \end{DoxyCompactList}\item 
+static TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___config_manager_a8c74dca0e2da85e92a49eab962b01787}{Get\+Data\+Tag\+Index\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets the data tag index array. \end{DoxyCompactList}\item 
+static TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___config_manager_a6ac1ace95c7c1fb061031432161f7e21}{Get\+Data\+Tag\+Volume\+Index\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets the data tag volume index array. \end{DoxyCompactList}\item 
+static TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___config_manager_ad2232370224cb1dcc97d8ad93c2ae841}{Get\+Data\+Tag\+Mesh\+Index\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Gets the data tag mesh index array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} = TEXT("{}http\+://127.\+0.\+0.\+1\+:5000"{})
+\begin{DoxyCompactList}\small\item\em The server address. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_ace64e9d2a554e6de2eb018fc5312f8ca}{URL\+\_\+\+REACHED}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/reached"{})
+\begin{DoxyCompactList}\small\item\em The reached address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a8c82f878632bf3ce427227756a8f63bf}{URL\+\_\+\+RUN\+\_\+\+SIMULATIONS}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/run\+\_\+simulations"{})
+\begin{DoxyCompactList}\small\item\em The run simulations address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a01479b729623c55f91fd9e801472b89e}{URL\+\_\+\+CONFIGURATION\+\_\+\+MESH}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/3d/configuration"{})
+\begin{DoxyCompactList}\small\item\em The configuration mesh address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a66ba8cdd4ead95417f57a72bffcc6ba6}{URL\+\_\+\+SKIN\+\_\+\+MESH}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/3d/configuration/skin"{})
+\begin{DoxyCompactList}\small\item\em The skin mesh address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a5cb1056d189cbc95d538b218c626030e}{URL\+\_\+\+ELECTRODES\+\_\+\+POSITION}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/elect\+\_\+pos"{})
+\begin{DoxyCompactList}\small\item\em The electrodes position address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_af52c72a317f948ca5360897909ab0234}{URL\+\_\+\+DATA\+\_\+\+VALIDATION}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/validation"{})
+\begin{DoxyCompactList}\small\item\em The data validation address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_af00f3bb8e9c5bf278be1b01a11d71fe0}{URL\+\_\+\+ROI}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/roi"{})
+\begin{DoxyCompactList}\small\item\em The ROI address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_a0224037f4fc85e59e62be7d8414a28cf}{URL\+\_\+\+SIMULATED\+\_\+3D}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/3d/simulated"{})
+\begin{DoxyCompactList}\small\item\em The simulated 3D address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_acf27fd2c849c57e1b3fd27bf5669c8d5}{URL\+\_\+\+SIMULATED\+\_\+\+DATA}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/simulated"{})
+\begin{DoxyCompactList}\small\item\em The simulated data address URL. \end{DoxyCompactList}\item 
+static FString \mbox{\hyperlink{class_u_p_t___config_manager_abd7e8b79878f1a66a93e32c5f1af5b09}{URL\+\_\+\+INTERPOLATED\+\_\+\+DATA}} = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/interpolated"{})
+\begin{DoxyCompactList}\small\item\em The interpolated data address URL. \end{DoxyCompactList}\item 
+static const TArray$<$ FString $>$ \mbox{\hyperlink{class_u_p_t___config_manager_a3d0e73bcd53e560ade677cceecc28f62}{DATA\+\_\+\+TAG\+\_\+\+ARRAY}} = \{ TEXT("{}1001"{}), TEXT("{}1002"{}), TEXT("{}1003"{}), TEXT("{}1006"{}), TEXT("{}1008"{}), TEXT("{}1009"{}), TEXT("{}1010"{}), TEXT("{}1"{}), TEXT("{}2"{}), TEXT("{}3"{}), TEXT("{}6"{}), TEXT("{}8"{}), TEXT("{}9"{}), TEXT("{}10"{}) \}
+\begin{DoxyCompactList}\small\item\em The data tag array. \end{DoxyCompactList}\item 
+static const TArray$<$ FString $>$ \mbox{\hyperlink{class_u_p_t___config_manager_aa70d41264d1b9b6395718a25fe8eaa9d}{DATA\+\_\+\+TAG\+\_\+\+NAME\+\_\+\+ARRAY}}
+\begin{DoxyCompactList}\small\item\em The data tag name array. \end{DoxyCompactList}\item 
+static const TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___config_manager_a2a7784ab027e7fe94305b82de8963374}{DATA\+\_\+\+TAG\+\_\+\+INDEX\+\_\+\+ARRAY}} = \{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 \}
+\begin{DoxyCompactList}\small\item\em The data tag index array. \end{DoxyCompactList}\item 
+static const TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___config_manager_ab72c002313b9606924d0ba594d52af7e}{DATA\+\_\+\+TAG\+\_\+\+VOLUME\+\_\+\+INDEX\+\_\+\+ARRAY}} = \{ 7, 8, 9, 10, 11, 12, 13 \}
+\begin{DoxyCompactList}\small\item\em The data tag volume index array. \end{DoxyCompactList}\item 
+static const TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_p_t___config_manager_ae6e9904bbbbeb31b5a7efd376e996895}{DATA\+\_\+\+TAG\+\_\+\+MESH\+\_\+\+INDEX\+\_\+\+ARRAY}} = \{ 0, 1, 2, 3, 4, 5, 6 \}
+\begin{DoxyCompactList}\small\item\em The data tag mesh index array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that manages configuration settings and provides various URLs for server communication. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_u_p_t___config_manager_a259a1f16f06f59bfbb9e54f4e969edaa}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\index{UPT\_ConfigManager@{UPT\_ConfigManager}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{UPT\_ConfigManager()}{UPT\_ConfigManager()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a259a1f16f06f59bfbb9e54f4e969edaa} 
+UPT\+\_\+\+Config\+Manager\+::\+UPT\+\_\+\+Config\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_u_p_t___config_manager}{UPT\+\_\+\+Config\+Manager}. 
+
+\Hypertarget{class_u_p_t___config_manager_a89032635cf6f9aa05af3acc90ca46c7b}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!````~UPT\_ConfigManager@{\texorpdfstring{$\sim$}{\string~}UPT\_ConfigManager}}
+\index{````~UPT\_ConfigManager@{\texorpdfstring{$\sim$}{\string~}UPT\_ConfigManager}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}UPT\_ConfigManager()}{\string~UPT\_ConfigManager()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a89032635cf6f9aa05af3acc90ca46c7b} 
+UPT\+\_\+\+Config\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+UPT\+\_\+\+Config\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_u_p_t___config_manager}{UPT\+\_\+\+Config\+Manager}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_p_t___config_manager_a652bbd9df021f443f04c91f0b30322a0}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetConfigurationMeshAddress@{GetConfigurationMeshAddress}}
+\index{GetConfigurationMeshAddress@{GetConfigurationMeshAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetConfigurationMeshAddress()}{GetConfigurationMeshAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a652bbd9df021f443f04c91f0b30322a0} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Configuration\+Mesh\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the configuration mesh address URL for a given patient ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The configuration mesh address URL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a652bbd9df021f443f04c91f0b30322a0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a300fe850ee9747d6fd253425a8c57bbc}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetDataTagArray@{GetDataTagArray}}
+\index{GetDataTagArray@{GetDataTagArray}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetDataTagArray()}{GetDataTagArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a300fe850ee9747d6fd253425a8c57bbc} 
+static TArray$<$ FString $>$ UPT\+\_\+\+Config\+Manager\+::\+Get\+Data\+Tag\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the data tag array. 
+
+\begin{DoxyReturn}{Returns}
+The data tag array. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_u_p_t___config_manager_a300fe850ee9747d6fd253425a8c57bbc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a300fe850ee9747d6fd253425a8c57bbc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a8c74dca0e2da85e92a49eab962b01787}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetDataTagIndexArray@{GetDataTagIndexArray}}
+\index{GetDataTagIndexArray@{GetDataTagIndexArray}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetDataTagIndexArray()}{GetDataTagIndexArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a8c74dca0e2da85e92a49eab962b01787} 
+static TArray$<$ int32 $>$ UPT\+\_\+\+Config\+Manager\+::\+Get\+Data\+Tag\+Index\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the data tag index array. 
+
+\begin{DoxyReturn}{Returns}
+The data tag index array. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_u_p_t___config_manager_a8c74dca0e2da85e92a49eab962b01787_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a8c74dca0e2da85e92a49eab962b01787_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_ad2232370224cb1dcc97d8ad93c2ae841}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetDataTagMeshIndexArray@{GetDataTagMeshIndexArray}}
+\index{GetDataTagMeshIndexArray@{GetDataTagMeshIndexArray}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetDataTagMeshIndexArray()}{GetDataTagMeshIndexArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_ad2232370224cb1dcc97d8ad93c2ae841} 
+static TArray$<$ int32 $>$ UPT\+\_\+\+Config\+Manager\+::\+Get\+Data\+Tag\+Mesh\+Index\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the data tag mesh index array. 
+
+\begin{DoxyReturn}{Returns}
+The data tag mesh index array. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_u_p_t___config_manager_ad2232370224cb1dcc97d8ad93c2ae841_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_ad2232370224cb1dcc97d8ad93c2ae841_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_aea1369c0413d7b8b4b9a9a86ef234f38}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetDataTagNameArray@{GetDataTagNameArray}}
+\index{GetDataTagNameArray@{GetDataTagNameArray}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetDataTagNameArray()}{GetDataTagNameArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_aea1369c0413d7b8b4b9a9a86ef234f38} 
+static TArray$<$ FString $>$ UPT\+\_\+\+Config\+Manager\+::\+Get\+Data\+Tag\+Name\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the data tag name array. 
+
+\begin{DoxyReturn}{Returns}
+The data tag name array. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_u_p_t___config_manager_aea1369c0413d7b8b4b9a9a86ef234f38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_u_p_t___config_manager_aea1369c0413d7b8b4b9a9a86ef234f38_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a6ac1ace95c7c1fb061031432161f7e21}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetDataTagVolumeIndexArray@{GetDataTagVolumeIndexArray}}
+\index{GetDataTagVolumeIndexArray@{GetDataTagVolumeIndexArray}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetDataTagVolumeIndexArray()}{GetDataTagVolumeIndexArray()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a6ac1ace95c7c1fb061031432161f7e21} 
+static TArray$<$ int32 $>$ UPT\+\_\+\+Config\+Manager\+::\+Get\+Data\+Tag\+Volume\+Index\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the data tag volume index array. 
+
+\begin{DoxyReturn}{Returns}
+The data tag volume index array. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_u_p_t___config_manager_a6ac1ace95c7c1fb061031432161f7e21_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a6ac1ace95c7c1fb061031432161f7e21_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a59bcc19aa5b2104fae73c34697c4e65f}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetDataVallidationAddress@{GetDataVallidationAddress}}
+\index{GetDataVallidationAddress@{GetDataVallidationAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetDataVallidationAddress()}{GetDataVallidationAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a59bcc19aa5b2104fae73c34697c4e65f} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Data\+Vallidation\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const FString \&}]{In\+Config\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the data validation address URL for a given patient ID and configuration ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+{\em In\+Config\+Id} & The configuration ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data validation address URL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a59bcc19aa5b2104fae73c34697c4e65f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a43635d07f6d0b5bee658d0024b4ecfb7}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetElectrodesPositionAddress@{GetElectrodesPositionAddress}}
+\index{GetElectrodesPositionAddress@{GetElectrodesPositionAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetElectrodesPositionAddress()}{GetElectrodesPositionAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a43635d07f6d0b5bee658d0024b4ecfb7} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Electrodes\+Position\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const FString \&}]{In\+Config\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the electrodes position address URL for a given patient ID and configuration ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+{\em In\+Config\+Id} & The configuration ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The electrodes position address URL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a43635d07f6d0b5bee658d0024b4ecfb7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a901b0d5ab7ba0cf558540430eb4d4b72}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetInterpolatedDataAddress@{GetInterpolatedDataAddress}}
+\index{GetInterpolatedDataAddress@{GetInterpolatedDataAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetInterpolatedDataAddress()}{GetInterpolatedDataAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a901b0d5ab7ba0cf558540430eb4d4b72} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Interpolated\+Data\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const FString \&}]{In\+Config\+Id}{, }\item[{const FString \&}]{In\+Roi\+Id}{, }\item[{const FString \&}]{In\+Interpolation\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the interpolated data address URL for a given patient ID, configuration ID, ROI ID, and interpolation ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+{\em In\+Config\+Id} & The configuration ID. \\
+\hline
+{\em In\+Roi\+Id} & The ROI ID. \\
+\hline
+{\em In\+Interpolation\+Id} & The interpolation ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The interpolated data address URL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a901b0d5ab7ba0cf558540430eb4d4b72_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a6ae375becb9a9ba415971bf986e29c57}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetReachedAddress@{GetReachedAddress}}
+\index{GetReachedAddress@{GetReachedAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetReachedAddress()}{GetReachedAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a6ae375becb9a9ba415971bf986e29c57} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Reached\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the reached address URL. 
+
+\begin{DoxyReturn}{Returns}
+The reached address URL. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a6ae375becb9a9ba415971bf986e29c57_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_ad5286cdef0de33276f2489308ce97a92}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetRoiAddress@{GetRoiAddress}}
+\index{GetRoiAddress@{GetRoiAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetRoiAddress()}{GetRoiAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_ad5286cdef0de33276f2489308ce97a92} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Roi\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const FString \&}]{In\+Roi\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the ROI address URL for a given patient ID and ROI ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+{\em In\+Roi\+Id} & The ROI ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ROI address URL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_u_p_t___config_manager_ad5286cdef0de33276f2489308ce97a92_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_af2f990e4ee3b3793887be01b231dfa08}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetRunSimulationsAddress@{GetRunSimulationsAddress}}
+\index{GetRunSimulationsAddress@{GetRunSimulationsAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetRunSimulationsAddress()}{GetRunSimulationsAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_af2f990e4ee3b3793887be01b231dfa08} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Run\+Simulations\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the run simulations address URL. 
+
+\begin{DoxyReturn}{Returns}
+The run simulations address URL. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_af2f990e4ee3b3793887be01b231dfa08_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a2c9bfa7be7dd6e91551037efed9e70cd}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetServerAddress@{GetServerAddress}}
+\index{GetServerAddress@{GetServerAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetServerAddress()}{GetServerAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a2c9bfa7be7dd6e91551037efed9e70cd} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Server\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the server address. 
+
+\begin{DoxyReturn}{Returns}
+The server address. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_u_p_t___config_manager_a2c9bfa7be7dd6e91551037efed9e70cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_u_p_t___config_manager_a2c9bfa7be7dd6e91551037efed9e70cd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a41c26ab6a05e2bcdc9285bcd88095604}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetSimulated3DAddress@{GetSimulated3DAddress}}
+\index{GetSimulated3DAddress@{GetSimulated3DAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetSimulated3DAddress()}{GetSimulated3DAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a41c26ab6a05e2bcdc9285bcd88095604} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Simulated3\+DAddress (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const FString \&}]{In\+Config\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the simulated 3D address URL for a given patient ID and configuration ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+{\em In\+Config\+Id} & The configuration ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The simulated 3D address URL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a41c26ab6a05e2bcdc9285bcd88095604_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a3fddf7bb37267c034132ba2e43bd6fff}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetSimulatedDataAddress@{GetSimulatedDataAddress}}
+\index{GetSimulatedDataAddress@{GetSimulatedDataAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetSimulatedDataAddress()}{GetSimulatedDataAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a3fddf7bb37267c034132ba2e43bd6fff} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Simulated\+Data\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const FString \&}]{In\+Config\+Id}{, }\item[{const FString \&}]{In\+Roi\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the simulated data address URL for a given patient ID, configuration ID, and ROI ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+{\em In\+Config\+Id} & The configuration ID. \\
+\hline
+{\em In\+Roi\+Id} & The ROI ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The simulated data address URL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a3fddf7bb37267c034132ba2e43bd6fff_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a4e5d916db4b6c4473475d5521f4c36ec}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetSkinMeshAddress@{GetSkinMeshAddress}}
+\index{GetSkinMeshAddress@{GetSkinMeshAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetSkinMeshAddress()}{GetSkinMeshAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a4e5d916db4b6c4473475d5521f4c36ec} 
+FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Skin\+Mesh\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Patient\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the skin mesh address URL for a given patient ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The skin mesh address URL. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_u_p_t___config_manager_a4e5d916db4b6c4473475d5521f4c36ec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_af2451f60d48311dac0bbc153117816ea}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetUrlConfigurationMesh@{GetUrlConfigurationMesh}}
+\index{GetUrlConfigurationMesh@{GetUrlConfigurationMesh}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetUrlConfigurationMesh()}{GetUrlConfigurationMesh()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_af2451f60d48311dac0bbc153117816ea} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Url\+Configuration\+Mesh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the URL for the configuration mesh. 
+
+\begin{DoxyReturn}{Returns}
+The URL for the configuration mesh. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_u_p_t___config_manager_af2451f60d48311dac0bbc153117816ea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_af2451f60d48311dac0bbc153117816ea_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a5ab134a0b3ff40877ca5590ba7cd0919}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetUrlDataValidation@{GetUrlDataValidation}}
+\index{GetUrlDataValidation@{GetUrlDataValidation}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetUrlDataValidation()}{GetUrlDataValidation()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a5ab134a0b3ff40877ca5590ba7cd0919} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Url\+Data\+Validation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the URL for data validation. 
+
+\begin{DoxyReturn}{Returns}
+The URL for data validation. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_u_p_t___config_manager_a5ab134a0b3ff40877ca5590ba7cd0919_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a5ab134a0b3ff40877ca5590ba7cd0919_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a93a589b06e93263a60dcd82bf0c5cf68}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetUrlElectrodesPosition@{GetUrlElectrodesPosition}}
+\index{GetUrlElectrodesPosition@{GetUrlElectrodesPosition}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetUrlElectrodesPosition()}{GetUrlElectrodesPosition()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a93a589b06e93263a60dcd82bf0c5cf68} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Url\+Electrodes\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the URL for the electrodes position. 
+
+\begin{DoxyReturn}{Returns}
+The URL for the electrodes position. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_u_p_t___config_manager_a93a589b06e93263a60dcd82bf0c5cf68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_a93a589b06e93263a60dcd82bf0c5cf68_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_ac6ed879f9237324d2519b7a314fa9327}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetUrlInterpolatedData@{GetUrlInterpolatedData}}
+\index{GetUrlInterpolatedData@{GetUrlInterpolatedData}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetUrlInterpolatedData()}{GetUrlInterpolatedData()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_ac6ed879f9237324d2519b7a314fa9327} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Url\+Interpolated\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the URL for interpolated data. 
+
+\begin{DoxyReturn}{Returns}
+The URL for interpolated data. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_u_p_t___config_manager_ac6ed879f9237324d2519b7a314fa9327_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_ac6ed879f9237324d2519b7a314fa9327_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a502ccd0eb24d2c25c3f5a3ffcf469217}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetUrlROI@{GetUrlROI}}
+\index{GetUrlROI@{GetUrlROI}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetUrlROI()}{GetUrlROI()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a502ccd0eb24d2c25c3f5a3ffcf469217} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Url\+ROI (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the URL for ROI. 
+
+\begin{DoxyReturn}{Returns}
+The URL for ROI. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_u_p_t___config_manager_a502ccd0eb24d2c25c3f5a3ffcf469217_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_u_p_t___config_manager_a502ccd0eb24d2c25c3f5a3ffcf469217_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_adbe2075b96fc494d121bfc075b5c7dcd}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetUrlSimulated3D@{GetUrlSimulated3D}}
+\index{GetUrlSimulated3D@{GetUrlSimulated3D}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetUrlSimulated3D()}{GetUrlSimulated3D()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_adbe2075b96fc494d121bfc075b5c7dcd} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Url\+Simulated3D (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the URL for simulated 3D data. 
+
+\begin{DoxyReturn}{Returns}
+The URL for simulated 3D data. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_u_p_t___config_manager_adbe2075b96fc494d121bfc075b5c7dcd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_adbe2075b96fc494d121bfc075b5c7dcd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_ad6460d1b3f28f431e16e8df397d13541}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetUrlSimulatedData@{GetUrlSimulatedData}}
+\index{GetUrlSimulatedData@{GetUrlSimulatedData}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetUrlSimulatedData()}{GetUrlSimulatedData()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_ad6460d1b3f28f431e16e8df397d13541} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Url\+Simulated\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the URL for simulated data. 
+
+\begin{DoxyReturn}{Returns}
+The URL for simulated data. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_u_p_t___config_manager_ad6460d1b3f28f431e16e8df397d13541_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_p_t___config_manager_ad6460d1b3f28f431e16e8df397d13541_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_addd543b6ccc566db91be4704c1bfc55f}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!GetUrlSkinMesh@{GetUrlSkinMesh}}
+\index{GetUrlSkinMesh@{GetUrlSkinMesh}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{GetUrlSkinMesh()}{GetUrlSkinMesh()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_addd543b6ccc566db91be4704c1bfc55f} 
+static FString UPT\+\_\+\+Config\+Manager\+::\+Get\+Url\+Skin\+Mesh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Gets the URL for the skin mesh. 
+
+\begin{DoxyReturn}{Returns}
+The URL for the skin mesh. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_u_p_t___config_manager_addd543b6ccc566db91be4704c1bfc55f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_u_p_t___config_manager_addd543b6ccc566db91be4704c1bfc55f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_p_t___config_manager_a0e2a9d235ce5686c97d97766b04443f9}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!SetServerAddress@{SetServerAddress}}
+\index{SetServerAddress@{SetServerAddress}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{SetServerAddress()}{SetServerAddress()}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a0e2a9d235ce5686c97d97766b04443f9} 
+void UPT\+\_\+\+Config\+Manager\+::\+Set\+Server\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{New\+Address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the server address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Address} & The new server address. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_u_p_t___config_manager_a0e2a9d235ce5686c97d97766b04443f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_p_t___config_manager_a3d0e73bcd53e560ade677cceecc28f62}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!DATA\_TAG\_ARRAY@{DATA\_TAG\_ARRAY}}
+\index{DATA\_TAG\_ARRAY@{DATA\_TAG\_ARRAY}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{DATA\_TAG\_ARRAY}{DATA\_TAG\_ARRAY}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a3d0e73bcd53e560ade677cceecc28f62} 
+const TArray$<$ FString $>$ UPT\+\_\+\+Config\+Manager\+::\+DATA\+\_\+\+TAG\+\_\+\+ARRAY = \{ TEXT("{}1001"{}), TEXT("{}1002"{}), TEXT("{}1003"{}), TEXT("{}1006"{}), TEXT("{}1008"{}), TEXT("{}1009"{}), TEXT("{}1010"{}), TEXT("{}1"{}), TEXT("{}2"{}), TEXT("{}3"{}), TEXT("{}6"{}), TEXT("{}8"{}), TEXT("{}9"{}), TEXT("{}10"{}) \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The data tag array. 
+
+\Hypertarget{class_u_p_t___config_manager_a2a7784ab027e7fe94305b82de8963374}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!DATA\_TAG\_INDEX\_ARRAY@{DATA\_TAG\_INDEX\_ARRAY}}
+\index{DATA\_TAG\_INDEX\_ARRAY@{DATA\_TAG\_INDEX\_ARRAY}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{DATA\_TAG\_INDEX\_ARRAY}{DATA\_TAG\_INDEX\_ARRAY}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a2a7784ab027e7fe94305b82de8963374} 
+const TArray$<$ int32 $>$ UPT\+\_\+\+Config\+Manager\+::\+DATA\+\_\+\+TAG\+\_\+\+INDEX\+\_\+\+ARRAY = \{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The data tag index array. 
+
+\Hypertarget{class_u_p_t___config_manager_ae6e9904bbbbeb31b5a7efd376e996895}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!DATA\_TAG\_MESH\_INDEX\_ARRAY@{DATA\_TAG\_MESH\_INDEX\_ARRAY}}
+\index{DATA\_TAG\_MESH\_INDEX\_ARRAY@{DATA\_TAG\_MESH\_INDEX\_ARRAY}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{DATA\_TAG\_MESH\_INDEX\_ARRAY}{DATA\_TAG\_MESH\_INDEX\_ARRAY}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_ae6e9904bbbbeb31b5a7efd376e996895} 
+const TArray$<$ int32 $>$ UPT\+\_\+\+Config\+Manager\+::\+DATA\+\_\+\+TAG\+\_\+\+MESH\+\_\+\+INDEX\+\_\+\+ARRAY = \{ 0, 1, 2, 3, 4, 5, 6 \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The data tag mesh index array. 
+
+\Hypertarget{class_u_p_t___config_manager_aa70d41264d1b9b6395718a25fe8eaa9d}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!DATA\_TAG\_NAME\_ARRAY@{DATA\_TAG\_NAME\_ARRAY}}
+\index{DATA\_TAG\_NAME\_ARRAY@{DATA\_TAG\_NAME\_ARRAY}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{DATA\_TAG\_NAME\_ARRAY}{DATA\_TAG\_NAME\_ARRAY}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_aa70d41264d1b9b6395718a25fe8eaa9d} 
+const TArray$<$ FString $>$ UPT\+\_\+\+Config\+Manager\+::\+DATA\+\_\+\+TAG\+\_\+\+NAME\+\_\+\+ARRAY\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The data tag name array. 
+
+\Hypertarget{class_u_p_t___config_manager_ab72c002313b9606924d0ba594d52af7e}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!DATA\_TAG\_VOLUME\_INDEX\_ARRAY@{DATA\_TAG\_VOLUME\_INDEX\_ARRAY}}
+\index{DATA\_TAG\_VOLUME\_INDEX\_ARRAY@{DATA\_TAG\_VOLUME\_INDEX\_ARRAY}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{DATA\_TAG\_VOLUME\_INDEX\_ARRAY}{DATA\_TAG\_VOLUME\_INDEX\_ARRAY}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_ab72c002313b9606924d0ba594d52af7e} 
+const TArray$<$ int32 $>$ UPT\+\_\+\+Config\+Manager\+::\+DATA\+\_\+\+TAG\+\_\+\+VOLUME\+\_\+\+INDEX\+\_\+\+ARRAY = \{ 7, 8, 9, 10, 11, 12, 13 \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The data tag volume index array. 
+
+\Hypertarget{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!SERVER\_ADDRESS@{SERVER\_ADDRESS}}
+\index{SERVER\_ADDRESS@{SERVER\_ADDRESS}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{SERVER\_ADDRESS}{SERVER\_ADDRESS}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5} 
+FString UPT\+\_\+\+Config\+Manager\+::\+SERVER\+\_\+\+ADDRESS = TEXT("{}http\+://127.\+0.\+0.\+1\+:5000"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The server address. 
+
+\Hypertarget{class_u_p_t___config_manager_a01479b729623c55f91fd9e801472b89e}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_CONFIGURATION\_MESH@{URL\_CONFIGURATION\_MESH}}
+\index{URL\_CONFIGURATION\_MESH@{URL\_CONFIGURATION\_MESH}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_CONFIGURATION\_MESH}{URL\_CONFIGURATION\_MESH}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a01479b729623c55f91fd9e801472b89e} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+CONFIGURATION\+\_\+\+MESH = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/3d/configuration"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The configuration mesh address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_af52c72a317f948ca5360897909ab0234}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_DATA\_VALIDATION@{URL\_DATA\_VALIDATION}}
+\index{URL\_DATA\_VALIDATION@{URL\_DATA\_VALIDATION}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_DATA\_VALIDATION}{URL\_DATA\_VALIDATION}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_af52c72a317f948ca5360897909ab0234} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+DATA\+\_\+\+VALIDATION = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/validation"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The data validation address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_a5cb1056d189cbc95d538b218c626030e}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_ELECTRODES\_POSITION@{URL\_ELECTRODES\_POSITION}}
+\index{URL\_ELECTRODES\_POSITION@{URL\_ELECTRODES\_POSITION}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_ELECTRODES\_POSITION}{URL\_ELECTRODES\_POSITION}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a5cb1056d189cbc95d538b218c626030e} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+ELECTRODES\+\_\+\+POSITION = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/elect\+\_\+pos"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The electrodes position address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_abd7e8b79878f1a66a93e32c5f1af5b09}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_INTERPOLATED\_DATA@{URL\_INTERPOLATED\_DATA}}
+\index{URL\_INTERPOLATED\_DATA@{URL\_INTERPOLATED\_DATA}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_INTERPOLATED\_DATA}{URL\_INTERPOLATED\_DATA}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_abd7e8b79878f1a66a93e32c5f1af5b09} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+INTERPOLATED\+\_\+\+DATA = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/interpolated"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The interpolated data address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_ace64e9d2a554e6de2eb018fc5312f8ca}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_REACHED@{URL\_REACHED}}
+\index{URL\_REACHED@{URL\_REACHED}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_REACHED}{URL\_REACHED}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_ace64e9d2a554e6de2eb018fc5312f8ca} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+REACHED = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/reached"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The reached address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_af00f3bb8e9c5bf278be1b01a11d71fe0}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_ROI@{URL\_ROI}}
+\index{URL\_ROI@{URL\_ROI}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_ROI}{URL\_ROI}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_af00f3bb8e9c5bf278be1b01a11d71fe0} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+ROI = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/roi"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The ROI address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_a8c82f878632bf3ce427227756a8f63bf}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_RUN\_SIMULATIONS@{URL\_RUN\_SIMULATIONS}}
+\index{URL\_RUN\_SIMULATIONS@{URL\_RUN\_SIMULATIONS}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_RUN\_SIMULATIONS}{URL\_RUN\_SIMULATIONS}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a8c82f878632bf3ce427227756a8f63bf} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+RUN\+\_\+\+SIMULATIONS = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/run\+\_\+simulations"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The run simulations address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_a0224037f4fc85e59e62be7d8414a28cf}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_SIMULATED\_3D@{URL\_SIMULATED\_3D}}
+\index{URL\_SIMULATED\_3D@{URL\_SIMULATED\_3D}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_SIMULATED\_3D}{URL\_SIMULATED\_3D}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a0224037f4fc85e59e62be7d8414a28cf} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+SIMULATED\+\_\+3D = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/3d/simulated"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The simulated 3D address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_acf27fd2c849c57e1b3fd27bf5669c8d5}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_SIMULATED\_DATA@{URL\_SIMULATED\_DATA}}
+\index{URL\_SIMULATED\_DATA@{URL\_SIMULATED\_DATA}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_SIMULATED\_DATA}{URL\_SIMULATED\_DATA}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_acf27fd2c849c57e1b3fd27bf5669c8d5} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+SIMULATED\+\_\+\+DATA = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/data/simulated"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The simulated data address URL. 
+
+\Hypertarget{class_u_p_t___config_manager_a66ba8cdd4ead95417f57a72bffcc6ba6}\index{UPT\_ConfigManager@{UPT\_ConfigManager}!URL\_SKIN\_MESH@{URL\_SKIN\_MESH}}
+\index{URL\_SKIN\_MESH@{URL\_SKIN\_MESH}!UPT\_ConfigManager@{UPT\_ConfigManager}}
+\doxysubsubsection{\texorpdfstring{URL\_SKIN\_MESH}{URL\_SKIN\_MESH}}
+{\footnotesize\ttfamily \label{class_u_p_t___config_manager_a66ba8cdd4ead95417f57a72bffcc6ba6} 
+FString UPT\+\_\+\+Config\+Manager\+::\+URL\+\_\+\+SKIN\+\_\+\+MESH = \mbox{\hyperlink{class_u_p_t___config_manager_aff9f98940ba048f58f6f05dc1776e6d5}{SERVER\+\_\+\+ADDRESS}} + TEXT("{}/3d/configuration/skin"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The skin mesh address URL. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___config_manager_8h}{PT\+\_\+\+Config\+Manager.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___config_manager_8cpp}{PT\+\_\+\+Config\+Manager.\+cpp}}\end{DoxyCompactItemize}

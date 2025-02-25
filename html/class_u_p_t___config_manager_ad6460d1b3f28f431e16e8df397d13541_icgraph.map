@@ -1,0 +1,6 @@
+<map id="UPT_ConfigManager::GetUrlSimulatedData" name="UPT_ConfigManager::GetUrlSimulatedData">
+<area shape="rect" id="Node000001" title="Gets the URL for simulated data." alt="" coords="230,29,381,72"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="340,16,327,10,305,8,285,10,273,15,268,21,270,28,265,29,263,19,270,10,284,5,305,3,328,5,342,11"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#a3fddf7bb37267c034132ba2e43bd6fff" title="Gets the simulated data address URL for a given patient ID, configuration ID, and ROI ID." alt="" coords="5,29,182,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,53,182,53,182,48,214,48"/>
+</map>

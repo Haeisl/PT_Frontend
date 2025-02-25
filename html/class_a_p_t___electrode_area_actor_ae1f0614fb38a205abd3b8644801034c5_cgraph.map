@@ -1,0 +1,9 @@
+<map id="APT_ElectrodeAreaActor::ProcessValidationResponseData" name="APT_ElectrodeAreaActor::ProcessValidationResponseData">
+<area shape="rect" id="Node000001" title="Processes the validation response data from an HTTP component and extracts various parameters." alt="" coords="5,88,226,131"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___j_s_o_n_converter.html#a77d30c9e8b027c8da2ce98371a115067" title="Converts a JSON object to an array of integers." alt="" coords="274,5,469,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,85,258,65,260,70,192,90"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___j_s_o_n_converter.html#a1ba17e54c0adff9d588774a39652bcc3" title="Converts a JSON object to an integer." alt="" coords="293,88,450,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,107,277,107,277,112,226,112"/>
+<area shape="rect" id="Node000004" href="$class_u_p_t___h_t_t_p_component.html#a2cde73780c0f4dabab2d76630c1be1f3" title="Returns the JSON object received from the last HTTP request." alt="" coords="289,155,454,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,129,274,148,273,153,199,134"/>
+</map>

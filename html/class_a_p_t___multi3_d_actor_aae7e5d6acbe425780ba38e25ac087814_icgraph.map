@@ -1,0 +1,7 @@
+<map id="APT_Multi3DActor::ConvertJSONResponseBodyToMultiVolume" name="APT_Multi3DActor::ConvertJSONResponseBodyToMultiVolume">
+<area shape="rect" id="Node000001" title="Converts a JSON response body to multiple volumes." alt="" coords="356,39,587,81"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___multi3_d_actor.html#ae8d4937169940ce4fb4e6741471c6375" title="Extracts both mesh and volume data from a JSON response body." alt="" coords="5,5,308,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,49,308,45,308,40,340,43"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___multi3_d_actor.html#a950fe8c53ff0b1c574ed669a02996fa4" title="Extracts volume data from a JSON response body." alt="" coords="47,72,266,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="340,77,267,84,267,79,340,71"/>
+</map>

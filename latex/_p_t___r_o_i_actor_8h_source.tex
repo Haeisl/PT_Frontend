@@ -1,0 +1,103 @@
+\doxysection{PT\+\_\+\+ROIActor.\+h}
+\hypertarget{_p_t___r_o_i_actor_8h_source}{}\label{_p_t___r_o_i_actor_8h_source}\index{Source/PlanningTool\_ET/PT\_ROIActor.h@{Source/PlanningTool\_ET/PT\_ROIActor.h}}
+\mbox{\hyperlink{_p_t___r_o_i_actor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___single3_d_actor_8h}{PT\_Single3DActor.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}ProceduralMeshComponent.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}InputActionValue.h"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___enum_container_8h}{PT\_EnumContainer.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}PT\_ROIActor.generated.h"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \mbox{\hyperlink{_p_t___r_o_i_actor_8h_a483781869753abf586c8d115ed260516}{DECLARE\_DYNAMIC\_MULTICAST\_DELEGATE}}(FRoiChangedEventDelegate);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00032\ UCLASS()}
+\DoxyCodeLine{00033\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a5ca4f65fd32a87eb16591504fa782fba}{APT\_ROIActor}}\ :\ public\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707}{APT\_Single3DActor}}}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00036\ \ \ \ \ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a5ca4f65fd32a87eb16591504fa782fba}{APT\_ROIActor}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a9187e9cf17cdcd8dcd43da6b7a7e77b8}{BeginPlay}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_aebfe324c22c7f525e3cba6b8a0a28516}{Tick}}(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ UPROPERTY(VisibleAnywhere)}
+\DoxyCodeLine{00057\ \ \ \ \ UProceduralMeshComponent*\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a0fdbb457456041368ebe2f303467e02d}{ProceduralMesh}};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ Enhanced\ Input}}
+\DoxyCodeLine{00060\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_Input"{}})}
+\DoxyCodeLine{00061\ \ \ \ \ class\ UInputMappingContext*\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a656044c1564966cd2371b3803a2daafd}{IMC\_PT\_ROIActor}};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_Input"{}})}
+\DoxyCodeLine{00064\ \ \ \ \ class\ UInputAction*\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_abf57b44c7357655407a87a0fc15440d2}{IA\_MoveBox}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00071\ \ \ \ \ TArray<FVector>\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_aba0169836e92b97c4fd447c94d772c47}{getROIBoundsToWorldSpace}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00076\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a66bcf5d9549694d6fb3eb155fb6fc054}{PrintCornerPoints}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00082\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a51875d7df5515cd97ffe85fbc95a498c}{InitCurrentCameraManager}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00091\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a023f69a334c1d6b8d7a2582605acbb81}{SetROIPosition}}(const\ \textcolor{keywordtype}{float}\&\ InPosX,\ const\ \textcolor{keywordtype}{float}\&\ InPosY,\ const\ \textcolor{keywordtype}{float}\&\ InPosZ);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a804b904c74c01607b1a74e0a378e44d4}{MoveROIPosition}}(const\ FVector\&\ InNewPosition);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a8a9a838509c7c2ef1222d9c0feccbc02}{SetROISize}}(const\ \textcolor{keywordtype}{float}\&\ InSizeX,\ const\ \textcolor{keywordtype}{float}\&\ InSizeY,\ const\ \textcolor{keywordtype}{float}\&\ InSizeZ);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00116\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_ad6bcdd64a2631fdc13d3f45d08998527}{SetROIRotation}}(const\ \textcolor{keywordtype}{float}\&\ InPitch,\ const\ \textcolor{keywordtype}{float}\&\ InYaw,\ const\ \textcolor{keywordtype}{float}\&\ InRoll);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00127\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00128\ \ \ \ \ FString\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a01d8a33ef51278a61eeffb4d6bdab2a7}{ConvertRoiToJson}}(const\ FString\&\ InPatientId,\ const\ FString\&\ InRoiId,\ const\ TArray<FVector>\&\ InVectorArray,\ const\ FVector\&\ InCenterPosition);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ UPROPERTY(EditAnywhere,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00131\ \ \ \ \ UMaterialInterface*\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a51d0ae04dc2c73226b27d78088446941}{Material}};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ UPROPERTY(BlueprintAssignable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI\_Event"{}})}
+\DoxyCodeLine{00134\ \ \ \ \ FRoiChangedEventDelegate\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_ab0a96b50dbe76e82a75651ac1d743641}{RoiChangedEvent}};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00140\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00141\ \ \ \ \ FVector\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a3b745e291f793c1e09b81dbf444eed46}{GetCurrentROISize}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_acbaa43aa4dd8908667a17dc749efddc2}{CurrentROISize}};\ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00147\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00148\ \ \ \ \ FVector\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a7b666b9e608020c9f04d4071f2831204}{GetCurrentROIPosition}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a83fe975a5347d773eac7d7130f065e99}{CurrentROIPosition}};\ \};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00154\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_ROI"{}})}
+\DoxyCodeLine{00155\ \ \ \ \ FRotator\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a9d32735720c30140822086e9fbc1c66c}{GetCurrentROIRotation}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_af5ca6edd9efcb249a25214661eb2dead}{CurrentROIRotation}};\ \};}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{void}\ GenerateBoxMesh();}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordtype}{void}\ ApplyTransformations(\textcolor{keyword}{const}\ FVector\&\ NewSize,\ \textcolor{keyword}{const}\ FVector\&\ NewPosition,\ \textcolor{keyword}{const}\ FRotator\&\ NewRotation);}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{void}\ ResetVertexArrayToStandardSize();}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{void}\ OnMoveROI(\textcolor{keyword}{const}\ FInputActionValue\&\ Value);}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00187\ \ \ \ \ TArray<FVector>\ GetROIBoundsToWorldSpaceRelativeTo(AActor*\ OtherActor);}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordtype}{void}\ CalculateNormalsManually();}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \ \ \ \ FVector\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_acbaa43aa4dd8908667a17dc749efddc2}{CurrentROISize}};}
+\DoxyCodeLine{00195\ \ \ \ \ FVector\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_a83fe975a5347d773eac7d7130f065e99}{CurrentROIPosition}};}
+\DoxyCodeLine{00196\ \ \ \ \ FRotator\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_af5ca6edd9efcb249a25214661eb2dead}{CurrentROIRotation}};}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ \ \ \ \ APlayerCameraManager*\ \mbox{\hyperlink{class_a_p_t___r_o_i_actor_acd0138e1a163fabd6259316ea478214a}{CameraManager}};}
+\DoxyCodeLine{00199\ \};}
+
+\end{DoxyCode}

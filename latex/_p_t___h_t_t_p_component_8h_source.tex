@@ -1,0 +1,64 @@
+\doxysection{PT\+\_\+\+HTTPComponent.\+h}
+\hypertarget{_p_t___h_t_t_p_component_8h_source}{}\label{_p_t___h_t_t_p_component_8h_source}\index{Source/PlanningTool\_ET/PT\_HTTPComponent.h@{Source/PlanningTool\_ET/PT\_HTTPComponent.h}}
+\mbox{\hyperlink{_p_t___h_t_t_p_component_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Components/ActorComponent.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___struct_container_8h}{PT\_StructContainer.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Http.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Json.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}PT\_HTTPComponent.generated.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \mbox{\hyperlink{_p_t___h_t_t_p_component_8h_aed76ec14b448fa76a994d068a9166dda}{DECLARE\_DYNAMIC\_MULTICAST\_DELEGATE}}(FHttpCallbackEventDelegate);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ UCLASS(ClassGroup\ =\ (Custom),\ meta\ =\ (BlueprintSpawnableComponent))}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a42f07ec3a91c09b1e461e217d455141a}{UPT\_HTTPComponent}}\ :\ \textcolor{keyword}{public}\ UActorComponent}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a42f07ec3a91c09b1e461e217d455141a}{UPT\_HTTPComponent}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_afca0d3d7abb76aa073426ee265b20e9d}{BeginPlay}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_aca1328fae31d7d445200f7ebc05f2ff6}{TickComponent}}(\textcolor{keywordtype}{float}\ DeltaTime,\ ELevelTick\ TickType,\ FActorComponentTickFunction*\ ThisTickFunction)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Server\ Status"{}})}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_aa4e12b157cee754376980580f0b8cf0f}{CheckServerStatus}}(\textcolor{keyword}{const}\ FString\&\ InAddress);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00059\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Run\ Simulation"{}})}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a82a1b987aefd255e92ee41193713f78e}{SendRunSimulationData}}(\textcolor{keyword}{const}\ FString\&\ InAddress,\ \textcolor{keyword}{const}\ FString\&\ PatientID,\ \textcolor{keyword}{const}\ FString\&\ ConfigID,\ \textcolor{keyword}{const}\ FString\&\ ROIID);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00065\ \ \ \ \ UPROPERTY(BlueprintAssignable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_API\_EVENT"{}})}
+\DoxyCodeLine{00066\ \ \ \ \ FHttpCallbackEventDelegate\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_afa4a9eb24427c17e1e6d633b07c0356b}{HttpCallbackEvent}};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_API\_CALL"{}})}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a5efefb469a23a7d2b5a4bddd9a527c57}{CallApi}}(const\ FString\&\ InAddress,\ const\ FString\&\ InVerb);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_API\_CALL"{}})}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_ac1d659007872513f61d5abeb12d390a4}{CallApiWithCompressedResponse}}(const\ FString\&\ InAddress,\ const\ FString\&\ InVerb);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00090\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_API\_CALL"{}})}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_ae6b67e84300df6d6192ab4e27b878230}{CallApiWithJSONBody}}(const\ FString\&\ InAddress,\ const\ FString\&\ InVerb,\ const\ FString\&\ InJsonString);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \ \ TSharedPtr<FJsonObject>\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a2cde73780c0f4dabab2d76630c1be1f3}{GetResponseObject}}()\ const;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ private:}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a40359c5d8c00601d266d6fb7856b3447}{OnCheckServerStatusResponse}}(FHttpRequestPtr\ Request,\ FHttpResponsePtr\ Response,\ \textcolor{keywordtype}{bool}\ bConnectedSuccesfully);}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a07c83eb92150f15d8c7205cbc40c1e98}{OnResponseReceived}}(FHttpRequestPtr\ Request,\ FHttpResponsePtr\ Response,\ \textcolor{keywordtype}{bool}\ bConnectedSuccesfully);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_a27cf3bd214a4e90c84d6259f77f6e09f}{OnResponseReceivedWithDecompressing}}(FHttpRequestPtr\ Request,\ FHttpResponsePtr\ Response,\ \textcolor{keywordtype}{bool}\ bConnectedSuccesfully);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00128\ \ \ \ \ TSharedPtr<FJsonObject>\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component_aaba218fbed519fa07782d80c4d9c6702}{ResponseObj}};}
+\DoxyCodeLine{00129\ \};}
+
+\end{DoxyCode}

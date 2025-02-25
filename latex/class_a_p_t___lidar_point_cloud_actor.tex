@@ -1,0 +1,73 @@
+\doxysection{APT\+\_\+\+Lidar\+Point\+Cloud\+Actor Class Reference}
+\hypertarget{class_a_p_t___lidar_point_cloud_actor}{}\label{class_a_p_t___lidar_point_cloud_actor}\index{APT\_LidarPointCloudActor@{APT\_LidarPointCloudActor}}
+
+
+A class that extends ALidar\+Point\+Cloud\+Actor to handle LIDAR point cloud operations.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Lidar\+Point\+Cloud\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for APT\+\_\+\+Lidar\+Point\+Cloud\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_a_p_t___lidar_point_cloud_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for APT\+\_\+\+Lidar\+Point\+Cloud\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_a_p_t___lidar_point_cloud_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_p_t___lidar_point_cloud_actor_ad03e2954288d7ae1f0c1c7e3c2f7b942}{Update\+Lidar\+Point\+Cloud\+Color}} (const TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&In\+Point\+Cloud, const TArray$<$ FLinear\+Color $>$ \&In\+Color\+Array, const TArray$<$ int32 $>$ \&In\+Vertex\+Index\+Array, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud)
+\begin{DoxyCompactList}\small\item\em Updates the color of the LIDAR point cloud. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that extends ALidar\+Point\+Cloud\+Actor to handle LIDAR point cloud operations. 
+
+This class provides functionality to update the color of a LIDAR point cloud. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_p_t___lidar_point_cloud_actor_ad03e2954288d7ae1f0c1c7e3c2f7b942}\index{APT\_LidarPointCloudActor@{APT\_LidarPointCloudActor}!UpdateLidarPointCloudColor@{UpdateLidarPointCloudColor}}
+\index{UpdateLidarPointCloudColor@{UpdateLidarPointCloudColor}!APT\_LidarPointCloudActor@{APT\_LidarPointCloudActor}}
+\doxysubsubsection{\texorpdfstring{UpdateLidarPointCloudColor()}{UpdateLidarPointCloudColor()}}
+{\footnotesize\ttfamily \label{class_a_p_t___lidar_point_cloud_actor_ad03e2954288d7ae1f0c1c7e3c2f7b942} 
+void APT\+\_\+\+Lidar\+Point\+Cloud\+Actor\+::\+Update\+Lidar\+Point\+Cloud\+Color (\begin{DoxyParamCaption}\item[{const TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&}]{In\+Point\+Cloud}{, }\item[{const TArray$<$ FLinear\+Color $>$ \&}]{In\+Color\+Array}{, }\item[{const TArray$<$ int32 $>$ \&}]{In\+Vertex\+Index\+Array}{, }\item[{TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&}]{Out\+Point\+Cloud}{}\end{DoxyParamCaption})}
+
+
+
+Updates the color of the LIDAR point cloud. 
+
+This function takes an input point cloud, an array of colors, and an array of vertex indices. It updates the color of the points in the input point cloud based on the provided colors and vertex indices, and stores the updated point cloud in the output point cloud array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Point\+Cloud} & The input point cloud to be updated. \\
+\hline
+{\em In\+Color\+Array} & An array of colors to be applied to the points. \\
+\hline
+{\em In\+Vertex\+Index\+Array} & An array of vertex indices corresponding to the points to be colored. \\
+\hline
+{\em Out\+Point\+Cloud} & The output point cloud with updated colors. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___lidar_point_cloud_actor_8h}{PT\+\_\+\+Lidar\+Point\+Cloud\+Actor.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___lidar_point_cloud_actor_8cpp}{PT\+\_\+\+Lidar\+Point\+Cloud\+Actor.\+cpp}}\end{DoxyCompactItemize}

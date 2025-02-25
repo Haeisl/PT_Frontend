@@ -1,0 +1,9 @@
+<map id="APT_ROIActor::ApplyTransformations" name="APT_ROIActor::ApplyTransformations">
+<area shape="rect" id="Node000001" title="Applies the transformations to the ROI." alt="" coords="264,56,508,83"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#a023f69a334c1d6b8d7a2582605acbb81" title="Sets the position of the ROI." alt="" coords="6,5,215,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,55,186,35,187,30,295,50"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___r_o_i_actor.html#ad6bcdd64a2631fdc13d3f45d08998527" title="Sets the rotation of the ROI and applies the transformation." alt="" coords="5,56,216,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,72,216,72,216,67,248,67"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___r_o_i_actor.html#a8a9a838509c7c2ef1222d9c0feccbc02" title="Sets the size of the ROI and applies the transformation." alt="" coords="17,107,204,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="295,89,187,109,186,103,294,83"/>
+</map>

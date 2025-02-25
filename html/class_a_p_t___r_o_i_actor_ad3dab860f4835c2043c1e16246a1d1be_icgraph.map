@@ -1,0 +1,21 @@
+<map id="APT_ROIActor::CalculateNormalsManually" name="APT_ROIActor::CalculateNormalsManually">
+<area shape="rect" id="Node000001" title="Manually calculates the normals for the current vertex and triangle index arrays." alt="" coords="1054,5,1275,48"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#a9187e9cf17cdcd8dcd43da6b7a7e77b8" title="Called when the game starts or when spawned." alt="" coords="5,13,182,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1038,24,675,14,453,14,230,19,182,21,182,16,230,13,453,8,675,9,1038,19"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___r_o_i_actor.html#a93f73bbae49c2ea7f0e9484a4ac5d49d" title="Generates the box mesh for the ROI." alt="" coords="780,39,1006,65"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1039,41,1007,44,1006,39,1038,36"/>
+<area shape="poly" id="edge7_Node000003_Node000002" title=" " alt="" coords="765,51,182,32,182,27,765,45"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___r_o_i_actor.html#a98775029206b38e73be0166206e3237c" title="Applies the transformations to the ROI." alt="" coords="488,89,732,116"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="800,71,689,91,688,86,799,66"/>
+<area shape="rect" id="Node000008" href="$class_a_p_t___r_o_i_actor.html#a804b904c74c01607b1a74e0a378e44d4" title="Moves the ROI position by the specified amount." alt="" coords="500,191,720,217"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="854,75,638,193,636,188,852,71"/>
+<area shape="rect" id="Node000005" href="$class_a_p_t___r_o_i_actor.html#a023f69a334c1d6b8d7a2582605acbb81" title="Sets the position of the ROI." alt="" coords="231,64,439,91"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="472,93,439,90,440,84,473,87"/>
+<area shape="rect" id="Node000006" href="$class_a_p_t___r_o_i_actor.html#ad6bcdd64a2631fdc13d3f45d08998527" title="Sets the rotation of the ROI and applies the transformation." alt="" coords="230,115,440,141"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="473,118,441,121,440,116,472,113"/>
+<area shape="rect" id="Node000007" href="$class_a_p_t___r_o_i_actor.html#a8a9a838509c7c2ef1222d9c0feccbc02" title="Sets the size of the ROI and applies the transformation." alt="" coords="241,165,428,192"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="551,124,441,156,396,167,395,162,439,151,550,118"/>
+<area shape="rect" id="Node000009" href="$class_a_p_t___r_o_i_actor.html#a5db649b8bd5881a7cf8adfabab72ed2b" title="Handles the input action to move the ROI." alt="" coords="240,216,430,243"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="485,218,431,223,430,218,484,213"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="237,211,228,206,182,167,145,120,116,75,99,42,103,39,121,73,149,117,186,163,231,202,240,207"/>
+</map>

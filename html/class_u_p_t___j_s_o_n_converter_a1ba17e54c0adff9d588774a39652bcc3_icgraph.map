@@ -1,0 +1,11 @@
+<map id="UPT_JSONConverter::ConvertJSONToInteger" name="UPT_JSONConverter::ConvertJSONToInteger">
+<area shape="rect" id="Node000001" title="Converts a JSON object to an integer." alt="" coords="639,72,796,115"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___simulation_component.html#ac2605fac55d1e34d09181fb205101db9" title="Retrieves simulation data from a JSON object." alt="" coords="348,5,591,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="623,71,551,51,552,46,625,66"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___electrode_area_actor.html#ab795722f63a08909139f9003d0bd4625" title="Processes the response data from an HTTP component and extracts various parameters." alt="" coords="386,72,553,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="624,96,553,96,553,91,624,91"/>
+<area shape="rect" id="Node000005" href="$class_a_p_t___electrode_area_actor.html#ae1f0614fb38a205abd3b8644801034c5" title="Processes the validation response data from an HTTP component and extracts various parameters." alt="" coords="359,139,580,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="625,121,552,141,551,135,623,116"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html#a57b42939f12c19af9b851a8b323f01dd" title="Retrieves simulation data from a JSON response body." alt="" coords="5,5,300,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,29,300,29,300,24,332,24"/>
+</map>

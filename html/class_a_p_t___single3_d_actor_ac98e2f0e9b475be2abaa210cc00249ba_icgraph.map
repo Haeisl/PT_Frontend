@@ -1,0 +1,5 @@
+<map id="APT_Single3DActor::ResetSingle3DActorArrays" name="APT_Single3DActor::ResetSingle3DActorArrays">
+<area shape="rect" id="Node000001" title="Resets the arrays of the single 3D actor." alt="" coords="262,5,440,48"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___multi3_d_actor.html#a09307a001910fa78195701b4281b80f1" title="Resets the arrays used by the multi 3D actor." alt="" coords="5,5,214,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,29,214,29,214,24,246,24"/>
+</map>

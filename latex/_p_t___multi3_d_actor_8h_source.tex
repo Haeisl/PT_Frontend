@@ -1,0 +1,67 @@
+\doxysection{PT\+\_\+\+Multi3\+DActor.\+h}
+\hypertarget{_p_t___multi3_d_actor_8h_source}{}\label{_p_t___multi3_d_actor_8h_source}\index{Source/PlanningTool\_ET/PT\_Multi3DActor.h@{Source/PlanningTool\_ET/PT\_Multi3DActor.h}}
+\mbox{\hyperlink{_p_t___multi3_d_actor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}GameFramework/Actor.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___single3_d_actor_8h}{PT\_Single3DActor.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___simulation_component_8h}{PT\_SimulationComponent.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}PT\_Multi3DActor.generated.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00019\ UCLASS()}
+\DoxyCodeLine{00020\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a78ac71324a85db7bef4cec6e38a7cf2e}{APT\_Multi3DActor}}\ :\ public\ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707}{APT\_Single3DActor}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a78ac71324a85db7bef4cec6e38a7cf2e}{APT\_Multi3DActor}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a4da43d76a74f8c47d26182827a2f1d8f}{BeginPlay}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a9548531a35dc01867967e74972877294}{Tick}}(\textcolor{keywordtype}{float}\ DeltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00056\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_af0a1bdccdb99c2f4d2db4821d775c2ae}{ConvertJSONResponseBodyToMultiMesh}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InTagArray,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InDescriptionArray,\ TArray<FPT\_MeshData>\&\ OutMeshArray);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_abb35b78b80db195a803da94781e0c251}{ConvertJSONObjectToMultiMesh}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InTagArray,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InDescriptionArray,\ TArray<FPT\_MeshData>\&\ OutMeshArray);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00092\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_aae7e5d6acbe425780ba38e25ac087814}{ConvertJSONResponseBodyToMultiVolume}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InTagArray,\ \textcolor{keyword}{const}\ TArray<FVector>\&\ InVertexArray,\ \textcolor{keyword}{const}\ TArray<FLinearColor>\&\ InVertexColorArray,\ TArray<FPT\_VolumeData>\&\ OutVolumeArray);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_ab736113cc1db79ceceff432192eaab0c}{ConvertJSONObjectToMultiVolume}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InTagArray,\ \textcolor{keyword}{const}\ TArray<FVector>\&\ InVertexArray,\ \textcolor{keyword}{const}\ TArray<FLinearColor>\&\ InVertexColorArray,\ TArray<FPT\_VolumeData>\&\ OutVolumeArray);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \textcolor{comment}{//UFUNCTION(BlueprintCallable,\ Category\ =\ "{}PT\_3D\_DATA"{})}}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_ac5feb83de583fdceec15b23c5c52769c}{ConvertJSONResponseBodyToTetraArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InTagArray,\ TArray<TArray<FPT\_TetraData>>\&\ OutTetraDataArray);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a974ed432ee4360510316de78226769c6}{ConvertJSONObjectToTetraArray}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ \textcolor{keyword}{const}\ TArray<FString>\&\ InTagArray,\ TArray<TArray<FPT\_TetraData>>\&\ OutTetraDataArray);}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_ad4276e6a6409b8c26b07aeb5a21928f9}{CalculateNormalsForMultiMesh}}(TArray<FVector>\&\ OutNormalArray);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00171\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_ae8d4937169940ce4fb4e6741471c6375}{GetMultiMeshAndMultiVolumeFromJSONResponseBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ TArray<FVector>\&\ OutVertexArray,\ TArray<FVector>\&\ OutNormalArray,\ TArray<FString>\&\ OutMeshTagArray,\ TArray<FString>\&\ OutVolumeTagArray,\ TArray<FString>\&\ OutMeshDescriptionArray,\ TArray<FString>\&\ OutVolumeDescriptionArray,\ TArray<FPT\_MeshData>\&\ OutMeshDataArray,\ TArray<FPT\_VolumeData>\&\ OutVolumeDataArray);}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00188\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a527e7a4b5d9b79bf6f5d48c36d95ae8d}{GetMultiMeshFromJSONResponseBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ TArray<FVector>\&\ OutVertexArray,\ TArray<FVector>\&\ OutNormalArray,\ TArray<FString>\&\ OutMeshTagArray,\ TArray<FString>\&\ OutMeshDescriptionArray,\ TArray<FPT\_MeshData>\&\ OutMeshDataArray);}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00204\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a950fe8c53ff0b1c574ed669a02996fa4}{GetMultiVolumeFromJSONResponseBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ TArray<FVector>\&\ OutVertexArray,\ TArray<FString>\&\ OutVolumeTagArray,\ TArray<FString>\&\ OutVolumeDescriptionArray,\ TArray<FPT\_VolumeData>\&\ OutVolumeDataArray);}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00213\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_3D\_DATA"{}})}
+\DoxyCodeLine{00214\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a09307a001910fa78195701b4281b80f1}{ResetMulti3DActorArrays}}();}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00227\ \ \ \ \ TArray<TArray<FPT\_TetraData>>\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a9964364534175db0245fca88d8064263}{TetraDataPerTagArray}};}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00237\ \ \ \ \ TArray<FPT\_MeshData>\ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a843d7b816dab5a18d9e79238feb2ceee}{MeshDataPerTagArray}};}
+\DoxyCodeLine{00238\ \};}
+
+\end{DoxyCode}

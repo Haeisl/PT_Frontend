@@ -1,0 +1,6 @@
+<map id="UPT_ConfigManager::GetSimulated3DAddress" name="UPT_ConfigManager::GetSimulated3DAddress">
+<area shape="rect" id="Node000001" title="Gets the simulated 3D address URL for a given patient ID and configuration ID." alt="" coords="5,29,171,72"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#adbe2075b96fc494d121bfc075b5c7dcd" title="Gets the URL for simulated 3D data." alt="" coords="219,29,370,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,48,203,48,203,53,171,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="255,29,253,19,260,10,274,5,294,3,317,5,330,11,328,16,315,10,294,8,275,10,263,15,259,21,260,28"/>
+</map>

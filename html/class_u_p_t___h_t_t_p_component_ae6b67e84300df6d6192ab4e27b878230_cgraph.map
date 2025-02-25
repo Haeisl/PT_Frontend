@@ -1,0 +1,5 @@
+<map id="UPT_HTTPComponent::CallApiWithJSONBody" name="UPT_HTTPComponent::CallApiWithJSONBody">
+<area shape="rect" id="Node000001" title="Sends an HTTP request with a JSON body to the specified address using the specified HTTP verb." alt="" coords="5,5,171,48"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___h_t_t_p_component.html#a07c83eb92150f15d8c7205cbc40c1e98" title="Handles the response received from an HTTP request." alt="" coords="219,5,384,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,24,203,24,203,29,171,29"/>
+</map>

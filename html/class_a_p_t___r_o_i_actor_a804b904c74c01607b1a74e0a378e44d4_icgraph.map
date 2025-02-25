@@ -1,0 +1,7 @@
+<map id="APT_ROIActor::MoveROIPosition" name="APT_ROIActor::MoveROIPosition">
+<area shape="rect" id="Node000001" title="Moves the ROI position by the specified amount." alt="" coords="468,5,688,32"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#a5db649b8bd5881a7cf8adfabab72ed2b" title="Handles the input action to move the ROI." alt="" coords="230,5,420,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="452,21,420,21,420,16,452,16"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___r_o_i_actor.html#a9187e9cf17cdcd8dcd43da6b7a7e77b8" title="Called when the game starts or when spawned." alt="" coords="5,5,182,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,21,182,21,182,16,214,16"/>
+</map>

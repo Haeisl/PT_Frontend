@@ -1,0 +1,7 @@
+<map id="APT_Multi3DActor::ConvertJSONObjectToMultiVolume" name="APT_Multi3DActor::ConvertJSONObjectToMultiVolume">
+<area shape="rect" id="Node000001" title="Converts a JSON object to multiple volumes." alt="" coords="5,51,190,93"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___j_s_o_n_converter.html#a77d30c9e8b027c8da2ce98371a115067" title="Converts a JSON object to an array of integers." alt="" coords="238,5,433,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,55,222,50,223,55,191,60"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___single3_d_actor.html#a0149913b56d5ba144d7ae6cec09c22e7" title="Creates an array of FLidarPointCloudPoint from given vertex indices, vertex array,..." alt="" coords="258,88,413,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,84,243,92,242,97,190,89"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="Source/PlanningTool_ET/ManageServerWidget.h" name="Source/PlanningTool_ET/ManageServerWidget.h">
+<area shape="rect" id="Node000001" title="Header file for the UManageServerWidget class, which provides functionality for managing server inter..." alt="" coords="308,5,493,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,245,111,272"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,40,219,60,173,77,130,98,106,114,88,128,75,146,63,172,57,201,57,230,51,230,51,201,58,170,71,143,85,125,103,109,127,94,171,72,217,55,307,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="141,96,298,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="355,51,263,92,261,87,353,46"/>
+<area shape="rect" id="Node000004" href="$_p_t___h_t_t_p_component_8h.html" title=" " alt="" coords="322,96,480,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="403,49,403,80,398,80,398,49"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="504,96,617,123"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="443,46,523,86,521,91,441,51"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="641,96,859,123"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="491,46,681,89,679,95,490,51"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="321,124,176,147,116,161,85,173,75,185,68,200,61,231,56,230,63,198,71,182,82,169,115,155,175,142,320,119"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="95,171,304,197"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="366,126,250,167,248,162,365,121"/>
+<area shape="rect" id="Node000006" href="$_p_t___struct_container_8h.html" title=" " alt="" coords="327,171,474,197"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="403,123,403,155,398,155,398,123"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="499,171,556,197"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="424,121,493,160,491,165,421,126"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="580,171,640,197"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="438,121,566,165,564,170,436,126"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="664,171,884,197"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="467,121,694,165,693,170,466,126"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="341,201,127,246,126,240,340,195"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="226,245,391,272"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="386,200,338,238,335,234,383,196"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="415,245,624,272"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="423,196,487,235,484,239,420,200"/>
+</map>

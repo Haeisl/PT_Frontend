@@ -1,0 +1,5 @@
+<map id="UPT_JSONConverter::CreateJsonArrayFromDoubleArray" name="UPT_JSONConverter::CreateJsonArrayFromDoubleArray">
+<area shape="rect" id="Node000001" title="Converts an array of doubles to a JSON array." alt="" coords="246,5,467,48"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___simulation_component.html#af1fe8c56b3ed362127bc6cc30495f7cb" title="Creates a JSON string for interpolated data." alt="" coords="5,5,198,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,29,198,29,198,24,230,24"/>
+</map>

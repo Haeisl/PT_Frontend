@@ -1,0 +1,5 @@
+<map id="UManageServerWidget" name="UManageServerWidget">
+<area shape="rect" id="Node000001" title="A widget class for managing server interactions specifically for the &quot;Server Management&quot; screen." alt="" coords="5,80,162,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="33,5,134,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,48,86,80,81,80,81,48"/>
+</map>

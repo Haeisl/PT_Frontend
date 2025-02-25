@@ -1,0 +1,6 @@
+<map id="UPT_ConfigManager::GetSkinMeshAddress" name="UPT_ConfigManager::GetSkinMeshAddress">
+<area shape="rect" id="Node000001" title="Gets the skin mesh address URL for a given patient ID." alt="" coords="5,29,157,72"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#addd543b6ccc566db91be4704c1bfc55f" title="Gets the URL for the skin mesh." alt="" coords="205,29,356,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,48,189,48,189,53,157,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="242,29,241,19,247,10,260,5,280,3,302,5,315,11,312,16,300,10,280,8,262,10,250,15,246,21,247,28"/>
+</map>

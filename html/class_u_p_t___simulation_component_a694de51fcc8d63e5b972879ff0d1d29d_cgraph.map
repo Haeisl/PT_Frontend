@@ -1,0 +1,10 @@
+<map id="UPT_SimulationComponent::ProcessInterpolation" name="UPT_SimulationComponent::ProcessInterpolation">
+<area shape="rect" id="Node000001" title="Processes interpolation for simulation data." alt="" coords="5,59,189,101"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___simulation_component.html#a1c2172529ef17f65b1bdda430d9e6e08" title="Performs barycentric interpolation for simulation data." alt="" coords="237,13,420,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,59,221,53,222,58,189,65"/>
+<area shape="rect" id="Node000004" href="$class_u_p_t___config_manager.html#a8c74dca0e2da85e92a49eab962b01787" title="Gets the data tag index array." alt="" coords="251,104,406,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,95,236,105,235,110,188,101"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html#a732cb9e0f9a8389354ce72d55378766d" title="Retrieves simulation data per electrode per tag." alt="" coords="468,5,682,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,32,452,32,452,37,421,37"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="284,104,283,94,290,85,305,79,328,77,353,80,368,86,366,91,352,85,328,83,307,85,293,89,288,95,290,103"/>
+</map>

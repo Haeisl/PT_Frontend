@@ -1,0 +1,11 @@
+<map id="UPT_JSONConverter::ConvertJSONObjectToDoubleArray" name="UPT_JSONConverter::ConvertJSONObjectToDoubleArray">
+<area shape="rect" id="Node000001" title="Converts a JSON object to an array of doubles." alt="" coords="934,51,1162,93"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___j_s_o_n_converter.html#a5d32f2c1006346cd2e3a0479cbb8200f" title="Converts a JSON response body to an array of doubles." alt="" coords="639,5,886,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="918,58,887,54,887,48,919,52"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html#a35c508f431cbfefe07042f0bfc42783f" title="Processes electrode data." alt="" coords="671,88,854,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="919,92,855,100,854,95,918,86"/>
+<area shape="rect" id="Node000004" href="$class_u_p_t___simulation_component.html#ac2605fac55d1e34d09181fb205101db9" title="Retrieves simulation data from a JSON object." alt="" coords="348,88,591,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="656,112,591,112,591,107,656,107"/>
+<area shape="rect" id="Node000005" href="$class_u_p_t___simulation_component.html#a57b42939f12c19af9b851a8b323f01dd" title="Retrieves simulation data from a JSON response body." alt="" coords="5,88,300,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="332,112,300,112,300,107,332,107"/>
+</map>

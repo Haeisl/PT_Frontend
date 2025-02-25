@@ -1,0 +1,5 @@
+<map id="APT_ROIActor::OnMoveROI" name="APT_ROIActor::OnMoveROI">
+<area shape="rect" id="Node000001" title="Handles the input action to move the ROI." alt="" coords="230,5,420,32"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#a9187e9cf17cdcd8dcd43da6b7a7e77b8" title="Called when the game starts or when spawned." alt="" coords="5,5,182,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,21,182,21,182,16,214,16"/>
+</map>

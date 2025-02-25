@@ -1,0 +1,6 @@
+<map id="UPT_ConfigManager::GetUrlDataValidation" name="UPT_ConfigManager::GetUrlDataValidation">
+<area shape="rect" id="Node000001" title="Gets the URL for data validation." alt="" coords="231,29,382,72"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="341,16,328,10,306,8,286,10,274,15,269,21,271,28,266,29,264,19,271,10,285,5,306,3,329,5,343,11"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#a59bcc19aa5b2104fae73c34697c4e65f" title="Gets the data validation address URL for a given patient ID and configuration ID." alt="" coords="5,29,183,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,53,183,53,183,48,215,48"/>
+</map>

@@ -23,13 +23,6 @@ public:
 	 */
 	UPT_SimulationComponent();
 
-protected:
-	/**
-	 * @brief Called when the game starts.
-	 */
-	virtual void BeginPlay() override;
-
-public:
 	/**
 	 * @brief Called every frame.
 	 * @param DeltaTime Time since the last frame.
@@ -247,10 +240,15 @@ public:
 	UFUNCTION(BlueprintPure, Category = "PT_SIMULATION_DATA")
 	TArray<FVector> GetVectorfieldInRoi() { return this->VectorfieldInRoi; };
 
-public:
 	/** @brief Array of electrode indices. */
 	UPROPERTY(BlueprintReadOnly, Category = "PT_SIMULATION_DATA")
 	TArray<int32> ElectrodeIndexArray;
+
+protected:
+	/**
+	 * @brief Called when the game starts.
+	 */
+	virtual void BeginPlay() override;
 
 private:
 	/**

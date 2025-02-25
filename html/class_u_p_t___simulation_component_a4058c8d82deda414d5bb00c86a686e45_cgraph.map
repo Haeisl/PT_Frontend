@@ -1,0 +1,6 @@
+<map id="UPT_SimulationComponent::ResetSimulationDataArrays" name="UPT_SimulationComponent::ResetSimulationDataArrays">
+<area shape="rect" id="Node000001" title="Resets the simulation data arrays." alt="" coords="5,29,197,72"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#a8c74dca0e2da85e92a49eab962b01787" title="Gets the data tag index array." alt="" coords="245,29,399,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,48,229,48,229,53,197,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="280,29,278,19,285,10,300,5,322,3,346,5,360,11,358,16,344,10,322,8,301,10,288,15,283,21,285,28"/>
+</map>

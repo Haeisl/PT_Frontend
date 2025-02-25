@@ -1,0 +1,5 @@
+<map id="UManageServerWidget::GetServerReachedAddress" name="UManageServerWidget::GetServerReachedAddress">
+<area shape="rect" id="Node000001" title="Gets the server reached address." alt="" coords="5,5,194,48"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#a6ae375becb9a9ba415971bf986e29c57" title="Gets the reached address URL." alt="" coords="242,5,393,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,24,227,24,227,29,194,29"/>
+</map>

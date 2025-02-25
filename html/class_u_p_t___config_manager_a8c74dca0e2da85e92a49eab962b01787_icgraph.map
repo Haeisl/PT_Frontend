@@ -1,0 +1,14 @@
+<map id="UPT_ConfigManager::GetDataTagIndexArray" name="UPT_ConfigManager::GetDataTagIndexArray">
+<area shape="rect" id="Node000001" title="Gets the data tag index array." alt="" coords="639,105,793,148"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="756,92,741,86,716,84,693,86,678,91,673,97,675,104,669,105,668,95,675,86,692,81,716,79,742,81,758,87"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___simulation_component.html#a5a8fddf58e505464e5526ba98aa91bd9" title="Called when the game starts." alt="" coords="378,5,561,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="665,100,590,62,558,51,560,46,592,58,667,95"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___simulation_component.html#ac2605fac55d1e34d09181fb205101db9" title="Retrieves simulation data from a JSON object." alt="" coords="348,72,591,115"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="623,117,591,112,592,107,624,112"/>
+<area shape="rect" id="Node000005" href="$class_u_p_t___simulation_component.html#a694de51fcc8d63e5b972879ff0d1d29d" title="Processes interpolation for simulation data." alt="" coords="378,139,561,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="624,142,562,150,561,145,624,136"/>
+<area shape="rect" id="Node000006" href="$class_u_p_t___simulation_component.html#a4058c8d82deda414d5bb00c86a686e45" title="Resets the simulation data arrays." alt="" coords="374,205,565,248"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="667,158,592,196,560,207,558,202,590,191,665,154"/>
+<area shape="rect" id="Node000004" href="$class_u_p_t___simulation_component.html#a57b42939f12c19af9b851a8b323f01dd" title="Retrieves simulation data from a JSON response body." alt="" coords="5,72,300,115"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="332,96,300,96,300,91,332,91"/>
+</map>

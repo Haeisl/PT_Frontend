@@ -1,0 +1,80 @@
+\doxysection{PT\+\_\+\+JSONConverter.\+h}
+\hypertarget{_p_t___j_s_o_n_converter_8h_source}{}\label{_p_t___j_s_o_n_converter_8h_source}\index{Source/PlanningTool\_ET/PT\_JSONConverter.h@{Source/PlanningTool\_ET/PT\_JSONConverter.h}}
+\mbox{\hyperlink{_p_t___j_s_o_n_converter_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___h_t_t_p_component_8h}{PT\_HTTPComponent.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}PT\_JSONConverter.generated.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ UCLASS()}
+\DoxyCodeLine{00015\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a34ee89d947e80dcdab7dfa3d7223caff}{UPT\_JSONConverter}}\ :\ public\ UObject}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a34ee89d947e80dcdab7dfa3d7223caff}{UPT\_JSONConverter}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a34ee89d947e80dcdab7dfa3d7223caff}{\string~UPT\_JSONConverter}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00037\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_JSON"{}})}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a71aa218001cae5cba5ed47016a8a65ae}{ConvertJSONResponseBodyToVectorArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<FVector>\&\ OutVectorArray);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a2598aaf8a9a48fa1e9ef95b8053c8eef}{ConvertJSONObjectToVectorArray}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<FVector>\&\ OutVectorArray);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00054\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_JSON"{}})}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a023fb22fafec94af4e5d4f0661a66635}{ConvertJSONResponseBodyToStringArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<FString>\&\ OutStringArray);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a9d43ed66078b3fd9559b5a09738fb129}{ConvertJSONObjectToStringArray}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<FString>\&\ OutStringArray);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_JSON"{}})}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a06d1c55d34fea6ba5fa4a8463ed08253}{ConvertJSONResponseBodyToColorArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<FLinearColor>\&\ OutColorArray);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a4d1493a858d50f43a3ff0e76f5515843}{ConvertJSONObjectToColorArray}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<FLinearColor>\&\ OutColorArray);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00088\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_JSON"{}})}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_ab57aab60f12e2a256748433bddd98a7a}{ConvertJSONResponseBodyToTriangleIndexArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<int32>\&\ OutTriangleIndexArray);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a3d0b180b51e52375fd2cbd5aad33e27d}{ConvertJSONObjectToTriangleIndexArray}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<int32>\&\ OutTriangleIndexArray);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00105\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_JSON"{}})}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_ad40b8256d54c6056ea84d3498e62c1c3}{ConvertJSONResponseBodyToTetraArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<FPT\_TetraData>\&\ OutTetraDataArray);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a7486fee0f598edc01991e5103bbf3201}{ConvertJSONObjectToTetraArray}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<FPT\_TetraData>\&\ OutTetraDataArray);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00122\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_JSON"{}})}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a5d32f2c1006346cd2e3a0479cbb8200f}{ConvertJSONResponseBodyToDoubleArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<double>\&\ OutDoubleArray);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a9bf5ddfd3a7b31044faaf04519ca153d}{ConvertJSONObjectToDoubleArray}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<double>\&\ OutDoubleArray);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00139\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_JSON"{}})}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a520fbf12003508772fda06fe9f5acfa3}{ConvertJSONResponseBodyToIntegerArray}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<int32>\&\ OutIntegerArray);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a77d30c9e8b027c8da2ce98371a115067}{ConvertJSONObjectToIntegerArray}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InArrayFieldName,\ TArray<int32>\&\ OutIntegerArray,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\&\ bPrintErrorMessage\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a23c361fef0b3e21ae024fd9196723e16}{ConvertJSONToDouble}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ \textcolor{keywordtype}{double}\&\ OutNumber);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a1ba17e54c0adff9d588774a39652bcc3}{ConvertJSONToInteger}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ int32\&\ OutNumber);}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_aa87eff3b9e1cc05bbfea5171eec554be}{ConvertJSONToString}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ InJsonObjectPtr,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ FString\&\ OutString);}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_aa4df3bbd7b886b6a9513f8f96e2211a4}{ConvertJSONResponseBodyToVector}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ InHTTPComponent,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ FVector\&\ OutVector);}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a665f2da5b43bcbc10fdb10582bd8edec}{ConvertJSONObjectToVector}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>*\ jsonObj,\ \textcolor{keyword}{const}\ FString\&\ InFieldName,\ FVector\&\ OutVector);}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keyword}{static}\ TSharedPtr<FJsonObject>\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_ab8f81ee9032d83d3b992720f93811fba}{CreateJsonObjectFromVector}}(\textcolor{keyword}{const}\ FVector\&\ InVector);}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keyword}{static}\ TArray<TSharedPtr<FJsonValue>>\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_aaf6d693a500595e5fd75c4345dbcf933}{CreateJsonArrayFromVectorArray}}(\textcolor{keyword}{const}\ TArray<FVector>\&\ InVectorArray);}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keyword}{static}\ TArray<TSharedPtr<FJsonValue>>\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a143c58849b8ee7146bc91fcfcd0cc524}{CreateJsonArrayFromDoubleArray}}(\textcolor{keyword}{const}\ TArray<double>\&\ InDoubleArray);}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00217\ \ \ \ \ \textcolor{keyword}{static}\ FString\ \mbox{\hyperlink{class_u_p_t___j_s_o_n_converter_a756044bc94b910a0ac9154076f0aff37}{SerializeJsonObjectToString}}(\textcolor{keyword}{const}\ TSharedPtr<FJsonObject>\&\ InJsonObject);}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ \};}
+
+\end{DoxyCode}

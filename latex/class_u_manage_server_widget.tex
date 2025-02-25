@@ -1,0 +1,187 @@
+\doxysection{UManage\+Server\+Widget Class Reference}
+\hypertarget{class_u_manage_server_widget}{}\label{class_u_manage_server_widget}\index{UManageServerWidget@{UManageServerWidget}}
+
+
+A widget class for managing server interactions specifically for the "{}\+Server Management"{} screen.  
+
+
+
+
+{\ttfamily \#include $<$Manage\+Server\+Widget.\+h$>$}
+
+
+
+Inheritance diagram for UManage\+Server\+Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_u_manage_server_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for UManage\+Server\+Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_u_manage_server_widget__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_manage_server_widget_afdaf95db5771e906f076dcb0e7a515d3}{Save\+Server\+Address}} (const FString \&IPAddress, const FString \&Port)
+\begin{DoxyCompactList}\small\item\em Saves the server address. \end{DoxyCompactList}\item 
+FString \mbox{\hyperlink{class_u_manage_server_widget_a50e5b3aadbc286dc83a817f820e6874a}{Get\+Server\+Reached\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Gets the server reached address. \end{DoxyCompactList}\item 
+FString \mbox{\hyperlink{class_u_manage_server_widget_a5fbc98b90ef0cf19ee54dd1279fa7eac}{Get\+Server\+Run\+Simulations\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Gets the server run simulations address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_manage_server_widget_a00016f058f84cbfeaaa66a3438d76bab}{Process\+Reached\+Response\+Data}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+Http\+Component, bool \&Out\+Reached)
+\begin{DoxyCompactList}\small\item\em Processes the response data for the reached server check. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_manage_server_widget_a14c0bb940886e9cfede3221bce11d7f2}{Process\+Run\+Response\+Data}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+Http\+Component, bool \&Out\+Success, FString \&Out\+Message)
+\begin{DoxyCompactList}\small\item\em Processes the response data for the run simulations request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A widget class for managing server interactions specifically for the "{}\+Server Management"{} screen. 
+
+This class provides functionality to save server addresses and process server responses for specific server interactions. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_manage_server_widget_a50e5b3aadbc286dc83a817f820e6874a}\index{UManageServerWidget@{UManageServerWidget}!GetServerReachedAddress@{GetServerReachedAddress}}
+\index{GetServerReachedAddress@{GetServerReachedAddress}!UManageServerWidget@{UManageServerWidget}}
+\doxysubsubsection{\texorpdfstring{GetServerReachedAddress()}{GetServerReachedAddress()}}
+{\footnotesize\ttfamily \label{class_u_manage_server_widget_a50e5b3aadbc286dc83a817f820e6874a} 
+FString UManage\+Server\+Widget\+::\+Get\+Server\+Reached\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the server reached address. 
+
+This function returns the address used to check if the server is reachable.
+
+\begin{DoxyReturn}{Returns}
+FString The server reached address. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_manage_server_widget_a50e5b3aadbc286dc83a817f820e6874a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_manage_server_widget_a5fbc98b90ef0cf19ee54dd1279fa7eac}\index{UManageServerWidget@{UManageServerWidget}!GetServerRunSimulationsAddress@{GetServerRunSimulationsAddress}}
+\index{GetServerRunSimulationsAddress@{GetServerRunSimulationsAddress}!UManageServerWidget@{UManageServerWidget}}
+\doxysubsubsection{\texorpdfstring{GetServerRunSimulationsAddress()}{GetServerRunSimulationsAddress()}}
+{\footnotesize\ttfamily \label{class_u_manage_server_widget_a5fbc98b90ef0cf19ee54dd1279fa7eac} 
+FString UManage\+Server\+Widget\+::\+Get\+Server\+Run\+Simulations\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the server run simulations address. 
+
+This function returns the address used to run simulations on the server.
+
+\begin{DoxyReturn}{Returns}
+FString The server run simulations address. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_manage_server_widget_a5fbc98b90ef0cf19ee54dd1279fa7eac_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_manage_server_widget_a00016f058f84cbfeaaa66a3438d76bab}\index{UManageServerWidget@{UManageServerWidget}!ProcessReachedResponseData@{ProcessReachedResponseData}}
+\index{ProcessReachedResponseData@{ProcessReachedResponseData}!UManageServerWidget@{UManageServerWidget}}
+\doxysubsubsection{\texorpdfstring{ProcessReachedResponseData()}{ProcessReachedResponseData()}}
+{\footnotesize\ttfamily \label{class_u_manage_server_widget_a00016f058f84cbfeaaa66a3438d76bab} 
+void UManage\+Server\+Widget\+::\+Process\+Reached\+Response\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+Http\+Component}{, }\item[{bool \&}]{Out\+Reached}{}\end{DoxyParamCaption})}
+
+
+
+Processes the response data for the reached server check. 
+
+This function processes the response data from the server to check if it is reachable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Http\+Component} & The HTTP component used for the request. \\
+\hline
+{\em Out\+Reached} & A boolean indicating if the server was reached. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_manage_server_widget_a00016f058f84cbfeaaa66a3438d76bab_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_manage_server_widget_a14c0bb940886e9cfede3221bce11d7f2}\index{UManageServerWidget@{UManageServerWidget}!ProcessRunResponseData@{ProcessRunResponseData}}
+\index{ProcessRunResponseData@{ProcessRunResponseData}!UManageServerWidget@{UManageServerWidget}}
+\doxysubsubsection{\texorpdfstring{ProcessRunResponseData()}{ProcessRunResponseData()}}
+{\footnotesize\ttfamily \label{class_u_manage_server_widget_a14c0bb940886e9cfede3221bce11d7f2} 
+void UManage\+Server\+Widget\+::\+Process\+Run\+Response\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+Http\+Component}{, }\item[{bool \&}]{Out\+Success}{, }\item[{FString \&}]{Out\+Message}{}\end{DoxyParamCaption})}
+
+
+
+Processes the response data for the run simulations request. 
+
+This function processes the response data from the server for the run simulations request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Http\+Component} & The HTTP component used for the request. \\
+\hline
+{\em Out\+Success} & A boolean indicating if the request was successful. \\
+\hline
+{\em Out\+Message} & A message returned from the server. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_u_manage_server_widget_a14c0bb940886e9cfede3221bce11d7f2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_u_manage_server_widget_afdaf95db5771e906f076dcb0e7a515d3}\index{UManageServerWidget@{UManageServerWidget}!SaveServerAddress@{SaveServerAddress}}
+\index{SaveServerAddress@{SaveServerAddress}!UManageServerWidget@{UManageServerWidget}}
+\doxysubsubsection{\texorpdfstring{SaveServerAddress()}{SaveServerAddress()}}
+{\footnotesize\ttfamily \label{class_u_manage_server_widget_afdaf95db5771e906f076dcb0e7a515d3} 
+void UManage\+Server\+Widget\+::\+Save\+Server\+Address (\begin{DoxyParamCaption}\item[{const FString \&}]{IPAddress}{, }\item[{const FString \&}]{Port}{}\end{DoxyParamCaption})}
+
+
+
+Saves the server address. 
+
+This function saves the server IP address and port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em IPAddress} & The IP address of the server. \\
+\hline
+{\em Port} & The port of the server. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_u_manage_server_widget_afdaf95db5771e906f076dcb0e7a515d3_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_manage_server_widget_8h}{Manage\+Server\+Widget.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_manage_server_widget_8cpp}{Manage\+Server\+Widget.\+cpp}}\end{DoxyCompactItemize}

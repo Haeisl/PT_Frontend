@@ -1,0 +1,11 @@
+<map id="APT_ROIActor::SetROISize" name="APT_ROIActor::SetROISize">
+<area shape="rect" id="Node000001" title="Sets the size of the ROI and applies the transformation." alt="" coords="5,43,193,69"/>
+<area shape="rect" id="Node000002" href="$class_a_p_t___r_o_i_actor.html#a98775029206b38e73be0166206e3237c" title="Applies the transformations to the ROI." alt="" coords="241,43,485,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,53,225,53,225,59,193,59"/>
+<area shape="rect" id="Node000003" href="$class_a_p_t___r_o_i_actor.html#a93f73bbae49c2ea7f0e9484a4ac5d49d" title="Generates the box mesh for the ROI." alt="" coords="533,13,758,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,41,517,37,518,43,486,46"/>
+<area shape="rect" id="Node000005" href="$class_a_p_t___r_o_i_actor.html#a442faed02cc87040949cc61a488a434d" title="Resets the vertex array to the standard size." alt="" coords="551,64,740,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="486,66,536,71,535,77,485,71"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___r_o_i_actor.html#ad3dab860f4835c2043c1e16246a1d1be" title="Manually calculates the normals for the current vertex and triangle index arrays." alt="" coords="806,5,1028,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="759,24,791,24,791,29,759,29"/>
+</map>

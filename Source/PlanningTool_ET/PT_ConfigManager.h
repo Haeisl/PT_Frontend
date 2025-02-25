@@ -4,10 +4,10 @@
 /**
  * @file PT_ConfigManager.h
  * @brief Header file for the UPT_ConfigManager class.
- * 
+ *
  * This file contains the declaration of the UPT_ConfigManager class, which is responsible for managing configuration settings
  * and providing various URLs for server communication.
- * 
+ *
  */
 
 #pragma once

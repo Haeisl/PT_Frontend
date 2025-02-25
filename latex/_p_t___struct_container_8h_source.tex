@@ -1,0 +1,79 @@
+\doxysection{PT\+\_\+\+Struct\+Container.\+h}
+\hypertarget{_p_t___struct_container_8h_source}{}\label{_p_t___struct_container_8h_source}\index{Source/PlanningTool\_ET/PT\_StructContainer.h@{Source/PlanningTool\_ET/PT\_StructContainer.h}}
+\mbox{\hyperlink{_p_t___struct_container_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <LidarPointCloudShared.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}PT\_StructContainer.generated.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ USTRUCT(BlueprintType)}
+\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\_TetraData}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ GENERATED\_USTRUCT\_BODY()}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_TetraData"{}})}
+\DoxyCodeLine{00024\ \ \ \ \ double\ \mbox{\hyperlink{struct_f_p_t___tetra_data_a1d1061d0764548ddfa4e80ae2671e8f1}{A}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_TetraData"{}})}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_f_p_t___tetra_data_a7ee40675fb065f3bef896ab60409e960}{B}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_TetraData"{}})}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_f_p_t___tetra_data_a9be8ac411d3246b781d254e0572ef047}{C}};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00035\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_TetraData"{}})}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_f_p_t___tetra_data_acae06eff72bfade6e0acb991f23a9104}{D}};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_TetraData"{}})}
+\DoxyCodeLine{00040\ \ \ \ \ FString\ \mbox{\hyperlink{struct_f_p_t___tetra_data_a3ea43493dfbb0eb153e5b24b95c13c7c}{Tag}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00043\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_TetraData"{}})}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_f_p_t___tetra_data_aa06b63ffe60fc9d0a8195b3c4362e0ac}{Index}};}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00055\ USTRUCT(BlueprintType)}
+\DoxyCodeLine{00056\ struct\ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\_MeshData}}}
+\DoxyCodeLine{00057\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ GENERATED\_USTRUCT\_BODY()}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_MeshData"{}})}
+\DoxyCodeLine{00062\ \ \ \ \ FString\ \mbox{\hyperlink{struct_f_p_t___mesh_data_ae470c02ce2e078450f8905e92ecbb7d0}{Id}};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00065\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_MeshData"{}})}
+\DoxyCodeLine{00066\ \ \ \ \ FString\ \mbox{\hyperlink{struct_f_p_t___mesh_data_ac7f659f04ff5a684128fe9b864323645}{Description}};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00069\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_MeshData"{}})}
+\DoxyCodeLine{00070\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{struct_f_p_t___mesh_data_ae93fef396507f331f6d41bf503cf5b32}{TriangleIndexArray}};}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00082\ USTRUCT(BlueprintType)}
+\DoxyCodeLine{00083\ struct\ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\_VolumeData}}}
+\DoxyCodeLine{00084\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ GENERATED\_USTRUCT\_BODY()}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ }
+\DoxyCodeLine{00088\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_VolumeData"{}})}
+\DoxyCodeLine{00089\ \ \ \ \ FString\ \mbox{\hyperlink{struct_f_p_t___volume_data_a5f8714da16048a4cb50710e2776c3762}{Id}};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00092\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_VolumeData"{}})}
+\DoxyCodeLine{00093\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{struct_f_p_t___volume_data_a45e906bbfa2f45d2f9161fdac2539769}{VertexIndexArray}};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00096\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}PT\_VolumeData"{}})}
+\DoxyCodeLine{00097\ \ \ \ \ TArray<FLidarPointCloudPoint>\ \mbox{\hyperlink{struct_f_p_t___volume_data_aec13f8dc5e68e716c0607fcc48dbd916}{PointCloudArray}};}
+\DoxyCodeLine{00098\ \};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00105\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_p_t___struct_container_a188e53ce42d2daae51f293518f4858dd}{PT\_StructContainer}}}
+\DoxyCodeLine{00106\ \{}
+\DoxyCodeLine{00107\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{class_p_t___struct_container_a188e53ce42d2daae51f293518f4858dd}{PT\_StructContainer}}();}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{class_p_t___struct_container_a188e53ce42d2daae51f293518f4858dd}{\string~PT\_StructContainer}}();}
+\DoxyCodeLine{00117\ \};}
+
+\end{DoxyCode}

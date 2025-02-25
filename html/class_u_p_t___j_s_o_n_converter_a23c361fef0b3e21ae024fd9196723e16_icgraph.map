@@ -1,0 +1,10 @@
+<map id="UPT_JSONConverter::ConvertJSONToDouble" name="UPT_JSONConverter::ConvertJSONToDouble">
+<area shape="rect" id="Node000001" title="Converts a JSON object to a double." alt="" coords="537,43,695,85"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___j_s_o_n_converter.html#a665f2da5b43bcbc10fdb10582bd8edec" title="Converts a JSON object to a FVector." alt="" coords="297,13,489,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="521,54,489,50,490,45,522,49"/>
+<area shape="rect" id="Node000004" href="$class_a_p_t___electrode_area_actor.html#ab795722f63a08909139f9003d0bd4625" title="Processes the response data from an HTTP component and extracts various parameters." alt="" coords="43,72,211,115"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="522,72,211,91,211,86,521,67"/>
+<area shape="rect" id="Node000003" href="$class_u_p_t___j_s_o_n_converter.html#aa4df3bbd7b886b6a9513f8f96e2211a4" title="Converts a JSON response body to a FVector." alt="" coords="5,5,249,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="281,34,249,33,249,28,281,29"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="282,62,212,77,211,72,281,57"/>
+</map>

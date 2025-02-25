@@ -1,0 +1,6 @@
+<map id="UPT_SimulationComponent::BeginPlay" name="UPT_SimulationComponent::BeginPlay">
+<area shape="rect" id="Node000001" title="Called when the game starts." alt="" coords="5,29,189,72"/>
+<area shape="rect" id="Node000002" href="$class_u_p_t___config_manager.html#a8c74dca0e2da85e92a49eab962b01787" title="Gets the data tag index array." alt="" coords="237,29,391,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,48,221,48,221,53,189,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="273,29,271,19,278,10,292,5,314,3,337,5,351,11,349,16,336,10,314,8,293,10,281,15,276,21,278,28"/>
+</map>

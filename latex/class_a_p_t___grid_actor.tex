@@ -1,0 +1,112 @@
+\doxysection{APT\+\_\+\+Grid\+Actor Class Reference}
+\hypertarget{class_a_p_t___grid_actor}{}\label{class_a_p_t___grid_actor}\index{APT\_GridActor@{APT\_GridActor}}
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Grid\+Actor.\+h$>$}
+
+
+
+Inheritance diagram for APT\+\_\+\+Grid\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_a_p_t___grid_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for APT\+\_\+\+Grid\+Actor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_a_p_t___grid_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_t___grid_actor_ae31a623f5040702a5d87fc102ff4fb89}{APT\+\_\+\+Grid\+Actor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_p_t___grid_actor_a3c3497cc2096168c662c2d2abe1f4a93}{Tick}} (float Delta\+Time) override
+\item 
+FString \mbox{\hyperlink{class_a_p_t___grid_actor_afdeb61e1a56b97fcf534a3d80a684c02}{Create\+Grid\+JSON}} (const FString \&In\+Config\+Id, const FString \&In\+Patient\+Id, const TArray$<$ FVector $>$ \&In\+Electrode\+Position\+Array, const TArray$<$ FString $>$ \&In\+Electrode\+Name\+Array, const FVector \&In\+Center\+Point, const double \&In\+Cell\+Size, const TArray$<$ FVector $>$ \&In\+Corner\+Point\+Array, const FRotator \&In\+Rotation, const int \&In\+Row\+Count, const int \&In\+Column\+Count)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_p_t___grid_actor_ab5b840c35fd32a2a27ec3cdf44fd1124}{Begin\+Play}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_p_t___grid_actor_ae31a623f5040702a5d87fc102ff4fb89}\index{APT\_GridActor@{APT\_GridActor}!APT\_GridActor@{APT\_GridActor}}
+\index{APT\_GridActor@{APT\_GridActor}!APT\_GridActor@{APT\_GridActor}}
+\doxysubsubsection{\texorpdfstring{APT\_GridActor()}{APT\_GridActor()}}
+{\footnotesize\ttfamily \label{class_a_p_t___grid_actor_ae31a623f5040702a5d87fc102ff4fb89} 
+APT\+\_\+\+Grid\+Actor\+::\+APT\+\_\+\+Grid\+Actor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_p_t___grid_actor_ab5b840c35fd32a2a27ec3cdf44fd1124}\index{APT\_GridActor@{APT\_GridActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APT\_GridActor@{APT\_GridActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_p_t___grid_actor_ab5b840c35fd32a2a27ec3cdf44fd1124} 
+void APT\+\_\+\+Grid\+Actor\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\Hypertarget{class_a_p_t___grid_actor_afdeb61e1a56b97fcf534a3d80a684c02}\index{APT\_GridActor@{APT\_GridActor}!CreateGridJSON@{CreateGridJSON}}
+\index{CreateGridJSON@{CreateGridJSON}!APT\_GridActor@{APT\_GridActor}}
+\doxysubsubsection{\texorpdfstring{CreateGridJSON()}{CreateGridJSON()}}
+{\footnotesize\ttfamily \label{class_a_p_t___grid_actor_afdeb61e1a56b97fcf534a3d80a684c02} 
+FString APT\+\_\+\+Grid\+Actor\+::\+Create\+Grid\+JSON (\begin{DoxyParamCaption}\item[{const FString \&}]{In\+Config\+Id}{, }\item[{const FString \&}]{In\+Patient\+Id}{, }\item[{const TArray$<$ FVector $>$ \&}]{In\+Electrode\+Position\+Array}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Electrode\+Name\+Array}{, }\item[{const FVector \&}]{In\+Center\+Point}{, }\item[{const double \&}]{In\+Cell\+Size}{, }\item[{const TArray$<$ FVector $>$ \&}]{In\+Corner\+Point\+Array}{, }\item[{const FRotator \&}]{In\+Rotation}{, }\item[{const int \&}]{In\+Row\+Count}{, }\item[{const int \&}]{In\+Column\+Count}{}\end{DoxyParamCaption})}
+
+Creates a JSON representation of the grid configuration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Config\+Id} & The configuration ID. \\
+\hline
+{\em In\+Patient\+Id} & The patient ID. \\
+\hline
+{\em In\+Electrode\+Position\+Array} & An array of electrode positions. \\
+\hline
+{\em In\+Electrode\+Name\+Array} & An array of electrode names. \\
+\hline
+{\em In\+Center\+Point} & The center point of the grid. \\
+\hline
+{\em In\+Cell\+Size} & The size of each cell in the grid. \\
+\hline
+{\em In\+Corner\+Point\+Array} & An array of corner points of the grid. \\
+\hline
+{\em In\+Rotation} & The rotation of the grid. \\
+\hline
+{\em In\+Row\+Count} & The number of rows in the grid. \\
+\hline
+{\em In\+Column\+Count} & The number of columns in the grid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A JSON string representing the grid configuration. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___grid_actor_afdeb61e1a56b97fcf534a3d80a684c02_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___grid_actor_a3c3497cc2096168c662c2d2abe1f4a93}\index{APT\_GridActor@{APT\_GridActor}!Tick@{Tick}}
+\index{Tick@{Tick}!APT\_GridActor@{APT\_GridActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_p_t___grid_actor_a3c3497cc2096168c662c2d2abe1f4a93} 
+void APT\+\_\+\+Grid\+Actor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___grid_actor_8h}{PT\+\_\+\+Grid\+Actor.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___grid_actor_8cpp}{PT\+\_\+\+Grid\+Actor.\+cpp}}\end{DoxyCompactItemize}

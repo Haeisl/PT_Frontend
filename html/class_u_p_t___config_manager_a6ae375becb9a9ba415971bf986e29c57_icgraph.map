@@ -1,0 +1,5 @@
+<map id="UPT_ConfigManager::GetReachedAddress" name="UPT_ConfigManager::GetReachedAddress">
+<area shape="rect" id="Node000001" title="Gets the reached address URL." alt="" coords="242,5,393,48"/>
+<area shape="rect" id="Node000002" href="$class_u_manage_server_widget.html#a50e5b3aadbc286dc83a817f820e6874a" title="Gets the server reached address." alt="" coords="5,5,194,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,29,194,29,194,24,226,24"/>
+</map>

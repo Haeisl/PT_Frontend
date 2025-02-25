@@ -1,0 +1,614 @@
+\doxysection{APT\+\_\+\+Multi3\+DActor Class Reference}
+\hypertarget{class_a_p_t___multi3_d_actor}{}\label{class_a_p_t___multi3_d_actor}\index{APT\_Multi3DActor@{APT\_Multi3DActor}}
+
+
+A class that extends \doxylink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor} to handle multiple 3D meshes and volumes.  
+
+
+
+
+{\ttfamily \#include $<$PT\+\_\+\+Multi3\+DActor.\+h$>$}
+
+
+
+Inheritance diagram for APT\+\_\+\+Multi3\+DActor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_a_p_t___multi3_d_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for APT\+\_\+\+Multi3\+DActor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_a_p_t___multi3_d_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_t___multi3_d_actor_a78ac71324a85db7bef4cec6e38a7cf2e}{APT\+\_\+\+Multi3\+DActor}} ()
+\begin{DoxyCompactList}\small\item\em Sets default values for this actor\textquotesingle{}s properties. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a9548531a35dc01867967e74972877294}{Tick}} (float Delta\+Time) override
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_af0a1bdccdb99c2f4d2db4821d775c2ae}{Convert\+JSONResponse\+Body\+To\+Multi\+Mesh}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, const TArray$<$ FString $>$ \&In\+Tag\+Array, const TArray$<$ FString $>$ \&In\+Description\+Array, TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \&Out\+Mesh\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to multiple meshes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_abb35b78b80db195a803da94781e0c251}{Convert\+JSONObject\+To\+Multi\+Mesh}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Field\+Name, const TArray$<$ FString $>$ \&In\+Tag\+Array, const TArray$<$ FString $>$ \&In\+Description\+Array, TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \&Out\+Mesh\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to multiple meshes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_aae7e5d6acbe425780ba38e25ac087814}{Convert\+JSONResponse\+Body\+To\+Multi\+Volume}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, const TArray$<$ FString $>$ \&In\+Tag\+Array, const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ FLinear\+Color $>$ \&In\+Vertex\+Color\+Array, TArray$<$ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\+\_\+\+Volume\+Data}} $>$ \&Out\+Volume\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to multiple volumes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_ab736113cc1db79ceceff432192eaab0c}{Convert\+JSONObject\+To\+Multi\+Volume}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Field\+Name, const TArray$<$ FString $>$ \&In\+Tag\+Array, const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ FLinear\+Color $>$ \&In\+Vertex\+Color\+Array, TArray$<$ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\+\_\+\+Volume\+Data}} $>$ \&Out\+Volume\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to multiple volumes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_ac5feb83de583fdceec15b23c5c52769c}{Convert\+JSONResponse\+Body\+To\+Tetra\+Array}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, const TArray$<$ FString $>$ \&In\+Tag\+Array, TArray$<$ TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ $>$ \&Out\+Tetra\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to tetrahedral data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a974ed432ee4360510316de78226769c6}{Convert\+JSONObject\+To\+Tetra\+Array}} (const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}In\+Json\+Object\+Ptr, const FString \&In\+Field\+Name, const TArray$<$ FString $>$ \&In\+Tag\+Array, TArray$<$ TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ $>$ \&Out\+Tetra\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON object to tetrahedral data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_ad4276e6a6409b8c26b07aeb5a21928f9}{Calculate\+Normals\+For\+Multi\+Mesh}} (TArray$<$ FVector $>$ \&Out\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Calculates normals for multiple meshes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_ae8d4937169940ce4fb4e6741471c6375}{Get\+Multi\+Mesh\+And\+Multi\+Volume\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FVector $>$ \&Out\+Vertex\+Array, TArray$<$ FVector $>$ \&Out\+Normal\+Array, TArray$<$ FString $>$ \&Out\+Mesh\+Tag\+Array, TArray$<$ FString $>$ \&Out\+Volume\+Tag\+Array, TArray$<$ FString $>$ \&Out\+Mesh\+Description\+Array, TArray$<$ FString $>$ \&Out\+Volume\+Description\+Array, TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \&Out\+Mesh\+Data\+Array, TArray$<$ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\+\_\+\+Volume\+Data}} $>$ \&Out\+Volume\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Extracts both mesh and volume data from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a527e7a4b5d9b79bf6f5d48c36d95ae8d}{Get\+Multi\+Mesh\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FVector $>$ \&Out\+Vertex\+Array, TArray$<$ FVector $>$ \&Out\+Normal\+Array, TArray$<$ FString $>$ \&Out\+Mesh\+Tag\+Array, TArray$<$ FString $>$ \&Out\+Mesh\+Description\+Array, TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \&Out\+Mesh\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Extracts mesh data from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a950fe8c53ff0b1c574ed669a02996fa4}{Get\+Multi\+Volume\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FVector $>$ \&Out\+Vertex\+Array, TArray$<$ FString $>$ \&Out\+Volume\+Tag\+Array, TArray$<$ FString $>$ \&Out\+Volume\+Description\+Array, TArray$<$ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\+\_\+\+Volume\+Data}} $>$ \&Out\+Volume\+Data\+Array)
+\begin{DoxyCompactList}\small\item\em Extracts volume data from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a09307a001910fa78195701b4281b80f1}{Reset\+Multi3\+DActor\+Arrays}} ()
+\begin{DoxyCompactList}\small\item\em Resets the arrays used by the multi 3D actor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_t___single3_d_actor_ac0cc55ebe3234982e36add39b332f707}{APT\+\_\+\+Single3\+DActor}} ()
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a167008919b32a3d177057b4f7c7b17ca}{Get\+Vertex\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the vertex array. \end{DoxyCompactList}\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a93a32b1ffd19680faf89040d21b7e0cc}{Get\+Vertex\+Color\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the vertex color array. \end{DoxyCompactList}\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a7eab857de9c5215e2947562ff2815254}{Get\+Triangle\+Index\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the triangle index array. \end{DoxyCompactList}\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8e9dab58abdf56e917aa7fe7ddec6bcc}{Get\+Normal\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Gets the normal array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a0149913b56d5ba144d7ae6cec09c22e7}{Create\+Point\+Cloud\+Array}} (const TArray$<$ int32 $>$ \&In\+Vertex\+Index\+Array, const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ FLinear\+Color $>$ \&In\+Vertex\+Color\+Array, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud\+Array)
+\begin{DoxyCompactList}\small\item\em Creates an array of FLidar\+Point\+Cloud\+Point from given vertex indices, vertex array, and vertex color array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_aeaf883636af0394186f05690534b2917}{Update\+Lidar\+Point\+Cloud\+Color}} (const TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&In\+Point\+Cloud, const TArray$<$ FLinear\+Color $>$ \&In\+Color\+Array, const TArray$<$ int32 $>$ \&In\+Vertex\+Index\+Array, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud)
+\begin{DoxyCompactList}\small\item\em Updates the color of a Lidar point cloud. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_aa66f0711724e833a781e44011a7f9f3c}{Convert\+JSONResponse\+Body\+To\+Mesh}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FVector $>$ \&Out\+Vertex\+Array, TArray$<$ int32 $>$ \&Out\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to a mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a9ce628a69546652c564d9b95d8da7ed2}{Convert\+JSONResponse\+Body\+To\+Volume}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, TArray$<$ FLidar\+Point\+Cloud\+Point $>$ \&Out\+Point\+Cloud\+Array)
+\begin{DoxyCompactList}\small\item\em Converts a JSON response body to a volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a37e361d670c1290c63b501c7ec8b26b8}{Set\+Vertex\+Array\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, TArray$<$ FVector $>$ \&Out\+Vertex\+Array)
+\begin{DoxyCompactList}\small\item\em Sets the vertex array from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a047e787ea313e91b392a6749642f3aac}{Set\+Vertex\+Color\+Array\+From\+JSONResponse\+Body}} (const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}In\+HTTPComponent, const FString \&In\+Field\+Name, TArray$<$ FLinear\+Color $>$ \&In\+Vertex\+Color\+Array)
+\begin{DoxyCompactList}\small\item\em Sets the vertex color array from a JSON response body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac7259989da2d7a5b2de67e87450112c7}{Calculate\+Normals}} (const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ int32 $>$ In\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Calculates the normals of the vertices of a 3D model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a47abcd7e44ed2e809c9afb5c665c711a}{Calculate\+Inverted\+Normals}} (const TArray$<$ FVector $>$ \&In\+Vertex\+Array, const TArray$<$ int32 $>$ In\+Triangle\+Index\+Array, TArray$<$ FVector $>$ \&Out\+Inverted\+Normal\+Array)
+\begin{DoxyCompactList}\small\item\em Calculates the inverted normals of the vertices of a 3D model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_ac98e2f0e9b475be2abaa210cc00249ba}{Reset\+Single3\+DActor\+Arrays}} ()
+\begin{DoxyCompactList}\small\item\em Resets the arrays of the single 3D actor. \end{DoxyCompactList}\item 
+int32 \mbox{\hyperlink{class_a_p_t___single3_d_actor_abd98047846a9040e34c20d58122e1043}{Get\+Vertex\+Array\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Gets the length of the vertex array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a4da43d76a74f8c47d26182827a2f1d8f}{Begin\+Play}} () override
+\begin{DoxyCompactList}\small\item\em Called when the game starts or when spawned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_p_t___single3_d_actor_a488438715c994b19c625a41173015c21}{Init\+White\+Vertex\+Color}} (const int32 \&In\+Vertex\+Array\+Length, const float \&In\+Alpha\+Value=1.f)
+\begin{DoxyCompactList}\small\item\em Initializes the vertex color array with white color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TArray$<$ TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ $>$ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a9964364534175db0245fca88d8064263}{Tetra\+Data\+Per\+Tag\+Array}}
+\begin{DoxyCompactList}\small\item\em A two-\/dimensional dynamic array storing tetrahedral data. \end{DoxyCompactList}\item 
+TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \mbox{\hyperlink{class_a_p_t___multi3_d_actor_a843d7b816dab5a18d9e79238feb2ceee}{Mesh\+Data\+Per\+Tag\+Array}}
+\begin{DoxyCompactList}\small\item\em An array storing mesh data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor}}}
+\begin{DoxyCompactItemize}
+\item 
+FMesh\+Data\+Callback\+Event\+Delegate \mbox{\hyperlink{class_a_p_t___single3_d_actor_a895f153034951a3dc3b8b107f469cbc8}{Mesh\+Data\+Loaded\+Callback\+Event}}
+\item 
+FVolume\+Data\+Callback\+Event\+Delegate \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8992e3301ec4511f1c66181970e427ef}{Volume\+Data\+Loaded\+Callback\+Event}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor}}}
+\begin{DoxyCompactItemize}
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_ab1d1a62192718897a53ac93e6ea248d1}{Vertex\+Array}}
+\item 
+TArray$<$ FLinear\+Color $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_a8e2242899fb6e9ab41006050fd5b3e01}{Vertex\+Color\+Array}}
+\item 
+TArray$<$ FVector $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_afce31e08cf5540225dae5717ce4cbca9}{Normal\+Array}}
+\item 
+TArray$<$ int32 $>$ \mbox{\hyperlink{class_a_p_t___single3_d_actor_afba7b1deb017920e17247c446f2d281d}{Triangle\+Index\+Array}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that extends \doxylink{class_a_p_t___single3_d_actor}{APT\+\_\+\+Single3\+DActor} to handle multiple 3D meshes and volumes. 
+
+This class provides functionality to convert JSON response bodies and objects into multiple 3D meshes and volumes. It also provides methods to extract mesh and volume data from JSON response bodies. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_p_t___multi3_d_actor_a78ac71324a85db7bef4cec6e38a7cf2e}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\index{APT\_Multi3DActor@{APT\_Multi3DActor}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{APT\_Multi3DActor()}{APT\_Multi3DActor()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a78ac71324a85db7bef4cec6e38a7cf2e} 
+APT\+\_\+\+Multi3\+DActor\+::\+APT\+\_\+\+Multi3\+DActor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sets default values for this actor\textquotesingle{}s properties. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_p_t___multi3_d_actor_a4da43d76a74f8c47d26182827a2f1d8f}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a4da43d76a74f8c47d26182827a2f1d8f} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Begin\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when the game starts or when spawned. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_a_p_t___single3_d_actor_a0b2969f0c88384528171a0c20e74c498}{APT\+\_\+\+Single3\+DActor}}.
+
+\Hypertarget{class_a_p_t___multi3_d_actor_ad4276e6a6409b8c26b07aeb5a21928f9}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!CalculateNormalsForMultiMesh@{CalculateNormalsForMultiMesh}}
+\index{CalculateNormalsForMultiMesh@{CalculateNormalsForMultiMesh}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{CalculateNormalsForMultiMesh()}{CalculateNormalsForMultiMesh()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_ad4276e6a6409b8c26b07aeb5a21928f9} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Calculate\+Normals\+For\+Multi\+Mesh (\begin{DoxyParamCaption}\item[{TArray$<$ FVector $>$ \&}]{Out\+Normal\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Calculates normals for multiple meshes. 
+
+This function takes an output array of normals and calculates the normals for multiple meshes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Out\+Normal\+Array} & An array of normals to which the function will add new normals. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_ad4276e6a6409b8c26b07aeb5a21928f9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_abb35b78b80db195a803da94781e0c251}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!ConvertJSONObjectToMultiMesh@{ConvertJSONObjectToMultiMesh}}
+\index{ConvertJSONObjectToMultiMesh@{ConvertJSONObjectToMultiMesh}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToMultiMesh()}{ConvertJSONObjectToMultiMesh()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_abb35b78b80db195a803da94781e0c251} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Convert\+JSONObject\+To\+Multi\+Mesh (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Tag\+Array}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Description\+Array}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \&}]{Out\+Mesh\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Converts a JSON object to multiple meshes. 
+
+This function takes a JSON object, a field name, an array of tags, and an output array of mesh data as input. It tries to get an object field from the JSON object with the given field name. If the field is found, it iterates over the tag array and for each tag, it creates a new mesh data object. It sets the ID of the mesh data object to the current tag. It converts the JSON object to a triangle index array and assigns it to the mesh data object. It then adds the mesh data object to the mesh array. If the field is not found, it logs an error message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em In\+Tag\+Array} & An array of tags. \\
+\hline
+{\em In\+Description\+Array} & An array of descriptions. \\
+\hline
+{\em Out\+Mesh\+Array} & An array of mesh data to which the function will add new meshes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_abb35b78b80db195a803da94781e0c251_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_abb35b78b80db195a803da94781e0c251_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_ab736113cc1db79ceceff432192eaab0c}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!ConvertJSONObjectToMultiVolume@{ConvertJSONObjectToMultiVolume}}
+\index{ConvertJSONObjectToMultiVolume@{ConvertJSONObjectToMultiVolume}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToMultiVolume()}{ConvertJSONObjectToMultiVolume()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_ab736113cc1db79ceceff432192eaab0c} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Convert\+JSONObject\+To\+Multi\+Volume (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Tag\+Array}{, }\item[{const TArray$<$ FVector $>$ \&}]{In\+Vertex\+Array}{, }\item[{const TArray$<$ FLinear\+Color $>$ \&}]{In\+Vertex\+Color\+Array}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\+\_\+\+Volume\+Data}} $>$ \&}]{Out\+Volume\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Converts a JSON object to multiple volumes. 
+
+This function takes a JSON object, a field name, an array of tags, an array of vertices, an array of vertex colors, and an output array of volume data as input. It tries to get an object field from the JSON object with the given field name. If the field is found, it iterates over the tag array and for each tag, it creates a new volume data object. It sets the ID of the volume data object to the current tag. It converts the JSON object to an integer array and creates a point cloud array from the integer array, the vertex array, and the vertex color array. It then adds the volume data object to the volume array. If the field is not found, it logs an error message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em In\+Tag\+Array} & An array of tags. \\
+\hline
+{\em In\+Vertex\+Array} & An array of vertices. \\
+\hline
+{\em In\+Vertex\+Color\+Array} & An array of vertex colors. \\
+\hline
+{\em Out\+Volume\+Array} & An array of volume data to which the function will add new volumes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_ab736113cc1db79ceceff432192eaab0c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_ab736113cc1db79ceceff432192eaab0c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_a974ed432ee4360510316de78226769c6}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!ConvertJSONObjectToTetraArray@{ConvertJSONObjectToTetraArray}}
+\index{ConvertJSONObjectToTetraArray@{ConvertJSONObjectToTetraArray}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONObjectToTetraArray()}{ConvertJSONObjectToTetraArray()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a974ed432ee4360510316de78226769c6} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Convert\+JSONObject\+To\+Tetra\+Array (\begin{DoxyParamCaption}\item[{const TShared\+Ptr$<$ FJson\+Object $>$ \texorpdfstring{$\ast$}{*}}]{In\+Json\+Object\+Ptr}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Tag\+Array}{, }\item[{TArray$<$ TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ $>$ \&}]{Out\+Tetra\+Data\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Converts a JSON object to tetrahedral data. 
+
+This function takes a JSON object, a field name, an array of tags, and an output array of tetrahedral data as input. It tries to get an object field from the JSON object with the given field name. If the field is found, it iterates over the tag array and for each tag, it converts the JSON object to a tetrahedral array and adds it to the output array. If the field is not found, it logs an error message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+Json\+Object\+Ptr} & A pointer to the JSON object to convert. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em In\+Tag\+Array} & An array of tags. \\
+\hline
+{\em Out\+Tetra\+Data\+Array} & An array of tetrahedral data to which the function will add new data. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_a974ed432ee4360510316de78226769c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_a974ed432ee4360510316de78226769c6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_af0a1bdccdb99c2f4d2db4821d775c2ae}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!ConvertJSONResponseBodyToMultiMesh@{ConvertJSONResponseBodyToMultiMesh}}
+\index{ConvertJSONResponseBodyToMultiMesh@{ConvertJSONResponseBodyToMultiMesh}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToMultiMesh()}{ConvertJSONResponseBodyToMultiMesh()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_af0a1bdccdb99c2f4d2db4821d775c2ae} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Convert\+JSONResponse\+Body\+To\+Multi\+Mesh (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Tag\+Array}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Description\+Array}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \&}]{Out\+Mesh\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Converts a JSON response body to multiple meshes. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes a HTTP component, a field name, an array of tags, and an output array of mesh data as input. It gets the response object from the HTTP component and calls the Convert\+JSONObject\+To\+Multi\+Mesh function with the response object and the other parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component from which to get the response object. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em In\+Tag\+Array} & An array of tags. \\
+\hline
+{\em In\+Description\+Array} & An array of descriptions. \\
+\hline
+{\em Out\+Mesh\+Array} & An array of mesh data to which the function will add new meshes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_af0a1bdccdb99c2f4d2db4821d775c2ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_af0a1bdccdb99c2f4d2db4821d775c2ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_aae7e5d6acbe425780ba38e25ac087814}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!ConvertJSONResponseBodyToMultiVolume@{ConvertJSONResponseBodyToMultiVolume}}
+\index{ConvertJSONResponseBodyToMultiVolume@{ConvertJSONResponseBodyToMultiVolume}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToMultiVolume()}{ConvertJSONResponseBodyToMultiVolume()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_aae7e5d6acbe425780ba38e25ac087814} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Convert\+JSONResponse\+Body\+To\+Multi\+Volume (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Tag\+Array}{, }\item[{const TArray$<$ FVector $>$ \&}]{In\+Vertex\+Array}{, }\item[{const TArray$<$ FLinear\+Color $>$ \&}]{In\+Vertex\+Color\+Array}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\+\_\+\+Volume\+Data}} $>$ \&}]{Out\+Volume\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Converts a JSON response body to multiple volumes. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes a HTTP component, a field name, an array of tags, an array of vertices, an array of vertex colors, and an output array of volume data as input. It gets the response object from the HTTP component and calls the Convert\+JSONObject\+To\+Multi\+Volume function with the response object and the other parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component from which to get the response object. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em In\+Tag\+Array} & An array of tags. \\
+\hline
+{\em In\+Vertex\+Array} & An array of vertices. \\
+\hline
+{\em In\+Vertex\+Color\+Array} & An array of vertex colors. \\
+\hline
+{\em Out\+Volume\+Array} & An array of volume data to which the function will add new volumes. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_aae7e5d6acbe425780ba38e25ac087814_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_aae7e5d6acbe425780ba38e25ac087814_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_ac5feb83de583fdceec15b23c5c52769c}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!ConvertJSONResponseBodyToTetraArray@{ConvertJSONResponseBodyToTetraArray}}
+\index{ConvertJSONResponseBodyToTetraArray@{ConvertJSONResponseBodyToTetraArray}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{ConvertJSONResponseBodyToTetraArray()}{ConvertJSONResponseBodyToTetraArray()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_ac5feb83de583fdceec15b23c5c52769c} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Convert\+JSONResponse\+Body\+To\+Tetra\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{const FString \&}]{In\+Field\+Name}{, }\item[{const TArray$<$ FString $>$ \&}]{In\+Tag\+Array}{, }\item[{TArray$<$ TArray$<$ \mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} $>$ $>$ \&}]{Out\+Tetra\+Data\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Converts a JSON response body to tetrahedral data. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It takes a HTTP component, a field name, an array of tags, and an output array of tetrahedral data as input. It gets the response object from the HTTP component and calls the Convert\+JSONObject\+To\+Tetra\+Data function with the response object and the other parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component from which to get the response object. \\
+\hline
+{\em In\+Field\+Name} & The name of the field to get from the JSON object. \\
+\hline
+{\em In\+Tag\+Array} & An array of tags. \\
+\hline
+{\em Out\+Tetra\+Data\+Array} & An array of tetrahedral data to which the function will add new data. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_ac5feb83de583fdceec15b23c5c52769c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_ac5feb83de583fdceec15b23c5c52769c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_ae8d4937169940ce4fb4e6741471c6375}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!GetMultiMeshAndMultiVolumeFromJSONResponseBody@{GetMultiMeshAndMultiVolumeFromJSONResponseBody}}
+\index{GetMultiMeshAndMultiVolumeFromJSONResponseBody@{GetMultiMeshAndMultiVolumeFromJSONResponseBody}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{GetMultiMeshAndMultiVolumeFromJSONResponseBody()}{GetMultiMeshAndMultiVolumeFromJSONResponseBody()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_ae8d4937169940ce4fb4e6741471c6375} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Get\+Multi\+Mesh\+And\+Multi\+Volume\+From\+JSONResponse\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Vertex\+Array}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Normal\+Array}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+Mesh\+Tag\+Array}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+Volume\+Tag\+Array}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+Mesh\+Description\+Array}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+Volume\+Description\+Array}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \&}]{Out\+Mesh\+Data\+Array}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\+\_\+\+Volume\+Data}} $>$ \&}]{Out\+Volume\+Data\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Extracts both mesh and volume data from a JSON response body. 
+
+This function takes a HTTP component and several output parameters. It uses the HTTP component to get the JSON response body, and then extracts the vertex array, mesh tags, volume tags, mesh descriptions, volume descriptions, mesh data, and volume data from the JSON. The extracted data is stored in the output parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component that contains the JSON response body. \\
+\hline
+{\em Out\+Vertex\+Array} & The output parameter where the vertex array will be stored. \\
+\hline
+{\em Out\+Normal\+Array} & The output parameter where the normal array will be stored. \\
+\hline
+{\em Out\+Mesh\+Tag\+Array} & The output parameter where the mesh tags will be stored. \\
+\hline
+{\em Out\+Volume\+Tag\+Array} & The output parameter where the volume tags will be stored. \\
+\hline
+{\em Out\+Mesh\+Description\+Array} & The output parameter where the mesh descriptions will be stored. \\
+\hline
+{\em Out\+Volume\+Description\+Array} & The output parameter where the volume descriptions will be stored. \\
+\hline
+{\em Out\+Mesh\+Data\+Array} & The output parameter where the mesh data will be stored. \\
+\hline
+{\em Out\+Volume\+Data\+Array} & The output parameter where the volume data will be stored. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_ae8d4937169940ce4fb4e6741471c6375_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_a527e7a4b5d9b79bf6f5d48c36d95ae8d}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!GetMultiMeshFromJSONResponseBody@{GetMultiMeshFromJSONResponseBody}}
+\index{GetMultiMeshFromJSONResponseBody@{GetMultiMeshFromJSONResponseBody}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{GetMultiMeshFromJSONResponseBody()}{GetMultiMeshFromJSONResponseBody()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a527e7a4b5d9b79bf6f5d48c36d95ae8d} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Get\+Multi\+Mesh\+From\+JSONResponse\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Vertex\+Array}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Normal\+Array}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+Mesh\+Tag\+Array}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+Mesh\+Description\+Array}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} $>$ \&}]{Out\+Mesh\+Data\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Extracts mesh data from a JSON response body. 
+
+This function takes a HTTP component and several output parameters. It uses the HTTP component to get the JSON response body, and then extracts the vertex array, mesh tags, mesh descriptions, and mesh data from the JSON. The extracted data is stored in the output parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component that contains the JSON response body. \\
+\hline
+{\em Out\+Vertex\+Array} & The output parameter where the vertex array will be stored. \\
+\hline
+{\em Out\+Normal\+Array} & The output parameter where the normal array will be stored. \\
+\hline
+{\em Out\+Mesh\+Tag\+Array} & The output parameter where the mesh tags will be stored. \\
+\hline
+{\em Out\+Mesh\+Description\+Array} & The output parameter where the mesh descriptions will be stored. \\
+\hline
+{\em Out\+Mesh\+Data\+Array} & The output parameter where the mesh data will be stored. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_a527e7a4b5d9b79bf6f5d48c36d95ae8d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_a950fe8c53ff0b1c574ed669a02996fa4}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!GetMultiVolumeFromJSONResponseBody@{GetMultiVolumeFromJSONResponseBody}}
+\index{GetMultiVolumeFromJSONResponseBody@{GetMultiVolumeFromJSONResponseBody}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{GetMultiVolumeFromJSONResponseBody()}{GetMultiVolumeFromJSONResponseBody()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a950fe8c53ff0b1c574ed669a02996fa4} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Get\+Multi\+Volume\+From\+JSONResponse\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\+\_\+\+HTTPComponent}} \texorpdfstring{$\ast$}{*}}]{In\+HTTPComponent}{, }\item[{TArray$<$ FVector $>$ \&}]{Out\+Vertex\+Array}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+Volume\+Tag\+Array}{, }\item[{TArray$<$ FString $>$ \&}]{Out\+Volume\+Description\+Array}{, }\item[{TArray$<$ \mbox{\hyperlink{struct_f_p_t___volume_data}{FPT\+\_\+\+Volume\+Data}} $>$ \&}]{Out\+Volume\+Data\+Array}{}\end{DoxyParamCaption})}
+
+
+
+Extracts volume data from a JSON response body. 
+
+This function takes a HTTP component and several output parameters. It uses the HTTP component to get the JSON response body, and then extracts the vertex array, volume tags, volume descriptions, and volume data from the JSON. The extracted data is stored in the output parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em In\+HTTPComponent} & The HTTP component that contains the JSON response body. \\
+\hline
+{\em Out\+Vertex\+Array} & The output parameter where the vertex array will be stored. \\
+\hline
+{\em Out\+Volume\+Tag\+Array} & The output parameter where the volume tags will be stored. \\
+\hline
+{\em Out\+Volume\+Description\+Array} & The output parameter where the volume descriptions will be stored. \\
+\hline
+{\em Out\+Volume\+Data\+Array} & The output parameter where the volume data will be stored. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_a950fe8c53ff0b1c574ed669a02996fa4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_a09307a001910fa78195701b4281b80f1}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!ResetMulti3DActorArrays@{ResetMulti3DActorArrays}}
+\index{ResetMulti3DActorArrays@{ResetMulti3DActorArrays}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{ResetMulti3DActorArrays()}{ResetMulti3DActorArrays()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a09307a001910fa78195701b4281b80f1} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Reset\+Multi3\+DActor\+Arrays (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Resets the arrays used by the multi 3D actor. 
+
+This function is a Blueprint\+Callable function that belongs to the "{}\+PT\+\_\+3\+D\+\_\+\+DATA"{} category. It resets the arrays used by the multi 3D actor. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_p_t___multi3_d_actor_a09307a001910fa78195701b4281b80f1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_p_t___multi3_d_actor_a9548531a35dc01867967e74972877294}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!Tick@{Tick}}
+\index{Tick@{Tick}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a9548531a35dc01867967e74972877294} 
+void APT\+\_\+\+Multi3\+DActor\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & The time elapsed since the last frame. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_a_p_t___single3_d_actor_a7451f79e24c4143a22a8d3d55c1c9fb5}{APT\+\_\+\+Single3\+DActor}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_a_p_t___multi3_d_actor_a843d7b816dab5a18d9e79238feb2ceee}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!MeshDataPerTagArray@{MeshDataPerTagArray}}
+\index{MeshDataPerTagArray@{MeshDataPerTagArray}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{MeshDataPerTagArray}{MeshDataPerTagArray}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a843d7b816dab5a18d9e79238feb2ceee} 
+TArray$<$\mbox{\hyperlink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}}$>$ APT\+\_\+\+Multi3\+DActor\+::\+Mesh\+Data\+Per\+Tag\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+An array storing mesh data. 
+
+This private member variable named {\ttfamily Mesh\+Data\+Per\+Tag\+Array} is a dynamic array that holds objects of type {\ttfamily \doxylink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}}. {\ttfamily \doxylink{struct_f_p_t___mesh_data}{FPT\+\_\+\+Mesh\+Data}} is a custom data type presumably representing some kind of mesh data.
+
+As a private member, {\ttfamily Mesh\+Data\+Per\+Tag\+Array} can only be accessed directly from within methods of the {\ttfamily \doxylink{class_a_p_t___multi3_d_actor}{APT\+\_\+\+Multi3\+DActor}} class. Other classes must interact with {\ttfamily Mesh\+Data\+Per\+Tag\+Array} through public or protected methods provided by the {\ttfamily \doxylink{class_a_p_t___multi3_d_actor}{APT\+\_\+\+Multi3\+DActor}} class. \Hypertarget{class_a_p_t___multi3_d_actor_a9964364534175db0245fca88d8064263}\index{APT\_Multi3DActor@{APT\_Multi3DActor}!TetraDataPerTagArray@{TetraDataPerTagArray}}
+\index{TetraDataPerTagArray@{TetraDataPerTagArray}!APT\_Multi3DActor@{APT\_Multi3DActor}}
+\doxysubsubsection{\texorpdfstring{TetraDataPerTagArray}{TetraDataPerTagArray}}
+{\footnotesize\ttfamily \label{class_a_p_t___multi3_d_actor_a9964364534175db0245fca88d8064263} 
+TArray$<$TArray$<$\mbox{\hyperlink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}}$>$ $>$ APT\+\_\+\+Multi3\+DActor\+::\+Tetra\+Data\+Per\+Tag\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A two-\/dimensional dynamic array storing tetrahedral data. 
+
+This private member variable named {\ttfamily Tetra\+Data\+Array} is a two-\/dimensional dynamic array where each element is another TArray that holds objects of type {\ttfamily \doxylink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}}. {\ttfamily \doxylink{struct_f_p_t___tetra_data}{FPT\+\_\+\+Tetra\+Data}} is a custom data type presumably representing some kind of tetrahedral data.
+
+As a private member, {\ttfamily Tetra\+Data\+Array} can only be accessed directly from within methods of the {\ttfamily \doxylink{class_a_p_t___multi3_d_actor}{APT\+\_\+\+Multi3\+DActor}} class. Other classes must interact with {\ttfamily Tetra\+Data\+Array} through public or protected methods provided by the {\ttfamily \doxylink{class_a_p_t___multi3_d_actor}{APT\+\_\+\+Multi3\+DActor}} class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___multi3_d_actor_8h}{PT\+\_\+\+Multi3\+DActor.\+h}}\item 
+Source/\+Planning\+Tool\+\_\+\+ET/\mbox{\hyperlink{_p_t___multi3_d_actor_8cpp}{PT\+\_\+\+Multi3\+DActor.\+cpp}}\end{DoxyCompactItemize}

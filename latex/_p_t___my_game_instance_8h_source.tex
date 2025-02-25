@@ -1,0 +1,37 @@
+\doxysection{PT\+\_\+\+My\+Game\+Instance.\+h}
+\hypertarget{_p_t___my_game_instance_8h_source}{}\label{_p_t___my_game_instance_8h_source}\index{Source/PlanningTool\_ET/PT\_MyGameInstance.h@{Source/PlanningTool\_ET/PT\_MyGameInstance.h}}
+\mbox{\hyperlink{_p_t___my_game_instance_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ (C)\ 2024\ Jan-\/Vincent\ Mock\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Modifications\ (C)\ 2025\ David\ Hasse\ -\/\ All\ Rights\ Reserved}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}Engine/GameInstance.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_p_t___h_t_t_p_component_8h}{PT\_HTTPComponent.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}PT\_MyGameInstance.generated.h"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00024\ UCLASS()}
+\DoxyCodeLine{00025\ class\ PLANNINGTOOL\_ET\_API\ \mbox{\hyperlink{class_u_p_t___my_game_instance}{UPT\_MyGameInstance}}\ :\ public\ UGameInstance}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___my_game_instance_aedfec5d638736ee3a0419e702910953e}{Init}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ \textcolor{stringliteral}{"{}HTTP"{}})}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_u_p_t___h_t_t_p_component}{UPT\_HTTPComponent}}*\ \mbox{\hyperlink{class_u_p_t___my_game_instance_ab71d5275d3d4dd38b417eef9f1d54b1b}{HTTPComponent}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \ \ UPROPERTY(BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Interpolated\ Data"{}})}
+\DoxyCodeLine{00047\ \ \ \ \ TArray<\textcolor{keywordtype}{double}>\ \mbox{\hyperlink{class_u_p_t___my_game_instance_a44d5eacaa628aa0a69477d072030f706}{InterpolatedData}};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00056\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Interpolated\ Data"{}})}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_p_t___my_game_instance_af839ff56b5c3b24b787bd3f9f6bc425c}{SetInterpolatedData}}(const\ TArray<\textcolor{keywordtype}{double}>\&\ InData);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00066\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Interpolated\ Data"{}})}
+\DoxyCodeLine{00067\ \ \ \ \ TArray<\textcolor{keywordtype}{double}>\ \mbox{\hyperlink{class_u_p_t___my_game_instance_af3ab7f7eb1cf88adace7beec2e4cf014}{GetInterpolatedData}}();}
+\DoxyCodeLine{00068\ \};}
+
+\end{DoxyCode}
